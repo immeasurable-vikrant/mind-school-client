@@ -1,3 +1,15 @@
+### Technology stack
+
+### Library - React 16
+
+### Bundling - Webpack
+
+### Styling - Styled components
+
+### Routing - React router
+
+### PWA configuration - Workbox
+
 # Coding guidelines
 
 This style guide is mostly based on the standards that are currently prevalent in JavaScript and React,
