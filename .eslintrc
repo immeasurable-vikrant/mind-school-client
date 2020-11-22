@@ -1,0 +1,73 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true,
+    "jquery": true
+  },
+  "extends": ["react-app", "eslint:recommended", "plugin:react/recommended"],
+  "parser": "babel-eslint",
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "no-global-assign": [
+      "error",
+      {
+        "exceptions": ["topics"]
+      }
+    ],
+    "no-console": 2,
+    "new-cap": 2,
+    "no-shadow": "error",
+    "no-shadow-restricted-names": "error",
+    "strict": 0,
+    "no-multi-spaces": "error",
+    "comma-dangle": [2, "never"],
+    "no-invalid-regexp": "error",
+    "arrow-parens": [0, "never"],
+    // "prefer-template": "error",
+    "no-const-assign": "error",
+    "no-underscore-dangle": "off",
+    "no-use-before-define": 2,
+    "no-irregular-whitespace": "error",
+    "no-regex-spaces": "error",
+    "no-empty-pattern": "error",
+    "eol-last": 0,
+    "no-label-var": "error",
+    "no-catch-shadow": "error",
+    "no-undef-init": "error",
+    "no-this-before-super": "error",
+    "array-callback-return": "error",
+    "valid-typeof": "error",
+    "object-shorthand": "error",
+    "react/prop-types": 2,
+    "react/jsx-no-undef": 2,
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/jsx-no-duplicate-props": 2,
+    "react/jsx-key": 2,
+    "react/jsx-no-bind": 0,
+    "no-var": 2,
+    "default-case": 2,
+    "eqeqeq": ["error", "always"],
+    "radix": "error",
+    "prefer-const": "error",
+    "prefer-spread": "error"
+  }
+}
