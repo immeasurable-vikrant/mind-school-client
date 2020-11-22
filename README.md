@@ -1,14 +1,14 @@
-#### Technology stack : 
+## Technology stack : 
 
-### Library - React 16
+### 1. Library - React 16
 
-### Bundling - Webpack
+### 2. Bundling - Webpack
 
-### Styling - Styled components
+### 3. Styling - Styled components
 
-### Routing - React router
+### 4. Routing - React router
 
-### PWA configuration - Workbox
+### 5. PWA configuration - Workbox
 
 # Coding guidelines
 
