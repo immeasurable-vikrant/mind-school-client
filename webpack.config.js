@@ -7,7 +7,11 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 module.exports = {
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/'
+  },
+  devServer: {
+    historyApiFallback: true
   },
   module: {
     rules: [{
@@ -41,8 +45,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebPackPlugin({
-      template: './src/index.html',
-      filename: './index.html'
+      template: path.resolve( __dirname, 'src/index.html'),
+      filename: 'index.html'
     })
   ]
 };
