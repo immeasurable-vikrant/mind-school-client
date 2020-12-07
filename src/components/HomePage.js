@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import dateFormat from 'dateformat';
 import { signError } from '../actions';
+import { useMediaQuery } from '@material-ui/core';
 import { paginate, paginateReset, paginateLoading } from '../actions/course';
 import { makeStyles } from '@material-ui/core/styles';
 import {
@@ -50,6 +51,7 @@ const HomePage = ({
   hasError,
   fetchPaginate
 }) => {
+  const matches = useMediaQuery('(min-width:600px)');
   const history = useHistory();
   const classes = useStyles();
   const [state, setState] = useState({
@@ -61,7 +63,6 @@ const HomePage = ({
   });
 
   const loadInitial = (keyword) => {
-
     const { limit } = state;
 
     const sort = randomSort();
@@ -152,7 +153,11 @@ const HomePage = ({
 
   const renderCourses = () => {
     return _.map(courses, (course, i) => {
-      return (
+      return matches ? (
+        <Grid item xs={3}>
+          {courseDetail(course)}
+        </Grid>
+      ) : (
         <div className='item'>{courseDetail(course)}</div>
       );
     });
@@ -177,11 +182,17 @@ const HomePage = ({
       return (
         <Fragment>
           <div className={classes.root}>
-            <Grid container spacing={3}>
-              <div className='horizontal_slider'>
-                <div className='slider_container'>{renderCourses()}</div>
-              </div>
-            </Grid>
+            {matches ? (
+              <Grid container spacing={3}>
+                {renderCourses()}
+              </Grid>
+            ) : (
+              <Grid container spacing={3}>
+                <div className='horizontal_slider'>
+                  <div className='slider_container'>{renderCourses()}</div>
+                </div>
+              </Grid>
+            )}
           </div>
           <div
             style={{
@@ -194,7 +205,6 @@ const HomePage = ({
       );
     }
   };
-
   return (
     <Fragment>
       <HomeDescription />

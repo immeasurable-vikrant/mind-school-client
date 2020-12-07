@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { Link, withRouter, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { userInfo } from '../actions';
+import {useStyles } from './useStyles'
 import getIn from '../utility/getIn';
-import { fade, makeStyles } from '@material-ui/core/styles';
 import {
   AppBar,
   Button,
@@ -14,49 +14,6 @@ import {
   Menu
 } from '@material-ui/core';
 import { AccountCircle } from '@material-ui/icons';
-
-const useStyles = makeStyles((theme) => ({
-  header: {
-    backgroundColor: 'transparent',
-    color: 'black',
-    boxShadow: '0px 0px 0px 0px'
-  },
-  grow: {
-    flexGrow: 1
-  },
-  menuButton: {
-    marginRight: theme.spacing(2)
-  },
-  title: {
-    [theme.breakpoints.up('sm')]: {
-      display: 'block'
-    }
-  },
-  search: {
-    position: 'relative',
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: fade(theme.palette.common.white, 0.15),
-    '&:hover': {
-      backgroundColor: fade(theme.palette.common.white, 0.25)
-    },
-    marginRight: theme.spacing(2),
-    marginLeft: 0,
-    width: '100%',
-    [theme.breakpoints.up('sm')]: {
-      marginLeft: theme.spacing(3),
-      width: 'auto'
-    }
-  },
-  sectionDesktop: {
-    [theme.breakpoints.up('md')]: {
-      display: 'flex'
-    }
-  },
-  sectionMobile: {
-    display: 'flex',
-    [theme.breakpoints.up('md')]: {}
-  }
-}));
 
 const Header = withRouter(({ logged }) => {
   const history = useHistory();
@@ -157,8 +114,15 @@ const Header = withRouter(({ logged }) => {
   const renderLogin = () => {
     return (
       <Fragment>
-        <Button onClick={() => history.push('/signin')}>Login</Button>
         <Button
+          className={classes.login}
+          variant='contained'
+          onClick={() => history.push('/signin')}>
+          Sign In
+        </Button>
+        <Button
+        variant='contained'
+          className={classes.login}
           onClick={() => {
             history.push('/signup');
           }}>
@@ -171,14 +135,14 @@ const Header = withRouter(({ logged }) => {
   const renderNav = () => {
     return (
       <div className={classes.grow}>
-        <AppBar position='sticky' className={classes.header}>
+        <AppBar className={classes.header}>
           <div
             style={{
               display: 'flex',
               justifyContent: 'space-between',
-              alignItems: 'center'
+              alignItems: 'center',
+              margin: '24px'
             }}>
-            {/* <Toolbar> */}
             <Link style={{ textDecoration: 'none' }} to='/'>
               <Typography className={classes.title} variant='h4' noWrap>
                 Silence
