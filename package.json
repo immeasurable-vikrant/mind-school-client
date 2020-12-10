@@ -51,6 +51,7 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.57",
     "@tata-digital/storybook-common": "git+https://gitlab.com/tata-digital/tcp-web/common.git",
     "async": "^3.2.0",
     "axios": "^0.19.2",

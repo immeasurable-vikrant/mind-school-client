@@ -1,21 +1,34 @@
+/** @format */
+
 import React, { Fragment } from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import { CssBaseline, Container } from '@material-ui/core';
 import Header from './Header';
 import HomePage from './HomePage';
 import Footer from './Footer';
 import Wrapper from './Wrapper';
-import WrapperDown from './WrapperDown';
+import WhyLearn from './WhyLearn';
+// import WrapperDown from './WrapperDown';
+
+const useStyles = makeStyles((theme) => ({
+  container: {
+    padding: '16px'
+  }
+}));
 
 const App = () => {
+  const classes = useStyles();
   return (
     <Fragment>
       <Header />
       <Wrapper />
       <CssBaseline />
-      <Container maxWidth='md'>
-        <HomePage style={{ backgroundColor: 'green', height: '100vh' }} />
+      <Container maxWidth='md' className={classes.container}>
+        <HomePage />
       </Container>
-      <WrapperDown />
+      <hr />
+      <WhyLearn />
+      {/* <WrapperDown /> */}
       <Footer />
     </Fragment>
   );

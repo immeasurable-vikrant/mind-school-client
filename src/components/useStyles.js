@@ -4,7 +4,8 @@ export const useStyles = makeStyles((theme) => ({
   header: {
     backgroundColor: '#FBFCFC',
     color: 'black',
-    boxShadow: '0px 0px 0px 0px'
+    boxShadow: '0px 0px 0px 0px',
+    position: 'unset'
   },
   grow: {
     flexGrow: 1

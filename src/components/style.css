@@ -242,10 +242,9 @@ h6 {
   display: block;
   width: 100%;
   overflow-x: scroll;
-  margin-top: 150px;
-  padding: 20px;
+  /* margin-top: 150px; */
   box-sizing: border-box;
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 
 .slider_container {

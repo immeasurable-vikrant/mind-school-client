@@ -1,3 +1,5 @@
+/** @format */
+
 import _ from 'lodash';
 import React, { useEffect, useState, Fragment } from 'react';
 import { withRouter, useHistory } from 'react-router-dom';
@@ -16,25 +18,38 @@ import {
   CardMedia,
   CardActions,
   Button,
-  Typography
+  Typography,
 } from '@material-ui/core';
 import { hostUrl } from '../../config';
-import HomeDescription from './HomeDescription';
+// import HomeDescription from './HomeDescription';
 import './style.css';
 
 const rand = require('random-seed').create();
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
+  },
+  text: {
+    fontStyle: 'helvetica',
+    fontSize: '24px',
+    lineHeight: '29px',
+    color: '#3c3b37',
+    fontWeight: '700',
+    padding: '16px',
+    // textAlign: 'center',
+  },
+  card: {
+    width: '240px',
+    height: '300px',
+    backgroundColor: 'white',
+    border: 'none',
+  },
+  cardButton: {
+    border: 'none',
   },
   media: {
-    height: 140
+    height: 140,
   },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary
-  }
 }));
 
 const numberWithCommas = (x) => {
@@ -49,7 +64,7 @@ const HomePage = ({
   page,
   courses,
   hasError,
-  fetchPaginate
+  fetchPaginate,
 }) => {
   const matches = useMediaQuery('(min-width:600px)');
   const history = useHistory();
@@ -59,7 +74,7 @@ const HomePage = ({
     keyword: '',
     limit: 8,
     sort: {},
-    suggestions: []
+    suggestions: [],
   });
 
   const loadInitial = (keyword) => {
@@ -85,7 +100,7 @@ const HomePage = ({
       'average',
       'reviews',
       'enrolled',
-      'price'
+      'price',
     ];
     const sort_type = type[rand(type.length)];
     const order = [1, -1];
@@ -93,7 +108,7 @@ const HomePage = ({
 
     return {
       field: sort_type,
-      value: sort_order
+      value: sort_order,
     };
   };
 
@@ -120,13 +135,13 @@ const HomePage = ({
 
   const courseDetail = (course) => {
     const text = `${numberWithCommas(
-      course.enrolled
+      course.enrolled,
     )} students enrolled, rating: ${course.average} (${numberWithCommas(
-      course.reviews
+      course.reviews,
     )} reviews), Last updated ${dateFormat(course?.updated, 'm/yyyy')}`;
 
     return (
-      <Card className={classes.root} onClick={(e) => handleDetail(e, course)}>
+      <Card className={classes.card} onClick={(e) => handleDetail(e, course)}>
         <CardActionArea>
           <CardMedia
             className={classes.media}
@@ -143,7 +158,7 @@ const HomePage = ({
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size='small' color='primary'>
+          <Button size='small' color='primary' className={classes.cardButton}>
             Learn More
           </Button>
         </CardActions>
@@ -181,23 +196,23 @@ const HomePage = ({
     } else {
       return (
         <Fragment>
-          <div className={classes.root}>
+          <div>
             {matches ? (
               <Grid container spacing={3}>
                 {renderCourses()}
               </Grid>
             ) : (
-              <Grid container spacing={3}>
-                <div className='horizontal_slider'>
-                  <div className='slider_container'>{renderCourses()}</div>
-                </div>
-              </Grid>
+              // <Grid container spacing={3}>
+              <div className='horizontal_slider'>
+                <div className='slider_container'>{renderCourses()}</div>
+              </div>
+              // </Grid>
             )}
           </div>
           <div
             style={{
               marginTop: 30,
-              marginBottom: 30
+              marginBottom: 30,
             }}>
             {renderLoading()}
           </div>
@@ -207,8 +222,9 @@ const HomePage = ({
   };
   return (
     <Fragment>
-      <HomeDescription />
-      <div>{renderState()}</div>
+      {/* <HomeDescription /> */}
+      <h1 className={classes.text}>Browse All Courses</h1>
+      <div className={classes.root}>{renderState()}</div>
     </Fragment>
   );
 };
@@ -220,7 +236,7 @@ HomePage.propTypes = {
   courses: PropTypes.array,
   total: PropTypes.number,
   page: PropTypes.number,
-  fetchPaginate: PropTypes.func
+  fetchPaginate: PropTypes.func,
 };
 
 const mapStateToProps = (state) => {
@@ -229,7 +245,7 @@ const mapStateToProps = (state) => {
     isLoading: state.paginate.loading,
     courses: state.paginate.courses,
     total: state.paginate.total,
-    page: state.paginate.page
+    page: state.paginate.page,
   };
 };
 
@@ -239,10 +255,10 @@ const mapDispatchToProps = (dispatch) => {
       dispatch(paginate(keyword, page, limit, sort, callback)),
     paginateReset: () => dispatch(paginateReset()),
     paginateLoading: (loading) => dispatch(paginateLoading(loading)),
-    signError: (error) => dispatch(signError(error))
+    signError: (error) => dispatch(signError(error)),
   };
 };
 
 export default withRouter(
-  connect(mapStateToProps, mapDispatchToProps)(HomePage)
+  connect(mapStateToProps, mapDispatchToProps)(HomePage),
 );
