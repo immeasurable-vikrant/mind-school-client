@@ -1,5 +1,3 @@
-/** @format */
-
 import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { CssBaseline, Container } from '@material-ui/core';
@@ -8,6 +6,7 @@ import HomePage from './HomePage';
 import Footer from './Footer';
 import Wrapper from './Wrapper';
 import WhyLearn from './WhyLearn';
+import BecomeTeacher from './BecomeTeacher';
 // import WrapperDown from './WrapperDown';
 
 const useStyles = makeStyles((theme) => ({
@@ -28,7 +27,11 @@ const App = () => {
       </Container>
       <hr />
       <WhyLearn />
-      {/* <WrapperDown /> */}
+      <Container maxWidth='md' className={classes.container}>
+        <HomePage />
+      </Container>
+      <hr />
+      <BecomeTeacher />
       <Footer />
     </Fragment>
   );

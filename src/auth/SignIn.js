@@ -11,8 +11,6 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { hostUrl } from '../../config';
 import '../../styles/style.css';
-import { Button } from '@material-ui/core';
-
 
 class Signin extends Component {
   constructor(props) {
@@ -53,7 +51,7 @@ class Signin extends Component {
     });
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.props.signError('');
   }
 
@@ -82,7 +80,7 @@ class Signin extends Component {
 
         const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
         return sleep(300).then(() => {
-          this.props.Login({ email, password, redirect, failed });
+          this.props.login({ email, password, redirect, failed });
         });
       }
     }
@@ -129,25 +127,20 @@ class Signin extends Component {
 
   renderSocial = () => {
     return (
-      <div
-        style={{
-          marginTop: 10
-        }}>
-        <div
-          style={{
-            marginBottom: 10
-          }}>
-          <a href={`${hostUrl}/auth/google`}>
-            <button
-              type='button'
-              name='google'
-              className='btn btn-lg btn-default'
-              style={{ width: '310px' }}>
-              <i className='fa fa-google-plus social google' />
-              Login with Google+
-            </button>
-          </a>
-        </div>
+      <div>
+        <a
+          className='btn btn-outline-dark google-oAuth-btn'
+          href={`${hostUrl}/auth/google`}
+          role='button'
+          style={{ textTransform: 'none', border: '1px solid #ced4da' }}>
+          <img
+            width='20px'
+            style={{ marginBottom: '3px', marginRight: '5px' }}
+            alt='Google sign-in'
+            src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png'
+          />
+          Login with Google
+        </a>
       </div>
     );
   };
@@ -164,74 +157,52 @@ class Signin extends Component {
     }
   };
   render() {
-  
     return (
       <div>
         {this.renderHeader()}
-        <div style={{ textAlign: 'center' }}>{this.signError()}</div>
-        <div className='sign-in-container'>
-          <form className='sign-in-form' onSubmit={(e) => this.submitForm(e)}>
-            <TextInput
-              ref={(e) => (this._email = e)}
-              label='Email'
-              name='email'
-              type='text'
-              validate={this.validateEmail}
-            />
-            <TextInput
-              ref={(e) => (this._password = e)}
-              label='Password'
-              name='password'
-              type='password'
-              validate={this.validatePassword}
-              placeholder='Please enter a password'
-            />
-            <div>
-              <button
-                
-                // variant='outlined'
-                // color='primary'
-                id='submit'
-                type='submit'
-                value='Submit'
-                className='log-in-btn'
-                name='submit'>
-                Log In
-              </button>
-              {/* <button
-                type='button'
-                value='Clear'
-                name='clear'
-                className='btn btn-lg btn-default'
-                onClick={(e) => {
-                  e.preventDefault();
-                  this.props.signError('');
-                  this.reset();
-                }}>
-                Clear
-              </button> */}
-              {/* <button
-                type='button'
-                value='Sign Up'
-                name='signup'
-                className='btn btn-lg btn-danger'
-                onClick={(e) => {
-                  e.preventDefault();
-                  this.props.history.push('/signup');
-                }}>
-                Sign Up
-              </button> */}
-              <p
-                onClick={(e) => {
-                  e.preventDefault();
-                  this.props.history.push('/signup');
-                }}>
-                Already have an account?
-              </p>
-            </div>
-          </form>
+        <div className='loginBox-header'>
+          Log In to Your Immeasurable Account!
         </div>
-        <div style={this.state.dialogStyle}>{this.renderSocial()}</div>
+        <div style={{ textAlign: 'center' }}>{this.signError()}</div>
+        <form className='sign-in-form' onSubmit={(e) => this.submitForm(e)}>
+          <div>{this.renderSocial()}</div>
+          <TextInput
+            ref={(e) => (this._email = e)}
+            name='email'
+            type='text'
+            placeholder='Email'
+            validate={this.validateEmail}
+          />
+          <TextInput
+            ref={(e) => (this._password = e)}
+            name='password'
+            type='password'
+            validate={this.validatePassword}
+            placeholder='Password'
+          />
+          <div>
+            <button
+              id='submit'
+              type='submit'
+              value='Submit'
+              className='log-in-btn'
+              name='submit'>
+              Log In
+            </button>
+            <div
+              className='dont-have-account'
+              onClick={(e) => {
+                e.preventDefault();
+                this.props.history.push('/signup');
+              }}>
+              Don&apos;t have an account?
+              <a className='loginPage-signup' href='/signup'>
+                Sign Up
+              </a>
+            </div>
+          </div>
+        </form>
+
         <div style={{ marginBottom: 40 }}>&nbsp;</div>
         {this.renderFooter()}
       </div>
@@ -243,7 +214,9 @@ Signin.propTypes = {
   dialog: PropTypes.bool,
   history: PropTypes.object,
   signError: PropTypes.func,
-  Login: PropTypes.func
+  login: PropTypes.func,
+  redirect: PropTypes.string,
+  error: PropTypes.string
 };
 
 function mapStateToProps(state) {
@@ -253,7 +226,7 @@ function mapStateToProps(state) {
 const mapDispatchToProps = (dispatch) => {
   return {
     signError: (error) => dispatch(signError(error)),
-    Login: ({ email, password, redirect, failed }) =>
+    login: ({ email, password, redirect, failed }) =>
       dispatch(logIn({ email, password, redirect, failed }))
   };
 };

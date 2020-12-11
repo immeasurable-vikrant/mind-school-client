@@ -33,12 +33,23 @@ body {
   width: 100%;
   color: #8e44ad;
   border: 1px solid #8e44ad;
-  border-radius: 10px;
+  border-radius: 4px;
   background-color: white;
   margin: 4px;
+  margin-top: 24px;
   padding: 8px;
 }
 
+.checkbox-terms-conditions {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 .btn-danger {
   background-color: rgb(255, 64, 129) !important;
 }
@@ -49,17 +60,17 @@ body {
   border-color: #eed3d7;
 }
 
-.sign-in-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .sign-in-form {
   margin: 24px 16px;
   background-color: white;
   padding: 16px;
-  border: 1px solid lightgray;
+  /* border: 1px solid lightgray; */
   border-radius: 10px;
+}
+
+.google-oAuth-btn {
+  width: 100%;
+  border: 1px solid #ced4da;
 }
 
 input {
@@ -77,6 +88,21 @@ input::placeholder {
 }
 .help-block {
   font-size: 18px !important;
+}
+
+.form-group-email {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.dont-have-account {
+  display: block;
+  padding: 16px 0 24px;
+  text-align: center;
+}
+.loginPage-signup {
+  font-weight: 700;
+  margin-left: 4px;
 }
 
 .divider {
@@ -121,4 +147,15 @@ input::placeholder {
   background-color: pink;
   padding: 5px 10px;
   text-align: center;
+}
+
+.loginBox-header {
+  border-bottom: solid 1px #dedfe0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  color: #29303b;
+  display: block;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 24px 64px 24px 24px;
 }
