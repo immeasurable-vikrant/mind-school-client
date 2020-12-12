@@ -1,5 +1,3 @@
-/** @format */
-
 import React, { Component } from 'react';
 import $ from 'jquery';
 import PropTypes from 'prop-types';
@@ -7,7 +5,7 @@ import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Button } from '@material-ui/core';
 import { signError, signUp } from '../actions';
-
+import { ERROR_MESSAGES } from '../common/constants';
 import path from 'path';
 import TextInput from '../components/TextInput';
 
@@ -218,9 +216,9 @@ class SignUp extends Component {
   validateEmail = (value) => {
     let error = '';
     if (!value || value.length <= 0) {
-      error = 'Required';
+      error = ERROR_MESSAGES.MANDATORY_FIELD;
     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
-      error = 'Invalid email address';
+      error = ERROR_MESSAGES.INVALID_NAME;
     }
 
     return error;
@@ -229,11 +227,11 @@ class SignUp extends Component {
   validateName = (value) => {
     let error = '';
     if (!value || value.length <= 0) {
-      error = 'Required';
+      error = ERROR_MESSAGES.MANDATORY_FIELD;
     } else if (value.length < 4) {
-      error = 'Must be 4 characters or more';
+      error = ERROR_MESSAGES.maxNCharacters(4);
     } else if (value.length > 30) {
-      error = 'Must be 30 characters or less';
+      error = ERROR_MESSAGES.maxNCharacters(30);
     }
 
     return error;
@@ -242,11 +240,11 @@ class SignUp extends Component {
   validatePassword = (value) => {
     let error = '';
     if (!value || value.length <= 0) {
-      error = 'Required';
+      error = ERROR_MESSAGES.MANDATORY_FIELD;
     } else if (value.length < 4) {
-      error = 'Must be 4 characters or more';
+      error = ERROR_MESSAGES.maxNCharacters(4);
     } else if (value.length > 15) {
-      error = 'Must be 15 characters or less';
+      error = ERROR_MESSAGES.maxNCharacters(4);
     }
 
     return error;
@@ -255,7 +253,7 @@ class SignUp extends Component {
   validatePasswordConfirm = (value) => {
     let error = '';
     if (!value || value.length <= 0) {
-      error = 'Required';
+      error = ERROR_MESSAGES.MANDATORY_FIELD;
     }
 
     const password = $('#password').val();
@@ -286,7 +284,7 @@ class SignUp extends Component {
         <div style={{ textAlign: 'center' }}>{this.signError()}</div>
         <div style={this.state.dialogStyle}>
           <form
-           className='sign-in-form'
+            className='sign-in-form'
             id='form_info'
             name='form_info'
             onSubmit={(e) => this.submitForm(e)}>
@@ -318,7 +316,7 @@ class SignUp extends Component {
               type='password'
               validate={this.validatePasswordConfirm}
             />
-            <input type='checkbox' className='checkbox-terms-conditions'/>
+            <input type='checkbox' className='checkbox-terms-conditions' />
             {/* <div className='form-group'>{this.renderButton()}</div> */}
             {/* <div style={{ clear: 'both' }}>&nbsp;</div> */}
             <div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Dialog, Paper, Button } from '@material-ui/core';
 import { withRouter } from 'react-router-dom';
@@ -7,6 +7,7 @@ import { buyCourse, addCart } from '../actions/cart';
 import { userInfo } from '../actions';
 import { hostUrl } from '../../config';
 import SignIn from '../auth/SignIn';
+import './style.css';
 
 const numberWithCommas = (x) => {
   const parts = parseInt(x, 10).toString().split('.');
@@ -163,7 +164,7 @@ const CartBanner = ({
         if (filtered[0].learn) {
           return (
             <div>
-              <div style={{ textAlign: 'center', marginBottom: 6 }}>
+              <div className='btn-group-buy'>
                 <Button
                   color='primary'
                   fullWidth={true}
@@ -178,22 +179,27 @@ const CartBanner = ({
     }
 
     return (
-      <div>
-        <div style={{ textAlign: 'center', marginBottom: 6 }}>
-          <Button fullWidth={true} onClick={() => onBuyCourse()}>
-            Buy
+      <Fragment>
+        <div className='btn-group-buy'>
+          <Button
+            fullWidth={true}
+            variant='outlined'
+            color='primary'
+            onClick={() => onBuyCourse()}>
+            Buy Now
           </Button>
         </div>
-        <div style={{ textAlign: 'center', marginBottom: 6 }}>
+        <div className='btn-group-buy'>
           <Button
             size='large'
             color='primary'
+            variant='outlined'
             fullWidth={true}
             onClick={addToCart}>
             Add to Cart
           </Button>
         </div>
-      </div>
+      </Fragment>
     );
   };
 
@@ -216,23 +222,28 @@ const CartBanner = ({
     return (
       <div>
         <Paper
-          // zDepth={2}
-          style={{
-            width: '100%',
-            height: '100%',
-            overflow: 'hidden',
-            backgroundColor: '#FFF',
-            display: 'inline-block'
-          }}>
-          <div
-            style={{
-              marginTop: 6,
-              marginLeft: 6,
-              marginRight: 6
-            }}>
+          elevation={0}
+          // style={{
+          //   width: '100%',
+          //   height: '100%',
+          //   overflow: 'hidden',
+          //   backgroundColor: '#FFF',
+          //   display: 'inline-block'
+          // }}
+        >
+          <div>
             <div style={{ marginBottom: 6 }} />
             <div style={{ textAlign: 'center' }}>{renderPicture(course)}</div>
-            <div style={{ marginBottom: 6 }} />
+            <div className='clp-component-render'>
+              <h3 className='course-title'>{course.title}</h3>
+              <div className='course-subtitle'>{course.subtitle}</div>
+            </div>
+            <div className='clp-badge-rating'>
+              <div className='clp-lead-item'>
+                <div className='clp-course-avg'>{course.average}*****</div>
+                <div className='clp-course-rev'>{course.reviews} students</div>
+              </div>
+            </div>
             <div style={{ textAlign: 'center', marginTop: 6 }}>
               <Button fullWidth={true}>Preview the Course</Button>
             </div>

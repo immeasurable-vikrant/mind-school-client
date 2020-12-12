@@ -159,3 +159,53 @@ input::placeholder {
   font-size: 15px;
   padding: 24px 64px 24px 24px;
 }
+
+.clp-component-render {
+  /* box-sizing: border-box; */
+  margin: 24px 24px 4px;
+  padding: 0;
+}
+
+.course-title {
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+}
+
+.course-subtitle {
+  font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+.clp-badge-rating {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 24px;
+}
+.clp-lead-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clp-course-avg {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #be5a0e;
+}
+
+.clp-course-rev {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-left: 4px;
+}
+
+.btn-group-buy {
+  text-align: center;
+  margin: 8px 24px;
+}

@@ -1,16 +1,16 @@
-/** @format */
-
 import React, { Component } from 'react';
 import $ from 'jquery';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { signError, logIn } from '../actions';
+import { ERROR_MESSAGES } from '../common/constants';
 import TextInput from '../components/TextInput';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { hostUrl } from '../../config';
 import '../../styles/style.css';
+
 
 class Signin extends Component {
   constructor(props) {
@@ -99,9 +99,9 @@ class Signin extends Component {
   validateEmail = (value) => {
     let error = '';
     if (!value || value.length <= 0) {
-      error = 'Required';
+      error = ERROR_MESSAGES.MANDATORY_FIELD;
     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
-      error = 'Invalid email address';
+      error = ERROR_MESSAGES.INVALID_NAME;
     }
 
     return error;
@@ -110,11 +110,11 @@ class Signin extends Component {
   validatePassword = (value) => {
     let error = '';
     if (!value || value.length <= 0) {
-      error = 'Required';
+      error = ERROR_MESSAGES.MANDATORY_FIELD;
     } else if (value.length < 4) {
-      error = 'Must be 4 characters or more';
+      error = ERROR_MESSAGES.minNCharacters(4);
     } else if (value.length > 15) {
-      error = 'Must be 15 characters or less';
+      error = ERROR_MESSAGES.maxNCharacters(15);
     }
 
     return error;

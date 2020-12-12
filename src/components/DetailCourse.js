@@ -12,6 +12,14 @@ import ShowMore from 'react-show-more';
 import Header from './Header';
 import CartBanner from './CartBanner';
 import Curriculum from './Curriculum';
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1
+  }
+}));
 
 const numberWithCommas = (x) => {
   const parts = parseInt(x, 10).toString().split('.');
@@ -26,6 +34,7 @@ const DetailCourse = ({
   hasError,
   getDetailCourse
 }) => {
+  const classes = useStyles();
   const [state, setState] = useState({
     dialogStyle: { display: 'none' }
   });
@@ -77,7 +86,7 @@ const DetailCourse = ({
           <a href='/' className='text-emphasis-first'>
             {author.name}
           </a>
-          <a href='/' className='text-white'>
+          <a href='/' className='text-black'>
             {decorator}
           </a>
         </span>
@@ -148,7 +157,7 @@ const DetailCourse = ({
             <div className='col-sm-1' />
           </div>
           <div className='row'>
-            <div className='text-white'>{decorator}</div>
+            <div className='text-black'>{decorator}</div>
           </div>
         </div>
       );
@@ -159,64 +168,37 @@ const DetailCourse = ({
     if (!course) return <div>&nbsp;</div>;
 
     return (
-      <div className='container-fluid'>
-        <div className='row header-top'>
-          <div className='col-sm-12'>
-            <div className='container'>
-              <div className='row body-content'>
-                <div className='col-sm-8'>
-                  <br />
-                  <br />
-                  <div className='text-white text-size-first'>
-                    {course.title}
-                  </div>
-                  <br />
-                  <div className='text-white text-size-second'>
-                    {course.subtitle}
-                  </div>
-                  <div className='text-white text-size-third'>
-                    rating:{' '}
-                    <span className='text-emphasis-first'>
-                      {course.average}
-                    </span>{' '}
-                    (
-                    <span className='text-emphasis-second'>
-                      {numberWithCommas(course.reviews)}
-                    </span>{' '}
-                    reviews)
-                  </div>
-                  <div className='text-white text-size-third text'>
-                    <span className='text-emphasis-third'>
-                      {numberWithCommas(course.enrolled)}
-                    </span>{' '}
-                    students enrolled
-                  </div>
-                  <div className='text-white text-size-third text'>
-                    Created by {authorNames(course._authors)}
-                  </div>
-                  <div className='text-white text-size-third text'>
-                    Last updated{' '}
-                    <span className='text-emphasis-third'>
-                      {dateFormat(course.updated, 'm/yyyy')}
-                    </span>
-                  </div>
-                </div>
-                <div className='col-sm-4'>
-                  <div style={{ marginTop: 30 }} className='hidden-xs'></div>
-                  <br />
-                  <CartBanner course={course} />
-                </div>
-              </div>
-              <div className='row body-content hidden-xs'>
-                <div className='col-sm-12'>
-                  <br />
-                  <br />
-                </div>
-              </div>
+      <div className={classes.root}>
+        <Grid container spacing={3}>
+          <Grid item xs={12} sm={4} md={4}>
+            <CartBanner authorNames={authorNames} course={course} />
+          </Grid>
+          <Grid xs={12}>
+            <div className='text-black text-size-third'>
+              rating:{' '}
+              <span className='text-emphasis-first'>{course.average}</span> (
+              <span className='text-emphasis-second'>
+                {numberWithCommas(course.reviews)}
+              </span>{' '}
+              reviews)
             </div>
-          </div>
-          <br />
-        </div>
+            <div className='text-black text-size-third text'>
+              <span className='text-emphasis-third'>
+                {numberWithCommas(course.enrolled)}
+              </span>{' '}
+              students enrolled
+            </div>
+            <div className='text-black text-size-third text'>
+              Created by {authorNames(course._authors)}
+            </div>
+            <div className='text-black text-size-third text'>
+              Last updated{' '}
+              <span className='text-emphasis-third'>
+                {dateFormat(course.updated, 'm/yyyy')}
+              </span>
+            </div>
+          </Grid>
+        </Grid>
         <div className='container'>
           <div className='row body-content'>
             <div className='col-sm-offset-1 col-sm-10'>
@@ -258,7 +240,8 @@ const DetailCourse = ({
           <br />
         </div>
         <br />
-        <div className='container'>{/* <Comment/> */}</div>
+        {/* <div className='container'> <Comment/> </div> */}
+        {/* </div> */}
       </div>
     );
   };
@@ -267,14 +250,7 @@ const DetailCourse = ({
     <div>
       <Header />
       <div style={{ backgroundColor: 'darkgray' }}>{renderState()}</div>
-      <div
-        style={{
-          marginTop: 20,
-          marginBottom: 20,
-          backgroundColor: 'darkgray'
-        }}>
-        {renderCourse()}
-      </div>
+      <div>{renderCourse()}</div>
       <Footer />
     </div>
   );
