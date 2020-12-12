@@ -4,7 +4,7 @@
 
 ### 2. Bundling - Webpack
 
-### 3. Styling - Styled components
+### 3. Styling - Styled components or Simple CSS
 
 ### 4. Routing - React router
 
@@ -20,15 +20,15 @@ clear examples.
 
 ### 1. Branching
 
-Branch name should either be created from JIRA tasks or it should be a meaningful name.
+Branch name should either be created & it should be a meaningful name.
 
 ##### Correct usage
 
-`feature/LOYALTY-1234-integrate-loyalty-points`, `feature/AUTH-1234-integrate-otp-login-flow`
+`feature/AUTH-1234-integrate-oAuth-flow`, `feature/AUTH-12-integrate-login-flow`
 
 ##### Incorrect usage
 
-`feature/spike-webview-10-May`
+`feature/auth-webview-Apr`
 
 ---
 
@@ -51,11 +51,11 @@ Rules for committing:
 
 ##### Correct usage
 
-`LOYALTY-1609 : Search icon fix on recent searches, Handle recent search use cases on log out`
+`HOMEPAGE : Search icon fix on recent searches, Handle recent search use cases on log out`
 
 ##### Incorrect usage
 
-`google sdk integrated”, “minor fixes`
+`payment system integrated”, “minor fixes`
 
 ---
 
