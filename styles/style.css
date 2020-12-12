@@ -162,7 +162,7 @@ input::placeholder {
 
 .clp-component-render {
   /* box-sizing: border-box; */
-  margin: 24px 24px 4px;
+  margin: 24px 0 4px;
   padding: 0;
 }
 
@@ -184,7 +184,7 @@ input::placeholder {
 .clp-badge-rating {
   display: flex;
   flex-direction: column;
-  margin: 8px 24px;
+  margin: 8px 0;
 }
 .clp-lead-item {
   display: flex;
@@ -208,4 +208,49 @@ input::placeholder {
 .btn-group-buy {
   text-align: center;
   margin: 8px 24px;
+}
+
+.cart-author-name {
+  font-size: 14px;
+  line-height: 20px;
+  color: #3c3b37;
+  font-weight: 400;
+  margin: 8px 0;
+}
+
+.cart-icons {
+  display: flex;
+  align-items: center;
+  margin: 4px 0;
+}
+
+.cart-subtitles {
+  font-size: 14px;
+  line-height: 20px;
+  color: #3c3b37;
+  font-weight: 400;
+}
+
+.img-icon-cart {
+  margin-top: 4px;
+  margin-right: 8px;
+}
+
+.cart-price {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #3c3b37;
+  margin-right: 4px;
+}
+.cart-price-striked {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #3c3b37;
+  margin-left: 4px;
+}
+
+.cart-container {
+  margin: 0 24px;
 }
