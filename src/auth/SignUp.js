@@ -3,7 +3,7 @@ import $ from 'jquery';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { Button } from '@material-ui/core';
+// import { Button } from '@material-ui/core';
 import { signError, signUp } from '../actions';
 import { ERROR_MESSAGES } from '../common/constants';
 import path from 'path';
@@ -65,7 +65,7 @@ class SignUp extends Component {
     const password = $('#password').val();
     const passwordConfirm = $('#passwordConfirm').val();
     const name = $('#name').val();
-    const fileToUpload = document.getElementById('fileToUpload').files;
+    // const fileToUpload = document.getElementById('fileToUpload').files;
 
     if (email && password && passwordConfirm && name) {
       if (
@@ -85,27 +85,27 @@ class SignUp extends Component {
             this.setState({ isSubmitting: false });
           };
 
-          let avatar = null;
+          const avatar = null;
 
-          if (fileToUpload) {
-            if (fileToUpload[0]) {
-              const filename = fileToUpload[0].name;
+          // if (fileToUpload) {
+          //   if (fileToUpload[0]) {
+          //     const filename = fileToUpload[0].name;
 
-              if (filename && filename.length > 0) {
-                const ext = path.extname(filename).toLowerCase();
+          //     if (filename && filename.length > 0) {
+          //       const ext = path.extname(filename).toLowerCase();
 
-                if (
-                  ext === '.png' ||
-                  ext === '.jpg' ||
-                  ext === '.jpeg' ||
-                  ext === '.gif' ||
-                  ext === '.ico'
-                ) {
-                  avatar = fileToUpload[0];
-                }
-              }
-            }
-          }
+          //       if (
+          //         ext === '.png' ||
+          //         ext === '.jpg' ||
+          //         ext === '.jpeg' ||
+          //         ext === '.gif' ||
+          //         ext === '.ico'
+          //       ) {
+          //         avatar = fileToUpload[0];
+          //       }
+          //     }
+          //   }
+          // }
 
           const sleep = (ms) =>
             new Promise((resolve) => setTimeout(resolve, ms));
@@ -166,7 +166,7 @@ class SignUp extends Component {
           width: '100%',
           height: '60px'
         }}>
-        <Button
+        {/* <Button
           label='Avatar Image'
           labelPosition='before'
           style={{ marginLeft: 0, marginRight: 20 }}
@@ -182,14 +182,14 @@ class SignUp extends Component {
               left: 0,
               width: '100%',
               opacity: 0,
-              marginRight: 20
+              marginRight: 20,
             }}
             id='fileToUpload'
             name='fileToUpload'
             className='form-control'
             onChange={this.uploadFile}
           />
-        </Button>
+        </Button> */}
         <div>
           <input
             id='avatar_text'
@@ -271,9 +271,9 @@ class SignUp extends Component {
     this._passwordConfirm.reset();
     this._name.reset();
 
-    $('#fileToUpload').val('');
-    $('#avatar_image').attr('src', '').hide();
-    $('#avatar_text').attr('placeholder', '');
+    // $('#fileToUpload').val('');
+    // $('#avatar_image').attr('src', '').hide();
+    // $('#avatar_text').attr('placeholder', '');
   };
 
   render() {

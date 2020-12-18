@@ -236,7 +236,15 @@ input::placeholder {
   margin-right: 8px;
 }
 
+.cart-price-div {
+  /* display: flex;
+  flex-direction: row; */
+  /* justify-content: flex-start; */
+  margin-top: 16px;
+}
+
 .cart-price {
+  margin-top: 20px;
   font-size: 19px;
   font-weight: 700;
   line-height: 19px;
@@ -249,8 +257,23 @@ input::placeholder {
   line-height: 19px;
   color: #3c3b37;
   margin-left: 4px;
+  margin-right: 4px;
 }
 
 .cart-container {
   margin: 0 24px;
+}
+
+.cart-banner-buttons-div {
+  /* display: flex;
+  align-items: center; */
+  margin-top: 16px;
+}
+
+.course-curriculum-div {
+  margin: 16px 0;
+}
+
+.col-sm-6 {
+  padding: 0;
 }

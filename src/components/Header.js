@@ -144,8 +144,8 @@ const Header = withRouter(({ logged }) => {
               margin: '24px'
             }}>
             <Link style={{ textDecoration: 'none' }} to='/'>
-              <Typography className={classes.title} variant='h4' noWrap>
-                Silence
+              <Typography className={classes.title} variant='h6' noWrap>
+                immeasurable
               </Typography>
             </Link>
             <div>{logged ? renderProfilePic() : renderLogin()}</div>

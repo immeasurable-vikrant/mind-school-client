@@ -1,5 +1,4 @@
 import _ from 'lodash';
-import dateFormat from 'dateformat';
 import { hostUrl } from '../../config';
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
@@ -14,10 +13,76 @@ import CartBanner from './CartBanner';
 import Curriculum from './Curriculum';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import englishIcon from '../../public/assets/images/english.png';
+import supportTeam from '../../public/assets/images/clock.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1
+  },
+  detailCourseDescriptionTitle: {
+    fontSize: '20px',
+    fontWeight: 600,
+    lineHeight: '28px',
+    color: 'rgba(0, 0, 0, 0.9)',
+    marginBottom: '4px'
+  },
+  detailCourseContainer: {
+    margin: '16px'
+  },
+  courseDescription: {
+    fontSize: '16px',
+    fontWeight: '400',
+    lineHeight: '24px'
+  },
+  spanCourseContent: {
+    fontSize: '14px',
+    color: '#3c3b37',
+    lineHeight: '20px',
+    fontWeight: '400',
+    margin: '8px'
+  },
+  courseIncludes: {
+    margin: '24px 0'
+  },
+  headingCourseIncludes: {
+    fontWeight: 700,
+    fontSize: '16px',
+    lineHeight: '19px',
+    color: '#3c3b37'
+  },
+  courseInstructor: {
+    fontWeight: 700,
+    fontSize: '24px',
+    lineHeight: '29px',
+    color: '#3c3b37'
+  },
+  authorImg: {
+    height: '110px',
+    width: '110px',
+    borderRadius: '56px'
+  },
+  instructorCredentials: {
+    display: 'flex',
+    flexDirection: 'column'
+  },
+  instructorDetailsDiv: {
+    display: 'flex'
+  },
+  instructorWrapper: {
+    display: 'flex',
+    flexDirection: 'column',
+    margin: '8px'
+  },
+  authorStudents: {
+    display: 'flex',
+    margin: '4px 16px'
+  },
+  authorName: {
+    fontSize: '19px',
+    lineHeight: '23px',
+    fontWeight: '700',
+    color: '#094c59'
   }
 }));
 
@@ -102,44 +167,43 @@ const DetailCourse = ({
       }
       return (
         <div key={i}>
-          <div className='row'>
-            <div className='col-sm-1' />
-            <div className='col-sm-4'>
-              <div>
-                <img alt='alt' src={`${hostUrl}/images/${author.avatar}`} />
+          <div className={classes.instructorWrapper}>
+            <div className={classes.instructorDetailsDiv}>
+              <img
+                alt='alt'
+                className={classes.authorImg}
+                src={`${hostUrl}/images/${author.avatar}`}
+              />
+              <div className={classes.instructorCredentials}>
+                <div className={classes.authorStudents}>
+                  <span className='text-size-third text-bold'>
+                    {author.average}
+                  </span>
+                  <span className='text-size-fourth'>Average rating</span>
+                </div>
+                <div className={classes.authorStudents}>
+                  <i className='fa fa-home text-emphasis-second' />
+                  <span className='text-size-third text-bold'>
+                    {numberWithCommas(author.reviews)}
+                  </span>{' '}
+                  <span className='text-size-fourth'>Reviews</span>
+                </div>
+                <div className={classes.authorStudents}>
+                  <span className='text-size-third text-bold'>
+                    {numberWithCommas(author.students)}
+                  </span>{' '}
+                  <span className='text-size-fourth'>Students</span>
+                </div>
+                <div className={classes.authorStudents}>
+                  <span className='text-size-third text-bold'>
+                    {numberWithCommas(author.courses)}
+                  </span>{' '}
+                  <span className='text-size-fourth'>Courses</span>
+                </div>
               </div>
-              <br />
-              <div>
-                <span className='text-size-third text-bold'>
-                  {author.average}
-                </span>{' '}
-                <span className='text-size-fourth'>Average rating</span>
-              </div>
-              <div>
-                <i className='fa fa-home text-emphasis-second' />
-                <span className='text-size-third text-bold'>
-                  {numberWithCommas(author.reviews)}
-                </span>{' '}
-                <span className='text-size-fourth'>Reviews</span>
-              </div>
-              <div>
-                <span className='text-size-third text-bold'>
-                  {numberWithCommas(author.students)}
-                </span>{' '}
-                <span className='text-size-fourth'>Students</span>
-              </div>
-              <div>
-                <span className='text-size-third text-bold'>
-                  {numberWithCommas(author.courses)}
-                </span>{' '}
-                <span className='text-size-fourth'>Courses</span>
-              </div>
-              <br />
             </div>
-            <div className='col-sm-6'>
-              <div className='text-size-fifth text-emphasis-fourth text-bold'>
-                {author.name}
-              </div>
+            <div>
+              <div className={classes.authorName}>{author.name}</div>
               <div className='text-size-sixth'>
                 <ShowMore
                   lines={5}
@@ -173,75 +237,84 @@ const DetailCourse = ({
           <Grid item xs={12} sm={4} md={4}>
             <CartBanner authorNames={authorNames} course={course} />
           </Grid>
-          <Grid xs={12}>
-            <div className='text-black text-size-third'>
-              rating:{' '}
-              <span className='text-emphasis-first'>{course.average}</span> (
-              <span className='text-emphasis-second'>
-                {numberWithCommas(course.reviews)}
-              </span>{' '}
-              reviews)
-            </div>
-            <div className='text-black text-size-third text'>
-              <span className='text-emphasis-third'>
-                {numberWithCommas(course.enrolled)}
-              </span>{' '}
-              students enrolled
-            </div>
-            <div className='text-black text-size-third text'>
-              Created by {authorNames(course._authors)}
-            </div>
-            <div className='text-black text-size-third text'>
-              Last updated{' '}
-              <span className='text-emphasis-third'>
-                {dateFormat(course.updated, 'm/yyyy')}
-              </span>
-            </div>
-          </Grid>
         </Grid>
-        <div className='container'>
-          <div className='row body-content'>
-            <div className='col-sm-offset-1 col-sm-10'>
-              <br />
-              <br />
-              <div className='text-size-second text-bold'>Description</div>
-              <br />
-              <ShowMore
-                lines={5}
-                more='Show more'
-                less='Show less'
-                anchorClass=''>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: unescape(course.description)
-                  }}
-                />
-              </ShowMore>
-              <br />
-              <br />
-              <Curriculum />
-            </div>
+        <div className={classes.detailCourseContainer}>
+          <hr />
+          <div className='text-size-second text-bold'>
+            <h2 className={classes.detailCourseDescriptionTitle}>
+              Course description
+            </h2>
           </div>
-        </div>
-        <div className='container'>
-          <div className='row body-content'>
-            <div className='col-sm-offset-1 col-sm-10'>
-              <br />
-              <br />
-              <div className='text-size-second text-bold text-center'>
-                About the Instructor
+          <br />
+          <ShowMore lines={5} more='Show more' less='Show less' anchorClass=''>
+            <div
+              className={classes.courseDescription}
+              dangerouslySetInnerHTML={{
+                __html: unescape(course.description)
+              }}
+            />
+          </ShowMore>
+          <hr />
+          <div className='course-curriculum-div'>
+            <h2 className={classes.detailCourseDescriptionTitle}>
+              Course Content
+            </h2>
+            <p className={classes.spanCourseContent}>
+              45 sections • 322 lectures • 32h 29 min length
+            </p>
+            <Curriculum />
+            <hr />
+            <div className={classes.courseIncludes}>
+              <h2 className={classes.headingCourseIncludes}>
+                This Course includes:
+              </h2>
+              <div className='cart-icons'>
+                <img
+                  className='img-icon-cart'
+                  alt='rtyu'
+                  src={englishIcon}
+                  width='16px'
+                  height='16px'
+                />
+                <span className='cart-subtitles'>English</span>
+              </div>
+              <div className='cart-icons'>
+                <img
+                  className='img-icon-cart'
+                  alt='rtyu'
+                  src={supportTeam}
+                  width='16px'
+                  height='16px'
+                />
+                <span className='cart-subtitles'>44 hr on demand video</span>
+              </div>
+              <div className='cart-icons'>
+                <img
+                  className='img-icon-cart'
+                  alt='rtyu'
+                  src={supportTeam}
+                  width='16px'
+                  height='16px'
+                />
+                <span className='cart-subtitles'>Access on mobile and TV</span>
+              </div>
+              <div className='cart-icons'>
+                <img
+                  className='img-icon-cart'
+                  alt='rtyu'
+                  src={supportTeam}
+                  width='16px'
+                  height='16px'
+                />
+                <span className='cart-subtitles'>Full time access</span>
               </div>
             </div>
           </div>
-          <br />
         </div>
         <div className='container'>
-          {renderAuthor(course._authors)}
-          <br />
+          <div className={classes.courseInstructor}>Course Instructor</div>
         </div>
-        <br />
-        {/* <div className='container'> <Comment/> </div> */}
-        {/* </div> */}
+        <div className='container'>{renderAuthor(course._authors)}</div>
       </div>
     );
   };

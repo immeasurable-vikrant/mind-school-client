@@ -1,5 +1,3 @@
-/** @format */
-
 import React, { useState, useEffect, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Dialog, Paper, Button } from '@material-ui/core';
@@ -9,6 +7,7 @@ import { buyCourse, addCart } from '../actions/cart';
 import { userInfo } from '../actions';
 import { hostUrl } from '../../config';
 import SignIn from '../auth/SignIn';
+import { makeStyles } from '@material-ui/core/styles';
 import englishIcon from '../../public/assets/images/english.png';
 import supportTeam from '../../public/assets/images/clock.png';
 import './style.css';
@@ -19,6 +18,17 @@ const numberWithCommas = (x) => {
   return parts.join('.');
 };
 
+const useStyles = makeStyles((theme) => ({
+  buttonBuyNow: {
+    backgroundColor: '#0f7c90',
+    color: '#ffffff'
+  },
+  buttonAddToCart: {
+    backgroundColor: '#D0021B !important',
+    color: '#ffffff'
+  }
+}));
+
 const CartBanner = ({
   course,
   logged,
@@ -28,6 +38,7 @@ const CartBanner = ({
   fetchBuyCourse,
   fetchAddCart
 }) => {
+  const classes = useStyles();
   const [state, setState] = useState({
     open: false
   });
@@ -136,17 +147,13 @@ const CartBanner = ({
     return (
       <div>
         <Dialog
-          //    contentStyle={ styles.dialogContent }
-          //    bodyStyle={ styles.dialogBody }
-          //    style={ styles.dialogRoot }
+        onClose={handleClose}
           modal={false}
           open={state.open}
           onRequestClose={handleClose}
           repositionOnUpdate={false}
           autoScrollBodyContent={true}>
           <SignIn redirect={handleClose} dialog={true} />
-          <br />
-          <br />
         </Dialog>
       </div>
     );
@@ -188,8 +195,9 @@ const CartBanner = ({
         <div className='btn-group-buy'>
           <Button
             fullWidth={true}
-            variant='outlined'
-            color='primary'
+            // variant='outlined'
+            className={classes.buttonBuyNow}
+            // color='primary'
             onClick={() => onBuyCourse()}>
             Buy Now
           </Button>
@@ -197,8 +205,7 @@ const CartBanner = ({
         <div className='btn-group-buy'>
           <Button
             size='large'
-            color='primary'
-            variant='outlined'
+            className={classes.buttonAddToCart}
             fullWidth={true}
             onClick={addToCart}>
             Add to Cart
@@ -268,24 +275,17 @@ const CartBanner = ({
                   <span className='cart-subtitles'>Last updated 9/2020</span>
                 </div>
               </div>
-              <div>
+              <div className='cart-price-div'>
                 <span className='cart-price'>
                 &#8377;{numberWithCommas(course.price)}
                 </span>
                 <del className='cart-price-striked'> &#8377;700</del>
+                <span>65% off</span>
               </div>
             </div>
-            <div style={{ textAlign: 'center', marginTop: 6 }}>
-              <Button fullWidth={true}>Preview the Course</Button>
-            </div>
-            <div style={{ textAlign: 'center', marginTop: 6 }}></div>
-            <div
-              style={{ textAlign: 'center', marginTop: 10, marginBottom: 10 }}>
-              <strong className='text-size-second text-black'>
-                ${numberWithCommas(course.price)}
-              </strong>
-            </div>
+            <div className='cart-banner-buttons-div'>
             {renderButton(course)}
+            </div>
           </div>
         </Paper>
       </div>
