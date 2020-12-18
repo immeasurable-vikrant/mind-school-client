@@ -1,17 +1,17 @@
 import _ from 'lodash';
 import dateFormat from 'dateformat';
-import { hostUrl } from '../../config';
+import { hostUrl } from '../../../config';
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { fetchDetailCourse } from '../actions/course';
+import { fetchDetailCourse } from '../../actions/course';
 import { CircularProgress } from '@material-ui/core';
-import Footer from './Footer';
+import Footer from '../Footer';
 import ShowMore from 'react-show-more';
-import Header from './Header';
-import CartBanner from './CartBanner';
-import Curriculum from './Curriculum';
+import Header from '../Header';
+import CartBanner from '../CartBanner';
+import Curriculum from '../Curriculum';
 
 const numberWithCommas = (x) => {
   const parts = parseInt(x, 10).toString().split('.');
