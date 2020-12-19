@@ -63,7 +63,7 @@ export const Details = Loadable({
 });
 
 export const DetailCourse = Loadable({
-  loader: () => import('../components/coursesdetails/DetailCourse'),
+  loader: () => import('../components/DetailCourse'),
   loading: LoadingComponent,
 });
 

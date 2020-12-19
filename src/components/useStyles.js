@@ -16,7 +16,9 @@ export const useStyles = makeStyles((theme) => ({
   title: {
     [theme.breakpoints.up('sm')]: {
       display: 'block'
-    }
+    },
+    fontWeight: 700,
+    lineHeight: '24px'
   },
   login: {
     color: '#8E44AD',

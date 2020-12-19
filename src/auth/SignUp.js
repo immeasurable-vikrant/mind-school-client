@@ -1,13 +1,11 @@
-/** @format */
-
 import React, { Component } from 'react';
 import $ from 'jquery';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { Button } from '@material-ui/core';
+// import { Button } from '@material-ui/core';
 import { signError, signUp } from '../actions';
-
+import { ERROR_MESSAGES } from '../common/constants';
 import path from 'path';
 import TextInput from '../components/TextInput';
 
@@ -67,7 +65,7 @@ class SignUp extends Component {
     const password = $('#password').val();
     const passwordConfirm = $('#passwordConfirm').val();
     const name = $('#name').val();
-    const fileToUpload = document.getElementById('fileToUpload').files;
+    // const fileToUpload = document.getElementById('fileToUpload').files;
 
     if (email && password && passwordConfirm && name) {
       if (
@@ -87,27 +85,27 @@ class SignUp extends Component {
             this.setState({ isSubmitting: false });
           };
 
-          let avatar = null;
+          const avatar = null;
 
-          if (fileToUpload) {
-            if (fileToUpload[0]) {
-              const filename = fileToUpload[0].name;
+          // if (fileToUpload) {
+          //   if (fileToUpload[0]) {
+          //     const filename = fileToUpload[0].name;
 
-              if (filename && filename.length > 0) {
-                const ext = path.extname(filename).toLowerCase();
+          //     if (filename && filename.length > 0) {
+          //       const ext = path.extname(filename).toLowerCase();
 
-                if (
-                  ext === '.png' ||
-                  ext === '.jpg' ||
-                  ext === '.jpeg' ||
-                  ext === '.gif' ||
-                  ext === '.ico'
-                ) {
-                  avatar = fileToUpload[0];
-                }
-              }
-            }
-          }
+          //       if (
+          //         ext === '.png' ||
+          //         ext === '.jpg' ||
+          //         ext === '.jpeg' ||
+          //         ext === '.gif' ||
+          //         ext === '.ico'
+          //       ) {
+          //         avatar = fileToUpload[0];
+          //       }
+          //     }
+          //   }
+          // }
 
           const sleep = (ms) =>
             new Promise((resolve) => setTimeout(resolve, ms));
@@ -168,7 +166,7 @@ class SignUp extends Component {
           width: '100%',
           height: '60px'
         }}>
-        <Button
+        {/* <Button
           label='Avatar Image'
           labelPosition='before'
           style={{ marginLeft: 0, marginRight: 20 }}
@@ -184,14 +182,14 @@ class SignUp extends Component {
               left: 0,
               width: '100%',
               opacity: 0,
-              marginRight: 20
+              marginRight: 20,
             }}
             id='fileToUpload'
             name='fileToUpload'
             className='form-control'
             onChange={this.uploadFile}
           />
-        </Button>
+        </Button> */}
         <div>
           <input
             id='avatar_text'
@@ -218,9 +216,9 @@ class SignUp extends Component {
   validateEmail = (value) => {
     let error = '';
     if (!value || value.length <= 0) {
-      error = 'Required';
+      error = ERROR_MESSAGES.MANDATORY_FIELD;
     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
-      error = 'Invalid email address';
+      error = ERROR_MESSAGES.INVALID_NAME;
     }
 
     return error;
@@ -229,11 +227,11 @@ class SignUp extends Component {
   validateName = (value) => {
     let error = '';
     if (!value || value.length <= 0) {
-      error = 'Required';
+      error = ERROR_MESSAGES.MANDATORY_FIELD;
     } else if (value.length < 4) {
-      error = 'Must be 4 characters or more';
+      error = ERROR_MESSAGES.maxNCharacters(4);
     } else if (value.length > 30) {
-      error = 'Must be 30 characters or less';
+      error = ERROR_MESSAGES.maxNCharacters(30);
     }
 
     return error;
@@ -242,11 +240,11 @@ class SignUp extends Component {
   validatePassword = (value) => {
     let error = '';
     if (!value || value.length <= 0) {
-      error = 'Required';
+      error = ERROR_MESSAGES.MANDATORY_FIELD;
     } else if (value.length < 4) {
-      error = 'Must be 4 characters or more';
+      error = ERROR_MESSAGES.maxNCharacters(4);
     } else if (value.length > 15) {
-      error = 'Must be 15 characters or less';
+      error = ERROR_MESSAGES.maxNCharacters(4);
     }
 
     return error;
@@ -255,7 +253,7 @@ class SignUp extends Component {
   validatePasswordConfirm = (value) => {
     let error = '';
     if (!value || value.length <= 0) {
-      error = 'Required';
+      error = ERROR_MESSAGES.MANDATORY_FIELD;
     }
 
     const password = $('#password').val();
@@ -273,9 +271,9 @@ class SignUp extends Component {
     this._passwordConfirm.reset();
     this._name.reset();
 
-    $('#fileToUpload').val('');
-    $('#avatar_image').attr('src', '').hide();
-    $('#avatar_text').attr('placeholder', '');
+    // $('#fileToUpload').val('');
+    // $('#avatar_image').attr('src', '').hide();
+    // $('#avatar_text').attr('placeholder', '');
   };
 
   render() {
@@ -286,7 +284,7 @@ class SignUp extends Component {
         <div style={{ textAlign: 'center' }}>{this.signError()}</div>
         <div style={this.state.dialogStyle}>
           <form
-           className='sign-in-form'
+            className='sign-in-form'
             id='form_info'
             name='form_info'
             onSubmit={(e) => this.submitForm(e)}>
@@ -318,7 +316,7 @@ class SignUp extends Component {
               type='password'
               validate={this.validatePasswordConfirm}
             />
-            <input type='checkbox' className='checkbox-terms-conditions'/>
+            <input type='checkbox' className='checkbox-terms-conditions' />
             {/* <div className='form-group'>{this.renderButton()}</div> */}
             {/* <div style={{ clear: 'both' }}>&nbsp;</div> */}
             <div>

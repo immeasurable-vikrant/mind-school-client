@@ -6,6 +6,7 @@ const Lecture = () => {
 
   useEffect(() => {
     const url = localStorage.getItem('url');
+    console.log('url', url);
     if (url) {
       localStorage.removeItem('url');
       history.push(`/view-lecture/${url}`);

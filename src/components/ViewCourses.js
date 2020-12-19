@@ -45,6 +45,7 @@ const ViewCourses = ({
   const handleCourse = (event, course) => {
     event.preventDefault();
     localStorage.setItem('course', course.no);
+    console.log('localStorage', localStorage.setItem);
     history.push('/detail');
   };
 
@@ -102,6 +103,7 @@ const ViewCourses = ({
   };
 
   const listCourse = (course) => {
+    console.log('course', course);
     return (
       <div
         onClick={(e) => handleCourse(e, course)}

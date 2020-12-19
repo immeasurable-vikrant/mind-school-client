@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Dialog, Paper, Button } from '@material-ui/core';
 import { withRouter } from 'react-router-dom';
@@ -7,6 +7,10 @@ import { buyCourse, addCart } from '../actions/cart';
 import { userInfo } from '../actions';
 import { hostUrl } from '../../config';
 import SignIn from '../auth/SignIn';
+import { makeStyles } from '@material-ui/core/styles';
+import englishIcon from '../../public/assets/images/english.png';
+import supportTeam from '../../public/assets/images/clock.png';
+import './style.css';
 
 const numberWithCommas = (x) => {
   const parts = parseInt(x, 10).toString().split('.');
@@ -14,14 +18,27 @@ const numberWithCommas = (x) => {
   return parts.join('.');
 };
 
+const useStyles = makeStyles((theme) => ({
+  buttonBuyNow: {
+    backgroundColor: '#0f7c90',
+    color: '#ffffff'
+  },
+  buttonAddToCart: {
+    backgroundColor: '#D0021B !important',
+    color: '#ffffff'
+  }
+}));
+
 const CartBanner = ({
   course,
   logged,
   user,
+  authorNames,
   fetchUserInfo,
   fetchBuyCourse,
   fetchAddCart
 }) => {
+  const classes = useStyles();
   const [state, setState] = useState({
     open: false
   });
@@ -130,17 +147,13 @@ const CartBanner = ({
     return (
       <div>
         <Dialog
-          //    contentStyle={ styles.dialogContent }
-          //    bodyStyle={ styles.dialogBody }
-          //    style={ styles.dialogRoot }
+        onClose={handleClose}
           modal={false}
           open={state.open}
           onRequestClose={handleClose}
           repositionOnUpdate={false}
           autoScrollBodyContent={true}>
           <SignIn redirect={handleClose} dialog={true} />
-          <br />
-          <br />
         </Dialog>
       </div>
     );
@@ -163,7 +176,7 @@ const CartBanner = ({
         if (filtered[0].learn) {
           return (
             <div>
-              <div style={{ textAlign: 'center', marginBottom: 6 }}>
+              <div className='btn-group-buy'>
                 <Button
                   color='primary'
                   fullWidth={true}
@@ -178,22 +191,27 @@ const CartBanner = ({
     }
 
     return (
-      <div>
-        <div style={{ textAlign: 'center', marginBottom: 6 }}>
-          <Button fullWidth={true} onClick={() => onBuyCourse()}>
-            Buy
+      <Fragment>
+        <div className='btn-group-buy'>
+          <Button
+            fullWidth={true}
+            // variant='outlined'
+            className={classes.buttonBuyNow}
+            // color='primary'
+            onClick={() => onBuyCourse()}>
+            Buy Now
           </Button>
         </div>
-        <div style={{ textAlign: 'center', marginBottom: 6 }}>
+        <div className='btn-group-buy'>
           <Button
             size='large'
-            color='primary'
+            className={classes.buttonAddToCart}
             fullWidth={true}
             onClick={addToCart}>
             Add to Cart
           </Button>
         </div>
-      </div>
+      </Fragment>
     );
   };
 
@@ -215,37 +233,59 @@ const CartBanner = ({
   const renderBanner = () => {
     return (
       <div>
-        <Paper
-          // zDepth={2}
-          style={{
-            width: '100%',
-            height: '100%',
-            overflow: 'hidden',
-            backgroundColor: '#FFF',
-            display: 'inline-block'
-          }}>
-          <div
-            style={{
-              marginTop: 6,
-              marginLeft: 6,
-              marginRight: 6
-            }}>
+        <Paper elevation={0}>
+          <div>
             <div style={{ marginBottom: 6 }} />
             <div style={{ textAlign: 'center' }}>{renderPicture(course)}</div>
-            <div style={{ marginBottom: 6 }} />
-            <div style={{ textAlign: 'center', marginTop: 6 }}>
-              <Button fullWidth={true}>Preview the Course</Button>
+            <div className='cart-container'>
+              <div className='clp-component-render'>
+                <h3 className='course-title'>{course.title}</h3>
+                <div className='course-subtitle'>{course.subtitle}</div>
+              </div>
+              <div className='clp-badge-rating'>
+                <div className='clp-lead-item'>
+                  <div className='clp-course-avg'>{course.average}*****</div>
+                  <div className='clp-course-rev'>
+                    {course.reviews} students
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className='cart-author-name'>
+                  Created by {authorNames(course._authors)}
+                </div>
+                <div className='cart-icons'>
+                  <img
+                    className='img-icon-cart'
+                    alt='rtyu'
+                    src={englishIcon}
+                    width='16px'
+                    height='16px'
+                  />
+                  <span className='cart-subtitles'>English</span>
+                </div>
+                <div className='cart-icons'>
+                  <img
+                    className='img-icon-cart'
+                    alt='rtyu'
+                    src={supportTeam}
+                    width='16px'
+                    height='16px'
+                  />
+                  <span className='cart-subtitles'>Last updated 9/2020</span>
+                </div>
+              </div>
+              <div className='cart-price-div'>
+                <span className='cart-price'>
+                &#8377;{numberWithCommas(course.price)}
+                </span>
+                <del className='cart-price-striked'> &#8377;700</del>
+                <span>65% off</span>
+              </div>
             </div>
-            <div style={{ textAlign: 'center', marginTop: 6 }}>
-              {/* <Button onClick={displayRazorPay}>Buy from razorPay</Button> */}
-            </div>
-            <div
-              style={{ textAlign: 'center', marginTop: 10, marginBottom: 10 }}>
-              <strong className='text-size-second text-black'>
-                ${numberWithCommas(course.price)}
-              </strong>
-            </div>
+            <div className='cart-banner-buttons-div'>
             {renderButton(course)}
+            </div>
           </div>
         </Paper>
       </div>
@@ -266,7 +306,8 @@ CartBanner.propTypes = {
   logged: PropTypes.bool,
   fetchAddCart: PropTypes.func,
   fetchBuyCourse: PropTypes.func,
-  fetchUserInfo: PropTypes.func
+  fetchUserInfo: PropTypes.func,
+  authorNames: PropTypes.func
 };
 
 const mapStateToProps = (state) => {
