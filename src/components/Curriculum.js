@@ -51,6 +51,7 @@ const styles = {
 
 const Curriculum = (props) => {
   const { logged, user, lecture, fetchUserInfo, fetchViewLecture } = props;
+  console.log('fetchViewLecture', props);
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -78,9 +79,16 @@ const Curriculum = (props) => {
   };
 
   const handleViewLecture = (event, header, body, learn) => {
+    // console.log('event', event);
+    console.log('header', header);
+    console.log('body', body);
+    // console.log('learn', learn);
+
     event.preventDefault();
     if (learn) {
       if (logged) {
+        const {user, lecture} = props;
+        // console.log('props', props);
         if (!lecture) {
           return handleOpen();
         }

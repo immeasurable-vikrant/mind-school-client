@@ -87,8 +87,8 @@ export const Routes = () => (
       <Route path='/detail' component={Details} />
       <Route path={`/detail/:id`} component={DetailCourse} />
       <Route path='/list-cart' component={composedAuth(ListCart)} />
-      <Route exact path='/lecture' component={Lecture} />
-      <Route exact path={`/view-lecture/:url`} component={ViewLecture} />
+      <Route path='/lecture' component={Lecture} />
+      <Route path={`/view-lecture/:url`} component={ViewLecture} />
       <Route path='/view-courses' component={ViewCourses} />
       <Route path='/social-google/:token ' component={SocialGoogle} />
     </div>
