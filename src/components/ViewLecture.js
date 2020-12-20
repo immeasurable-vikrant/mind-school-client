@@ -408,6 +408,7 @@ const ViewLecture = ({ match }) => {
 
   const renderVideo = () => {
     const { url } = match.params;
+    console.log('url', url);
     if (!url || url.length < 0) return <div>&nbsp;</div>;
 
     return (
