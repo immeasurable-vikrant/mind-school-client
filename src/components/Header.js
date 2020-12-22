@@ -1,11 +1,10 @@
-/** @format */
-
-import React, { Fragment } from 'react';
+import React, { useState, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { withRouter, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { userInfo } from '../actions';
 import getIn from '../utility/getIn';
+import companyLogo from '../../public/assets/images/apple.png';
 //material-ui imports
 import { fade, makeStyles } from '@material-ui/core/styles';
 import {
@@ -19,7 +18,6 @@ import {
   Menu,
   Button
 } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
 import SchoolIcon from '@material-ui/icons/School';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import SearchIcon from '@material-ui/icons/Search';
@@ -107,6 +105,7 @@ const useStyles = makeStyles((theme) => ({
 const Header = withRouter(({ logged }) => {
   const history = useHistory();
   const classes = useStyles();
+  const [state, setState] = useState({ search: '' });
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -240,7 +239,7 @@ const Header = withRouter(({ logged }) => {
     return (
       <Fragment>
         <div className={classes.sectionMobile}>
-          <div style={{width:'100%'}}>
+          <div style={{ width: '100%' }}>
             <Button
               className={classes.login}
               variant='contained'
@@ -269,29 +268,53 @@ const Header = withRouter(({ logged }) => {
     );
   };
 
+  const onPushToSearchPages = (e) => {
+    history.push('/search-results')
+  };
+  const onHandleSearch = (e) => {
+    setState({ [e.target.name]: e.target.value });
+  };
+
   const renderNav = () => {
     return (
       <div className={classes.grow}>
         <AppBar position='static' className={classes.header}>
           <Toolbar>
+            <div
+              style={{ margin: '10px 8px 16px' }}
+              onClick={() => {
+                history.push('/');
+              }}>
+              <img
+                src={companyLogo}
+                height='32px'
+                width='32px'
+                alt='companyLogo'
+              />
+            </div>
             <Typography className={classes.title} variant='h6' noWrap>
               Immeasurable
             </Typography>
+
             <div className={classes.search}>
               <div className={classes.searchIcon}>
                 <SearchIcon />
               </div>
               <InputBase
+                name='search'
+                value={state.search}
                 placeholder='Search…'
                 classes={{
                   root: classes.inputRoot,
                   input: classes.inputInput
                 }}
                 inputProps={{ 'aria-label': 'search' }}
+                onClick={onPushToSearchPages}
+                onChange={onHandleSearch}
               />
             </div>
             <div className={classes.grow} />
-            {!logged ? renderProfilePic() : renderLogin()}
+            {logged ? renderProfilePic() : renderLogin()}
           </Toolbar>
         </AppBar>
         {renderMobileMenu}
