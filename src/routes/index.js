@@ -20,7 +20,6 @@ import SocialGoogle from '../components/SocialGoogle';
 export const history = createBrowserHistory({
   forceRefresh: true
 });
-
 export const store = createStore(reducers, applyMiddleware(thunk));
 
 export const Routes = () => (

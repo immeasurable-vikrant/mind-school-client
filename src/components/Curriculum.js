@@ -180,6 +180,7 @@ const Curriculum = (props) => {
   };
 
   const isFirstUpdate = useRef(true);
+  
   useEffect(() => {
     if (isFirstUpdate.current) {
       isFirstUpdate.current = false;

@@ -8,7 +8,7 @@ import { signError, signUp } from '../actions';
 import { ERROR_MESSAGES } from '../common/constants';
 import path from 'path';
 import TextInput from '../components/TextInput';
-
+import '../../styles/style.css'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -158,14 +158,7 @@ class SignUp extends Component {
 
   renderButton = () => {
     return (
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'left',
-          alignItems: 'center',
-          width: '100%',
-          height: '60px'
-        }}>
+      <div>
         {/* <Button
           label='Avatar Image'
           labelPosition='before'
@@ -282,13 +275,14 @@ class SignUp extends Component {
         <Header />
         <div className='loginBox-header'>Sign Up and Start Learning today!</div>
         <div style={{ textAlign: 'center' }}>{this.signError()}</div>
-        <div style={this.state.dialogStyle}>
+        <div>
           <form
             className='sign-in-form'
-            id='form_info'
-            name='form_info'
+            // id='form_info'
+            // name='form_info'
             onSubmit={(e) => this.submitForm(e)}>
             <TextInput
+              className="text-input-signup"
               ref={(e) => (this._name = e)}
               placeholder=' Full Name'
               name='name'

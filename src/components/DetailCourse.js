@@ -161,10 +161,10 @@ const DetailCourse = ({
 
   const renderAuthor = (authors) => {
     return _.map(authors, (author, i) => {
-      let decorator = '<br/>';
-      if (i === authors.length - 1) {
-        decorator = '';
-      }
+      // let decorator = '<br/>';
+      // if (i === authors.length - 1) {
+      //   decorator = '';
+      // }
       return (
         <div key={i}>
           <div className={classes.instructorWrapper}>
@@ -220,9 +220,9 @@ const DetailCourse = ({
             </div>
             <div className='col-sm-1' />
           </div>
-          <div className='row'>
+          {/* <div className='row'>
             <div className='text-black'>{decorator}</div>
-          </div>
+          </div> */}
         </div>
       );
     });

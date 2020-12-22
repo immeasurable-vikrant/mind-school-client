@@ -85,6 +85,7 @@ input::placeholder {
 }
 .form-control {
   font-size: 18px !important;
+  /* outline: blue; */
 }
 .help-block {
   font-size: 18px !important;
@@ -276,4 +277,9 @@ input::placeholder {
 
 .col-sm-6 {
   padding: 0;
+}
+
+.text-input-signup {
+  width: 100%;
+  outline: bisque;
 }

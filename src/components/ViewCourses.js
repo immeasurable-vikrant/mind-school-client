@@ -1,3 +1,5 @@
+/** @format */
+
 import _ from 'lodash';
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
@@ -5,11 +7,28 @@ import { withRouter, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { fetchViewCourses } from '../actions/view-courses';
 import { userInfo } from '../actions';
-import { CircularProgress, Paper, Avatar } from '@material-ui/core';
+import { CircularProgress, Avatar, Grid, Typography } from '@material-ui/core';
 import Equalizer from 'react-equalizer';
 import { hostUrl } from '../../config';
+import { makeStyles } from '@material-ui/core/styles';
 import Header from './Header';
 import Footer from './Footer';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+    margin: '16px'
+  },
+  noCourse: {
+    marginTop: '140px',
+    marginBottom: '140px',
+    fontSize: '22px',
+    fontWeight: '500',
+    lineHeight: '27px',
+    color: '#3c3b37',
+    textAlign: 'center'
+  }
+}));
 
 const ViewCourses = ({
   courses,
@@ -18,6 +37,7 @@ const ViewCourses = ({
   fetchUserInfo,
   viewCourses
 }) => {
+  const classes = useStyles();
   const history = useHistory();
   const [state, setState] = useState({
     dialogStyle: { display: 'none' }
@@ -70,19 +90,14 @@ const ViewCourses = ({
   const renderTop = () => {
     if (courses) {
       return (
-        <div
-          style={{ width: '100%', backgroundColor: 'rgba(33, 33, 33, 0.9)' }}>
-          <div className='container-fluid'>
-            <div className='row'>
-              <div className='col-sm-12'>
-                <br />
-                <div className='text-size-second text-bold text-white'>
-                  <span>My Courses</span>
-                </div>
-                <br />
-              </div>
-            </div>
-          </div>
+        <div className={classes.root}>
+          <Grid container>
+            <Grid item xs={12}>
+              <Typography variant='h6' gutterBottom>
+                My Courses
+              </Typography>
+            </Grid>
+          </Grid>
         </div>
       );
     }
@@ -91,11 +106,11 @@ const ViewCourses = ({
   const authorNames = (authors) => {
     return _.map(authors, (author, i) => {
       return (
-        <div key={i} style={{ marginBottom: 6 }}>
-          <span>
-            <Avatar src={`${hostUrl}/images/${author.avatar}`} size={22} />
-          </span>
-          <span> {author.name}</span>
+        <div key={i} className='row'>
+            <span>
+              <Avatar src={`${hostUrl}/images/${author.avatar}`} size={22} />
+            </span>
+            <span style={{marginLeft: '8px', fontSize: '22px', fontWeight: '500', lineHeight: '28px'}}> {author.name}</span>
         </div>
       );
     });
@@ -110,35 +125,24 @@ const ViewCourses = ({
           height: '100%',
           cursor: 'pointer'
         }}>
-        <Paper
-          // zDepth={1}
+        <div
           style={{
-            width: '100%',
-            height: '100%',
-            padding: 10,
-            margin: 10,
-            backgroundColor: '#FFF'
+            marginLeft: 3,
+            marginRight: 3,
+            marginTop: 12,
+            marginBottom: 8,
+            overflow: 'hidden'
           }}>
-          <div
-            style={{
-              marginLeft: 3,
-              marginRight: 3,
-              marginTop: 12,
-              marginBottom: 8,
-              overflow: 'hidden'
-            }}>
-            <img
-              style={{ width: '100%', height: '100%' }}
-              alt='altImg'
-              src={`${hostUrl}/images/${course.picture}`}
-            />
-          </div>
-          <hr />
-          <div className='text-size-fifth'>{authorNames(course._authors)}</div>
-          <hr />
-          <div className='text-size-fifth text-bold'>{course.title}</div>
-          <div className='text-size-fifth'>{course.subtitle}</div>
-        </Paper>
+          <img
+            style={{ width: '100%', height: '100%' }}
+            alt='altImg'
+            src={`${hostUrl}/images/${course.picture}`}
+          />
+        </div>
+        <hr />
+        <div className='container' style={{margin:'16px'}}>{authorNames(course._authors)}</div>
+        <div className='text-size-fifth text-bold' style={{margin:'16px', fontSize: '22px', fontWeight: '400', lineHeight: '28px'}}>{course.title}</div>
+        <div className='text-size-fifth' style={{margin:'16px'}}>{course.subtitle}</div>
       </div>
     );
   };
@@ -157,11 +161,7 @@ const ViewCourses = ({
     if (courses) {
       if (courses.length <= 0) {
         return (
-          <div
-            className='text-size-second text-bold text-center'
-            style={{ marginTop: 140, marginBottom: 140, color: 'red' }}>
-            There is no course right now.
-          </div>
+          <div className={classes.noCourse}>There is no course right now.</div>
         );
       }
 
@@ -169,7 +169,7 @@ const ViewCourses = ({
         if (i % 3 === 0) {
           const lists = _.slice(courses, i, i + 3);
           return (
-            <div key={i} className='row' style={{ marginBottom: 20 }}>
+            <div key={i} className='row'>
               <Equalizer byRow={true}>{listCourses(lists)}</Equalizer>
             </div>
           );
@@ -178,9 +178,7 @@ const ViewCourses = ({
 
       return (
         <div>
-          <br />
           <div>{rows}</div>
-          <br />
         </div>
       );
     }
@@ -203,6 +201,7 @@ const ViewCourses = ({
     <div>
       <Header />
       {renderCourses()}
+      <hr />
       <Footer />
     </div>
   );

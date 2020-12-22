@@ -10,12 +10,8 @@ const Lecture = () => {
       localStorage.removeItem('url');
       history.push(`/view-lecture/${url}`);
     }
-  }, []);
+  }, [history]);
 
-  return (
-    <div>
-      <h2>Hello hello ello</h2>
-    </div>
-  );
+  return <div />
 };
 export default withRouter(Lecture);

@@ -10,12 +10,12 @@ import 'jquery';
 
 const token = localStorage.getItem('token');
 if (token) {
-	store.dispatch(signIn());
+  store.dispatch(signIn());
 }
 
 ReactDOM.render(
-	<Provider store={store}>
-		<Routes />
-	</Provider>,
-	document.getElementById('root')
+  <Provider store={store}>
+    <Routes />
+  </Provider>,
+  document.getElementById('root')
 );

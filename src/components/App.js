@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { CssBaseline, Container } from '@material-ui/core';
-import Header from './Header';
+// import Header from './Header';
+import Header from './Header'
 import HomePage from './HomePage';
 import Footer from './Footer';
 import Wrapper from './Wrapper';

@@ -1,6 +1,11 @@
+/** @format */
+
 import React, { useEffect } from 'react';
 import { hostUrl } from '../../config';
 import ReactPlayer from 'react-player';
+import $ from 'jquery';
+import Header from './Header';
+import Footer from './Footer';
 
 let timeout = null;
 let dragTime = false;
@@ -83,7 +88,7 @@ const ViewLecture = ({ match }) => {
       return false;
     });
 
-    caption.text('lecture ' + url);
+    // caption.text('lecture ' + url);
 
     control.show().css({ opacity: 0 });
 
@@ -414,11 +419,11 @@ const ViewLecture = ({ match }) => {
       <div>
         <div id='videoContainer' className='videoContainer'>
           <ReactPlayer
-            ref={(player) => {
-              this.player = player;
-            }}
+            // ref={(player) => {
+            //   this.player = player;
+            // }}
             width='100vw'
-            height='100vh'
+            // height='100vh'
             url={`${hostUrl}/video/lecture-${url}.mp4`}
             playing={true}
             controls={false}
@@ -433,7 +438,11 @@ const ViewLecture = ({ match }) => {
   const { url } = match.params;
   if (!url || url.length < 0) return <div>&nbsp;</div>;
 
-  return <div>{renderVideo()}</div>;
+  return (
+    <div>
+      <Header /> {renderVideo()} <Footer />
+    </div>
+  );
 };
 
 export default ViewLecture;

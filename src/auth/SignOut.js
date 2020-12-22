@@ -36,7 +36,7 @@ const SignOut = ({ logged, logOut }) => {
             style={{
               display: 'flex',
               justifyContent: 'center',
-              margin: 10,
+              margin: 10
             }}>
             <button
               type='button'
@@ -63,7 +63,7 @@ const SignOut = ({ logged, logOut }) => {
             margin: 20,
             textAlign: 'center !important',
             verticalAlign: 'middle !important',
-            display: 'inline-block',
+            display: 'inline-block'
           }}>
           <br />
           <p>Thank you for visiting Immeasurable!</p>
@@ -82,21 +82,21 @@ const SignOut = ({ logged, logOut }) => {
 
 SignOut.propTypes = {
   logged: PropTypes.bool,
-  logOut: PropTypes.func,
+  logOut: PropTypes.func
 };
 
 const mapStateToProps = (state) => {
   return {
-    logged: state.auth.logged,
+    logged: state.auth.logged
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    logOut: () => dispatch(logout()),
+    logOut: () => dispatch(logout())
   };
 };
 
 export default withRouter(
-  connect(mapStateToProps, mapDispatchToProps)(SignOut),
+  connect(mapStateToProps, mapDispatchToProps)(SignOut)
 );

@@ -4,7 +4,8 @@
 import _ from 'lodash';
 import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import { Button, Dialog } from '@material-ui/core';
+import { Dialog, Grid, Typography } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import {
@@ -19,15 +20,85 @@ import { userInfo } from '../actions';
 import { hostUrl } from '../../config';
 //Auth Import
 import SignIn from '../auth/SignIn';
-
+//Component import
 import Header from './Header';
-// import Footer from './footer';
+import Footer from './Footer';
 
 const numberWithCommas = (x) => {
   const parts = parseInt(x, 10).toString().split('.');
   parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
   return parts.join('.');
 };
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    flexDirection: 'column',
+    margin: '8px 16px'
+  },
+  rootCartSubtitle: {
+    margin: '16px 0 8px'
+  },
+  cartTitle: {
+    fontSize: '18px',
+    fontWeight: '500',
+    lineHeight: '22px',
+    color: '#29303b',
+    margin: '16px'
+  },
+  coursesCartPara: {
+    fontSize: '14px',
+    fontWeight: '400',
+    lineHeight: '22px',
+    margin: '0'
+  },
+  courseLength: {
+    fontSize: '18px',
+    fontWeight: '400',
+    lineHeight: '22px',
+    margin: '0 8px'
+  },
+  coursePrice: {
+    fontSize: '22px',
+    fontWeight: '600',
+    lineHeight: '21px',
+    color: '#000000'
+  },
+  removeFromCart: {
+    fontSize: '15px',
+    lineHeight: '22px',
+    fontWeight: '500'
+  },
+  courseTitle: {
+    fontSize: '17px',
+    fontWeight: '700',
+    lineHeight: '18px',
+    color: '#29303b',
+    margin: '4px 0'
+  },
+  courseSubTitle: {
+    fontSize: '13px',
+    fontWeight: '400',
+    lineHeight: '19px',
+    color: '#29303b',
+    margin: '4px 0'
+  },
+  totalPrice: {
+    fontSize: '36px',
+    fontWeight: '700',
+    lineHeight: '51px',
+    color: '#29303b'
+  },
+  totalTitle: {
+    fontSize: '18px',
+    fontWeight: '400',
+    lineHeight: '26px',
+    color: '#29303b'
+  },
+  renderList: {
+    margin: '30px'
+  }
+}));
 
 const styles = {
   dialogRoot: {
@@ -45,6 +116,7 @@ const styles = {
     paddingBottom: 0
   }
 };
+
 const ListCart = ({
   logged,
   user,
@@ -56,6 +128,7 @@ const ListCart = ({
   fetchRemoveCart,
   fetchPayCart
 }) => {
+  const classes = useStyles();
   const [state, setState] = useState({
     open: false,
     total: 0
@@ -148,79 +221,65 @@ const ListCart = ({
   const renderTop = () => {
     if (courses) {
       return (
-        <div
-          style={{ width: '100%', backgroundColor: 'rgba(33, 33, 33, 0.9)' }}>
-          <div className='container-fluid'>
-            <div className='row'>
-              <div className='col-sm-12'>
-                <br />
-                <div className='text-size-second text-bold text-white'>
-                  <span>Shopping Cart</span>
-                </div>
-                <div className='text-size-fifth'>
-                  <span className='text-emphasis-third'>{courses.length}</span>
-                  <span className='text-white'> Courses in Cart</span>
-                </div>
-                <br />
-              </div>
-            </div>
-          </div>
-        </div>
+        <Grid className={classes.root}>
+          <Grid container item xs={6} spacing={3}>
+            <Typography className={classes.cartTitle}>
+              Shoopping Cart!
+            </Typography>
+          </Grid>
+          <Grid
+            className={classes.rootCartSubtitle}
+            container
+            item
+            xs={6}
+            spacing={3}>
+            <span className={classes.courseLength}>{courses.length}</span>
+            <p className={classes.coursesCartPara}>Courses in Cart</p>
+          </Grid>
+        </Grid>
       );
     }
   };
 
   const listCourse = (course) => {
     return (
-      <div>
-        <div className='container-fluid'>
-          <div className='row'>
-            <div className='col-sm-4'>
-              <div
-                style={{
-                  marginLeft: 3,
-                  marginRight: 3,
-                  marginTop: 8,
-                  marginBottom: 8,
-                  overflow: 'hidden'
-                }}>
-                <img
-                  style={{ width: '100%', height: '100%' }}
-                  alt=''
-                  src={`${hostUrl}/images/${course.picture}`}
-                />
-              </div>
+      <div className='container-fluid'>
+        <div className='row'>
+          <div className='col-sm-4'>
+            <div
+              style={{
+                overflow: 'hidden'
+              }}>
+              <img
+                style={{ width: '100%', height: '100%' }}
+                alt=''
+                src={`${hostUrl}/images/${course.picture}`}
+              />
             </div>
-            <div className='col-sm-8'>
+          </div>
+          <div className='col-sm-8'>
+            <div>
               <div
                 style={{
-                  marginLeft: 10,
-                  marginRight: 10,
-                  marginTop: 12,
-                  marginBottom: 12
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  margin: '12px 0'
                 }}>
-                <div
-                  style={{ display: 'flex', justifyContent: 'space-between' }}>
-                  <span className='text-size-fifth text-bold text-emphasis-fourth'>
-                    ${course.price}
-                  </span>
-                  <span>
-                    <Button
-                      onClick={() => {
-                        onRemoveCart(course.no);
-                      }}>
-                      Remove
-                    </Button>
-                  </span>
-                </div>
-                <div className='text-size-fifth text-bold'>{course.title}</div>
-                <div className='text-size-fifth'>{course.subtitle}</div>
+                <span className={classes.coursePrice}>${course.price}</span>
+                <span
+                  className={classes.removeFromCart}
+                  onClick={() => {
+                    onRemoveCart(course.no);
+                  }}>
+                  Remove
+                </span>
               </div>
+              <div className={classes.courseTitle}>{course.title}</div>
+              <div className={classes.courseSubTitle}>{course.subtitle}</div>
             </div>
           </div>
         </div>
-        <br />
-        {/* </Paper> */}
+        <hr />
       </div>
     );
   };
@@ -235,14 +294,14 @@ const ListCart = ({
 
   const renderCheckout = () => {
     return (
-      <div style={{ width: '100%', backgroundColor: 'rgba(33, 33, 33, 0.9)' }}>
+      <div>
         <div className='container-fluid'>
           <div className='row'>
             <div className='col-sm-12'>
               <br />
-              <div className='text-size-second text-bold text-white'>
+              <div className={classes.totalTitle}>
                 Total :{' '}
-                <span className='text-size-second text-emphasis-third text-bold'>
+                <span className={classes.totalPrice}>
                   ${numberWithCommas(state.total)}
                 </span>
               </div>
@@ -279,7 +338,7 @@ const ListCart = ({
       {renderTop()}
       {renderList()}
       {renderCheckout()}
-      {/* <Footer/> */}
+      <Footer />
     </div>
   );
 };

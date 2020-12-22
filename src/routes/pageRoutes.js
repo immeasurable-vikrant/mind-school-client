@@ -2,11 +2,11 @@
  * @description Page routes
  */
 
- //auth
+//auth
 
- export const signIn = '/signin'
- export const signOut = '/signout'
- export const signUp = '/signup'
+export const signIn = '/signin'
+export const signOut = '/signout'
+export const signUp = '/signup'
 
 //oAuth
 export const socialGoogle = '/social-google'
