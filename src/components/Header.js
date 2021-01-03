@@ -1,10 +1,8 @@
-/** @format */
-
 import React, { useState, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { withRouter, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { userInfo } from '../actions';
+import { userInfo, logout } from '../actions';
 import getIn from '../utility/getIn';
 import companyLogo from '../../public/assets/images/apple.png';
 //material-ui imports
@@ -104,7 +102,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Header = withRouter(({ logged }) => {
+const Header = withRouter(({ logged, logOut }) => {
   const history = useHistory();
   const classes = useStyles();
   const [state, setState] = useState({ search: '' });
@@ -131,6 +129,11 @@ const Header = withRouter(({ logged }) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
+  const logoutHandler = () => {
+    console.log('clicked');
+    logOut();
+  };
+
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
     <Menu
@@ -150,10 +153,7 @@ const Header = withRouter(({ logged }) => {
         </IconButton>
         <p>My Courses</p>
       </MenuItem>
-      <MenuItem
-        onClick={() => {
-          history.push('/signout');
-        }}>
+      <MenuItem onClick={logoutHandler}>
         <p>Logout</p>
       </MenuItem>
     </Menu>
@@ -189,10 +189,7 @@ const Header = withRouter(({ logged }) => {
         </IconButton>
         <p>Cart</p>
       </MenuItem>
-      <MenuItem
-        onClick={() => {
-          history.push('/signout');
-        }}>
+      <MenuItem onClick={logoutHandler}>
         <p>Logout</p>
       </MenuItem>
     </Menu>
@@ -344,6 +341,7 @@ const mapDispatchToProps = (dispatch) => {
     fetchUserInfo: () => {
       return dispatch(userInfo());
     },
+    logOut: () => dispatch(logout()),
   };
 };
 

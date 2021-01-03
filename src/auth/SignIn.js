@@ -6,23 +6,20 @@ import { connect } from 'react-redux';
 import { signError, logIn } from '../actions';
 import { ERROR_MESSAGES } from '../common/constants';
 import TextInput from '../components/TextInput';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import { hostUrl } from '../../config';
 import '../../styles/style.css';
-
 
 class Signin extends Component {
   constructor(props) {
     super(props);
     this.state = {
       dialogStyle: { display: 'none' },
-      isSubmitting: false
+      isSubmitting: false,
     };
   }
 
   static childContextTypes = {
-    muiTheme: PropTypes.object
+    muiTheme: PropTypes.object,
   };
 
   getChildContext() {
@@ -31,7 +28,7 @@ class Signin extends Component {
 
   static propTypes = {
     topOffset: PropTypes.number,
-    leftOffset: PropTypes.number
+    leftOffset: PropTypes.number,
   };
 
   componentDidMount() {
@@ -46,8 +43,8 @@ class Signin extends Component {
         width: '100%',
         height: '100%',
         top: this.props.topOffset,
-        left: this.props.leftOffset
-      }
+        left: this.props.leftOffset,
+      },
     });
   }
 
@@ -145,21 +142,9 @@ class Signin extends Component {
     );
   };
 
-  renderHeader = () => {
-    if (!this.props.dialog) {
-      return <Header />;
-    }
-  };
-
-  renderFooter = () => {
-    if (!this.props.dialog) {
-      return <Footer />;
-    }
-  };
   render() {
     return (
       <div>
-        {this.renderHeader()}
         <div className='loginBox-header'>
           Log In to Your Immeasurable Account!
         </div>
@@ -202,9 +187,6 @@ class Signin extends Component {
             </div>
           </div>
         </form>
-
-        <div style={{ marginBottom: 40 }}>&nbsp;</div>
-        {this.renderFooter()}
       </div>
     );
   }
@@ -216,7 +198,7 @@ Signin.propTypes = {
   signError: PropTypes.func,
   login: PropTypes.func,
   redirect: PropTypes.string,
-  error: PropTypes.string
+  error: PropTypes.string,
 };
 
 function mapStateToProps(state) {
@@ -227,7 +209,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
     signError: (error) => dispatch(signError(error)),
     login: ({ email, password, redirect, failed }) =>
-      dispatch(logIn({ email, password, redirect, failed }))
+      dispatch(logIn({ email, password, redirect, failed })),
   };
 };
 

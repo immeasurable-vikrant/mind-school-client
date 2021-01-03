@@ -11,7 +11,6 @@ import Details from '../components/Details';
 import reducers from '../reducers';
 import SignIn from '../auth/SignIn';
 import SignUp from '../auth/SignUp';
-import SignOut from '../auth/SignOut';
 import ListCart from '../components/ListCart';
 import ViewCourses from '../components/ViewCourses';
 import DetailCourse from '../components/DetailCourse';
@@ -33,7 +32,6 @@ export const Routes = () => (
       <Route exact path='/' component={App} />
       <Route path='/signup' component={SignUp} />
       <Route path='/signin' component={SignIn} />
-      <Route path='/signout' component={SignOut} />
       <Route path='/detail' component={Details} />
       <Route path={`/detail/:id`} component={DetailCourse} />
       <Route path='/list-cart' component={composedAuth(ListCart)} />

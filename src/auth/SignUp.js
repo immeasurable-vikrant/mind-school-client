@@ -8,21 +8,19 @@ import { signError, signUp } from '../actions';
 import { ERROR_MESSAGES } from '../common/constants';
 import path from 'path';
 import TextInput from '../components/TextInput';
-import '../../styles/style.css'
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import '../../styles/style.css';
 
 class SignUp extends Component {
   constructor(props) {
     super(props);
     this.state = {
       dialogStyle: { display: 'none' },
-      isSubmitting: false
+      isSubmitting: false,
     };
   }
 
   static childContextTypes = {
-    muiTheme: PropTypes.object
+    muiTheme: PropTypes.object,
   };
 
   getChildContext() {
@@ -31,7 +29,7 @@ class SignUp extends Component {
 
   static propTypes = {
     topOffset: PropTypes.number,
-    leftOffset: PropTypes.number
+    leftOffset: PropTypes.number,
   };
 
   componentDidMount() {
@@ -44,8 +42,8 @@ class SignUp extends Component {
         marginLeft: 0,
         marginRight: 0,
         top: this.props.topOffset,
-        left: this.props.leftOffset
-      }
+        left: this.props.leftOffset,
+      },
     });
 
     $('#avatar_image').hide();
@@ -272,7 +270,6 @@ class SignUp extends Component {
   render() {
     return (
       <div>
-        <Header />
         <div className='loginBox-header'>Sign Up and Start Learning today!</div>
         <div style={{ textAlign: 'center' }}>{this.signError()}</div>
         <div>
@@ -282,7 +279,7 @@ class SignUp extends Component {
             // name='form_info'
             onSubmit={(e) => this.submitForm(e)}>
             <TextInput
-              className="text-input-signup"
+              className='text-input-signup'
               ref={(e) => (this._name = e)}
               placeholder=' Full Name'
               name='name'
@@ -338,7 +335,6 @@ class SignUp extends Component {
             </div>
           </form>
         </div>
-        <Footer />
       </div>
     );
   }
@@ -350,12 +346,12 @@ SignUp.propTypes = {
   signError: PropTypes.func,
   signUp: PropTypes.func,
   redirect: PropTypes.string,
-  error: PropTypes.string
+  error: PropTypes.string,
 };
 
 function mapStateToProps(state) {
   return {
-    error: state.auth.error
+    error: state.auth.error,
   };
 }
 
@@ -363,7 +359,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
     signError: (error) => dispatch(signError(error)),
     signUp: ({ email, password, name, avatar, failed }) =>
-      dispatch(signUp({ email, password, name, avatar, failed }))
+      dispatch(signUp({ email, password, name, avatar, failed })),
   };
 };
 
