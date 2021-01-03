@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { withRouter, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { fetchDetailCourse } from '../actions/course';
-import { fetchLecture } from '../actions/lecture';
+import { fetchDetailCourse } from '../../actions/course';
+import { fetchLecture } from '../../actions/lecture';
 
 const Details = ({ detailCourse, lectureCourse }) => {
   const history = useHistory();

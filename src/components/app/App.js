@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { CssBaseline, Container } from '@material-ui/core';
-import HomePage from './HomePage';
-import HomePageSecondary from './HomePageSecondary';
-import Wrapper from './Wrapper';
-import WhyLearn from './WhyLearn';
-import BecomeTeacher from './BecomeTeacher';
+import HomePage from '../HomePage';
+import HomePageSecondary from '../HomePageSecondary';
+import Wrapper from '../Wrapper';
+import WhyLearn from '../WhyLearn';
+import BecomeTeacher from '../BecomeTeacher';
 
 const useStyles = makeStyles((theme) => ({
   container: {
