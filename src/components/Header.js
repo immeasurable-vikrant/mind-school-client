@@ -1,3 +1,5 @@
+/** @format */
+
 import React, { useState, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { withRouter, useHistory } from 'react-router-dom';
@@ -16,7 +18,7 @@ import {
   Badge,
   MenuItem,
   Menu,
-  Button
+  Button,
 } from '@material-ui/core';
 import SchoolIcon from '@material-ui/icons/School';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
@@ -25,44 +27,44 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 
 const useStyles = makeStyles((theme) => ({
   grow: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   header: {
     backgroundColor: '#FBFCFC',
     color: 'black',
     boxShadow: '0 4px 12px rgba(0,0,0,.08) ',
-    position: 'unset'
+    position: 'unset',
   },
   menuButton: {
-    marginRight: theme.spacing(2)
+    marginRight: theme.spacing(2),
   },
   login: {
     color: '#8E44AD',
     border: '1px solid #8E44AD',
     borderRadius: '10px',
     backgroundColor: 'white',
-    margin: '5px'
+    margin: '5px',
   },
   title: {
     display: 'none',
     [theme.breakpoints.up('sm')]: {
-      display: 'block'
-    }
+      display: 'block',
+    },
   },
   search: {
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: fade(theme.palette.common.white, 0.15),
     '&:hover': {
-      backgroundColor: fade(theme.palette.common.white, 0.25)
+      backgroundColor: fade(theme.palette.common.white, 0.25),
     },
     marginRight: theme.spacing(2),
     marginLeft: 0,
     width: '100%',
     [theme.breakpoints.up('sm')]: {
       marginLeft: theme.spacing(3),
-      width: 'auto'
-    }
+      width: 'auto',
+    },
   },
   searchIcon: {
     padding: theme.spacing(0, 2),
@@ -71,10 +73,10 @@ const useStyles = makeStyles((theme) => ({
     pointerEvents: 'none',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   inputRoot: {
-    color: 'inherit'
+    color: 'inherit',
   },
   inputInput: {
     border: '1px solid #616A6B',
@@ -85,21 +87,21 @@ const useStyles = makeStyles((theme) => ({
     transition: theme.transitions.create('width'),
     width: '100%',
     [theme.breakpoints.up('md')]: {
-      width: '20ch'
-    }
+      width: '20ch',
+    },
   },
   sectionDesktop: {
     display: 'none',
     [theme.breakpoints.up('md')]: {
-      display: 'flex'
-    }
+      display: 'flex',
+    },
   },
   sectionMobile: {
     display: 'flex',
     [theme.breakpoints.up('md')]: {
-      display: 'none'
-    }
-  }
+      display: 'none',
+    },
+  },
 }));
 
 const Header = withRouter(({ logged }) => {
@@ -212,7 +214,7 @@ const Header = withRouter(({ logged }) => {
               </Badge>
             </IconButton>
             <IconButton
-              aria-label=' user profile'
+              aria-label='user profile'
               aria-controls={mobileMenuId}
               aria-haspopup='true'
               onClick={handleMobileMenuOpen}
@@ -268,9 +270,6 @@ const Header = withRouter(({ logged }) => {
     );
   };
 
-  const onPushToSearchPages = (e) => {
-    history.push('/search-results')
-  };
   const onHandleSearch = (e) => {
     setState({ [e.target.name]: e.target.value });
   };
@@ -292,7 +291,13 @@ const Header = withRouter(({ logged }) => {
                 alt='companyLogo'
               />
             </div>
-            <Typography className={classes.title} variant='h6' noWrap>
+            <Typography
+              className={classes.title}
+              variant='h6'
+              noWrap
+              onClick={() => {
+                history.push('/');
+              }}>
               Immeasurable
             </Typography>
 
@@ -306,10 +311,9 @@ const Header = withRouter(({ logged }) => {
                 placeholder='Search…'
                 classes={{
                   root: classes.inputRoot,
-                  input: classes.inputInput
+                  input: classes.inputInput,
                 }}
                 inputProps={{ 'aria-label': 'search' }}
-                onClick={onPushToSearchPages}
                 onChange={onHandleSearch}
               />
             </div>
@@ -322,7 +326,7 @@ const Header = withRouter(({ logged }) => {
       </div>
     );
   };
-
+  console.log('AKKKKKKKKKKKKKKK', logged);
   return <div className='App'>{renderNav()}</div>;
 });
 
@@ -331,7 +335,7 @@ const mapStateToProps = (state) => {
   const { logged, user } = auth;
   return {
     logged,
-    user
+    user,
   };
 };
 
@@ -339,12 +343,12 @@ const mapDispatchToProps = (dispatch) => {
   return {
     fetchUserInfo: () => {
       return dispatch(userInfo());
-    }
+    },
   };
 };
 
 Header.propTypes = {
-  logged: PropTypes.bool
+  logged: PropTypes.bool,
 };
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));

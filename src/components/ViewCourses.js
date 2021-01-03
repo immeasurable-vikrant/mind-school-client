@@ -11,8 +11,6 @@ import { CircularProgress, Avatar, Grid, Typography } from '@material-ui/core';
 import Equalizer from 'react-equalizer';
 import { hostUrl } from '../../config';
 import { makeStyles } from '@material-ui/core/styles';
-import Header from './Header';
-import Footer from './Footer';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -199,10 +197,8 @@ const ViewCourses = ({
 
   return (
     <div>
-      <Header />
       {renderCourses()}
       <hr />
-      <Footer />
     </div>
   );
 };

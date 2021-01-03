@@ -1,11 +1,7 @@
-/** @format */
-
 import React, { useEffect } from 'react';
 import { hostUrl } from '../../config';
 import ReactPlayer from 'react-player';
 import $ from 'jquery';
-import Header from './Header';
-import Footer from './Footer';
 
 let timeout = null;
 let dragTime = false;
@@ -438,11 +434,7 @@ const ViewLecture = ({ match }) => {
   const { url } = match.params;
   if (!url || url.length < 0) return <div>&nbsp;</div>;
 
-  return (
-    <div>
-      <Header /> {renderVideo()} <Footer />
-    </div>
-  );
+  return <div>{renderVideo()}</div>;
 };
 
 export default ViewLecture;

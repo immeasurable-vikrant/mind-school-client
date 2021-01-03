@@ -13,16 +13,13 @@ import {
   listCart,
   addCart,
   removeCart,
-  payCart
+  payCart,
 } from '../actions/cart';
 import { userInfo } from '../actions';
 //Config Import
 import { hostUrl } from '../../config';
 //Auth Import
 import SignIn from '../auth/SignIn';
-//Component import
-import Header from './Header';
-import Footer from './Footer';
 
 const numberWithCommas = (x) => {
   const parts = parseInt(x, 10).toString().split('.');
@@ -34,70 +31,70 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
-    margin: '8px 16px'
+    margin: '8px 16px',
   },
   rootCartSubtitle: {
-    margin: '16px 0 8px'
+    margin: '16px 0 8px',
   },
   cartTitle: {
     fontSize: '18px',
     fontWeight: '500',
     lineHeight: '22px',
     color: '#29303b',
-    margin: '16px'
+    margin: '16px',
   },
   coursesCartPara: {
     fontSize: '14px',
     fontWeight: '400',
     lineHeight: '22px',
-    margin: '0'
+    margin: '0',
   },
   courseLength: {
     fontSize: '18px',
     fontWeight: '400',
     lineHeight: '22px',
-    margin: '0 8px'
+    margin: '0 8px',
   },
   coursePrice: {
     fontSize: '22px',
     fontWeight: '600',
     lineHeight: '21px',
-    color: '#000000'
+    color: '#000000',
   },
   removeFromCart: {
     fontSize: '15px',
     lineHeight: '22px',
-    fontWeight: '500'
+    fontWeight: '500',
   },
   courseTitle: {
     fontSize: '17px',
     fontWeight: '700',
     lineHeight: '18px',
     color: '#29303b',
-    margin: '4px 0'
+    margin: '4px 0',
   },
   courseSubTitle: {
     fontSize: '13px',
     fontWeight: '400',
     lineHeight: '19px',
     color: '#29303b',
-    margin: '4px 0'
+    margin: '4px 0',
   },
   totalPrice: {
-    fontSize: '36px',
+    fontSize: '24px',
     fontWeight: '700',
     lineHeight: '51px',
-    color: '#29303b'
+    color: '#29303b',
   },
   totalTitle: {
     fontSize: '18px',
     fontWeight: '400',
     lineHeight: '26px',
-    color: '#29303b'
+    color: '#29303b',
   },
   renderList: {
-    margin: '30px'
-  }
+    margin: '30px',
+  },
 }));
 
 const styles = {
@@ -105,16 +102,16 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: 0
+    paddingTop: 0,
   },
   dialogContent: {
     position: 'relative',
     width: '80vw',
-    transform: ''
+    transform: '',
   },
   dialogBody: {
-    paddingBottom: 0
-  }
+    paddingBottom: 0,
+  },
 };
 
 const ListCart = ({
@@ -126,12 +123,12 @@ const ListCart = ({
   fetchListCart,
   fetchAddCart,
   fetchRemoveCart,
-  fetchPayCart
+  fetchPayCart,
 }) => {
   const classes = useStyles();
   const [state, setState] = useState({
     open: false,
-    total: 0
+    total: 0,
   });
 
   useEffect(() => {
@@ -248,7 +245,7 @@ const ListCart = ({
           <div className='col-sm-4'>
             <div
               style={{
-                overflow: 'hidden'
+                overflow: 'hidden',
               }}>
               <img
                 style={{ width: '100%', height: '100%' }}
@@ -263,7 +260,7 @@ const ListCart = ({
                 style={{
                   display: 'flex',
                   justifyContent: 'space-between',
-                  margin: '12px 0'
+                  margin: '12px 0',
                 }}>
                 <span className={classes.coursePrice}>${course.price}</span>
                 <span
@@ -310,7 +307,7 @@ const ListCart = ({
                 style={{
                   display: 'flex',
                   justifyContent: 'center',
-                  margin: 10
+                  margin: 10,
                 }}>
                 <button
                   type='button'
@@ -333,12 +330,10 @@ const ListCart = ({
 
   return (
     <div>
-      <Header />
       {renderDialog()}
       {renderTop()}
       {renderList()}
       {renderCheckout()}
-      <Footer />
     </div>
   );
 };
@@ -352,14 +347,14 @@ ListCart.propTypes = {
   fetchListCart: PropTypes.func,
   fetchRemoveCart: PropTypes.func,
   fetchPayCart: PropTypes.func,
-  fetchUserInfo: PropTypes.func
+  fetchUserInfo: PropTypes.func,
 };
 
 const mapStateToProps = (state) => {
   return {
     logged: state.auth.logged,
     user: state.auth.user,
-    courses: state.fetchCartList
+    courses: state.fetchCartList,
   };
 };
 
@@ -370,10 +365,10 @@ const mapDispatchToProps = (dispatch) => {
     fetchAddCart: (course_no) => dispatch(addCart(course_no)),
     fetchRemoveCart: (course_no) => dispatch(removeCart(course_no)),
     fetchPayCart: (courses) => dispatch(payCart(courses)),
-    fetchUserInfo: () => dispatch(userInfo())
+    fetchUserInfo: () => dispatch(userInfo()),
   };
 };
 
 export default withRouter(
-  connect(mapStateToProps, mapDispatchToProps)(ListCart)
+  connect(mapStateToProps, mapDispatchToProps)(ListCart),
 );

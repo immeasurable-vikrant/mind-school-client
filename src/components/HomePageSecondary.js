@@ -22,6 +22,7 @@ import {
   Typography,
 } from '@material-ui/core';
 import { hostUrl } from '../../config';
+// import HomeDescription from './HomeDescription';
 import './style.css';
 
 const rand = require('random-seed').create();
@@ -36,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#3c3b37',
     fontWeight: '700',
     padding: '16px',
+    // textAlign: 'center',
   },
   card: {
     width: '240px',
@@ -57,7 +59,7 @@ const numberWithCommas = (x) => {
   return parts.join('.');
 };
 
-const HomePage = ({
+const HomePageSecondary = ({
   isLoading,
   total,
   page,
@@ -115,6 +117,84 @@ const HomePage = ({
     event.preventDefault();
     localStorage.setItem('course', course.no);
     history.push('/detail');
+  };
+
+  /* Search auto-suggest methods */
+  const onSuggestionsClearRequested = () => {
+    setState({
+      suggestions: [],
+    });
+  };
+
+  const onSuggestionsFetchRequested = ({ value }) => {
+    setState({
+      suggestions: getSuggestions(value),
+    });
+  };
+
+  const getSuggestionValue = (suggestion) => suggestion;
+  const renderSuggestion = (suggestion) => <span>{suggestion}</span>;
+
+  const renderInputComponent = (inputProps) => (
+    <div className='react-autosuggest__inputContainer'>
+      <i className='fa fa-search react-autosuggest__icon' aria-hidden='true' />
+      <input {...inputProps} />
+    </div>
+  );
+
+  const onInputChange = (event, { newValue, method }) => {
+    setState({ keyword: newValue });
+  };
+
+  const onFormSubmit = (event) => {
+    event.preventDefault();
+    if (!isLoading) {
+      const { keyword } = state;
+      loadInitial(keyword);
+    }
+  };
+
+  /* Search UI component */
+  const renderForm = () => {
+    const { suggestions, keyword } = state;
+
+    const inputProps = {
+      placeholder: 'Please enter a keyword.',
+      value: keyword,
+      onChange: onInputChange,
+    };
+
+    return (
+      <div>
+        <form onSubmit={onFormSubmit}>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}>
+            <span>
+              {/* <AutoSuggest
+                suggestions={suggestions}
+                onSuggestionsClearRequested={onSuggestionsClearRequested}
+                onSuggestionsFetchRequested={onSuggestionsFetchRequested}
+                onSuggestionSelected={(_, { suggestionValue }) =>
+                  console.log('Selected: ' + suggestionValue)
+                }
+                getSuggestionValue={getSuggestionValue}
+                renderSuggestion={renderSuggestion}
+                inputProps={inputProps}
+                renderInputComponent={renderInputComponent}
+                highlightFirstSuggestion={true}
+              /> */}
+            </span>
+            <span>
+              {/* <RaisedButton label='Search' type='submit' primary={true} /> */}
+            </span>
+          </div>
+        </form>
+      </div>
+    );
   };
 
   const renderAuthor = (authors) => {
@@ -203,9 +283,11 @@ const HomePage = ({
                 {renderCourses()}
               </Grid>
             ) : (
+              // <Grid container spacing={3}>
               <div className='horizontal_slider'>
                 <div className='slider_container'>{renderCourses()}</div>
               </div>
+              // </Grid>
             )}
           </div>
           <div
@@ -221,13 +303,15 @@ const HomePage = ({
   };
   return (
     <Fragment>
-      <h1 className={classes.text}>Browse All Courses</h1>
+      {/* <HomeDescription /> */}
+      {renderForm()}
+      <h1 className={classes.text}>Browse Hindi Courses</h1>
       <div className={classes.root}>{renderState()}</div>
     </Fragment>
   );
 };
 
-HomePage.propTypes = {
+HomePageSecondary.propTypes = {
   isLoading: PropTypes.bool,
   hasError: PropTypes.string,
   course: PropTypes.array,
@@ -258,5 +342,5 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 export default withRouter(
-  connect(mapStateToProps, mapDispatchToProps)(HomePage),
+  connect(mapStateToProps, mapDispatchToProps)(HomePageSecondary),
 );

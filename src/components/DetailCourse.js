@@ -1,14 +1,12 @@
 import _ from 'lodash';
 import { hostUrl } from '../../config';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { fetchDetailCourse } from '../actions/course';
 import { CircularProgress } from '@material-ui/core';
-import Footer from './Footer';
 import ShowMore from 'react-show-more';
-import Header from './Header';
 import CartBanner from './CartBanner';
 import Curriculum from './Curriculum';
 import { makeStyles } from '@material-ui/core/styles';
@@ -18,72 +16,72 @@ import supportTeam from '../../public/assets/images/clock.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   detailCourseDescriptionTitle: {
     fontSize: '20px',
     fontWeight: 600,
     lineHeight: '28px',
     color: 'rgba(0, 0, 0, 0.9)',
-    marginBottom: '4px'
+    marginBottom: '4px',
   },
   detailCourseContainer: {
-    margin: '16px'
+    margin: '16px',
   },
   courseDescription: {
     fontSize: '16px',
     fontWeight: '400',
-    lineHeight: '24px'
+    lineHeight: '24px',
   },
   spanCourseContent: {
     fontSize: '14px',
     color: '#3c3b37',
     lineHeight: '20px',
     fontWeight: '400',
-    margin: '8px'
+    margin: '8px',
   },
   courseIncludes: {
-    margin: '24px 0'
+    margin: '24px 0',
   },
   headingCourseIncludes: {
     fontWeight: 700,
     fontSize: '16px',
     lineHeight: '19px',
-    color: '#3c3b37'
+    color: '#3c3b37',
   },
   courseInstructor: {
     fontWeight: 700,
     fontSize: '24px',
     lineHeight: '29px',
-    color: '#3c3b37'
+    color: '#3c3b37',
   },
   authorImg: {
     height: '110px',
     width: '110px',
-    borderRadius: '56px'
+    borderRadius: '56px',
   },
   instructorCredentials: {
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
   },
   instructorDetailsDiv: {
-    display: 'flex'
+    display: 'flex',
   },
   instructorWrapper: {
     display: 'flex',
     flexDirection: 'column',
-    margin: '8px'
+    margin: '8px',
   },
   authorStudents: {
     display: 'flex',
-    margin: '4px 16px'
+    margin: '4px 16px',
   },
   authorName: {
     fontSize: '19px',
     lineHeight: '23px',
     fontWeight: '700',
-    color: '#094c59'
-  }
+    color: '#094c59',
+  },
 }));
 
 const numberWithCommas = (x) => {
@@ -97,11 +95,11 @@ const DetailCourse = ({
   isLoading,
   match,
   hasError,
-  getDetailCourse
+  getDetailCourse,
 }) => {
   const classes = useStyles();
   const [state, setState] = useState({
-    dialogStyle: { display: 'none' }
+    dialogStyle: { display: 'none' },
   });
 
   useEffect(() => {
@@ -113,8 +111,8 @@ const DetailCourse = ({
         marginTop: 100,
         marginBottom: 100,
         width: '100%',
-        height: '100%'
-      }
+        height: '100%',
+      },
     });
     window.scrollTo(0, 0);
     getDetailCourse(match?.params?.id);
@@ -212,7 +210,7 @@ const DetailCourse = ({
                   anchorClass=''>
                   <div
                     dangerouslySetInnerHTML={{
-                      __html: unescape(author.description)
+                      __html: unescape(author.description),
                     }}
                   />
                 </ShowMore>
@@ -250,7 +248,7 @@ const DetailCourse = ({
             <div
               className={classes.courseDescription}
               dangerouslySetInnerHTML={{
-                __html: unescape(course.description)
+                __html: unescape(course.description),
               }}
             />
           </ShowMore>
@@ -320,12 +318,10 @@ const DetailCourse = ({
   };
 
   return (
-    <div>
-      <Header />
+    <Fragment>
       <div style={{ backgroundColor: 'darkgray' }}>{renderState()}</div>
       <div>{renderCourse()}</div>
-      <Footer />
-    </div>
+    </Fragment>
   );
 };
 
@@ -334,23 +330,23 @@ DetailCourse.propTypes = {
   isLoading: PropTypes.bool,
   match: PropTypes.object,
   hasError: PropTypes.bool,
-  getDetailCourse: PropTypes.func
+  getDetailCourse: PropTypes.func,
 };
 
 const mapStateToProps = (state) => {
   return {
     course: state.fetchDetailCourseDone,
     hasError: state.fetchCourseFailure,
-    isLoading: state.fetchCourseLoading
+    isLoading: state.fetchCourseLoading,
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    getDetailCourse: (course_no) => dispatch(fetchDetailCourse(course_no))
+    getDetailCourse: (course_no) => dispatch(fetchDetailCourse(course_no)),
   };
 };
 
 export default withRouter(
-  connect(mapStateToProps, mapDispatchToProps)(DetailCourse)
+  connect(mapStateToProps, mapDispatchToProps)(DetailCourse),
 );

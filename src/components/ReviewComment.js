@@ -1,3 +1,5 @@
+/** @format */
+
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Paper, Dialog } from '@material-ui/core';
@@ -7,8 +9,6 @@ import { connect } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
 import { commentError, addComment } from '../actions/comment';
 import { userInfo } from '../actions';
-import Header from './Header';
-import Footer from './Footer';
 import SignIn from '../auth/SignIn';
 
 const styles = {
@@ -16,16 +16,16 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: 0
+    paddingTop: 0,
   },
   dialogContent: {
     position: 'relative',
     width: '80vw',
-    transform: ''
+    transform: '',
   },
   dialogBody: {
-    paddingBottom: 0
-  }
+    paddingBottom: 0,
+  },
 };
 
 const ReviewComment = ({
@@ -37,13 +37,13 @@ const ReviewComment = ({
   logged,
   fetchAddComment,
   fetchUserInfo,
-  fetchCommentError
+  fetchCommentError,
 }) => {
   const [state, setState] = useState({
     dialogStyle: { display: 'none' },
     isSubmitting: false,
     open: false,
-    rating: 0
+    rating: 0,
   });
 
   useEffect(() => {
@@ -56,8 +56,8 @@ const ReviewComment = ({
         marginLeft: 0,
         marginRight: 0,
         width: '100%',
-        height: '100%'
-      }
+        height: '100%',
+      },
     });
     const token = localStorage.getItem('token');
     if (token) {
@@ -118,7 +118,7 @@ const ReviewComment = ({
               content,
               rating,
               helpful,
-              failed
+              failed,
             );
           });
         }
@@ -281,7 +281,6 @@ const ReviewComment = ({
     <div>
       <div>{renderDialog()}</div>
       <div>
-        <Header />
         <br />
         <div className='container'>
           <div className='row'>
@@ -295,7 +294,7 @@ const ReviewComment = ({
                   marginBottom: 40,
                   overflow: 'hidden',
                   backgroundColor: '#FFF',
-                  display: 'block'
+                  display: 'block',
                 }}>
                 <br />
                 <div
@@ -311,7 +310,6 @@ const ReviewComment = ({
           </div>
         </div>
         <br />
-        <Footer />
       </div>
     </div>
   );
@@ -338,7 +336,7 @@ ReviewComment.propTypes = {
   logged: PropTypes.bool,
   fetchAddComment: PropTypes.func,
   fetchUserInfo: PropTypes.func,
-  fetchCommentError: PropTypes.func
+  fetchCommentError: PropTypes.func,
 };
 
 const mapStateToProps = (state) => {
@@ -346,13 +344,13 @@ const mapStateToProps = (state) => {
     logged: state.auth.logged,
     user: state.auth.user,
     hasError: state.fetchCommentError,
-    isLoading: state.fetchCommentLoading
+    isLoading: state.fetchCommentLoading,
   };
 };
 
 const form = reduxForm({
   form: 'review',
-  validate
+  validate,
 });
 
 const mapDispatchToProps = (dispatch) => {
@@ -365,15 +363,15 @@ const mapDispatchToProps = (dispatch) => {
       content,
       rating,
       helpful,
-      failed
+      failed,
     ) =>
       dispatch(
-        addComment(course_no, page, limit, content, rating, helpful, failed)
+        addComment(course_no, page, limit, content, rating, helpful, failed),
       ),
-    fetchUserInfo: () => dispatch(userInfo())
+    fetchUserInfo: () => dispatch(userInfo()),
   };
 };
 
 export default withRouter(
-  form(connect(mapStateToProps, mapDispatchToProps)(ReviewComment))
+  form(connect(mapStateToProps, mapDispatchToProps)(ReviewComment)),
 );

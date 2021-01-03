@@ -1,3 +1,5 @@
+/** @format */
+
 import React from 'react';
 import thunk from 'redux-thunk';
 import { createStore, applyMiddleware } from 'redux';
@@ -16,14 +18,17 @@ import DetailCourse from '../components/DetailCourse';
 import Lecture from '../components/Lecture';
 import ViewLecture from '../components/ViewLecture';
 import SocialGoogle from '../components/SocialGoogle';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export const history = createBrowserHistory({
-  forceRefresh: true
+  forceRefresh: true,
 });
 export const store = createStore(reducers, applyMiddleware(thunk));
 
 export const Routes = () => (
   <Router>
+    <Header />
     <div>
       <Route exact path='/' component={App} />
       <Route path='/signup' component={SignUp} />
@@ -32,10 +37,11 @@ export const Routes = () => (
       <Route path='/detail' component={Details} />
       <Route path={`/detail/:id`} component={DetailCourse} />
       <Route path='/list-cart' component={composedAuth(ListCart)} />
-      <Route exact path='/lecture' component={Lecture} />
-      <Route exact path={`/view-lecture/:url`} component={ViewLecture} />
+      <Route path='/lecture' component={Lecture} />
+      <Route path={`/view-lecture/:url`} component={ViewLecture} />
       <Route path='/view-courses' component={ViewCourses} />
-      <Route path='/social-google/:token ' component={SocialGoogle} />
+      <Route path='/social-google' component={SocialGoogle} />
     </div>
+    <Footer />
   </Router>
 );

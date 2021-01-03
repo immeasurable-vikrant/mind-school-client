@@ -2,8 +2,6 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchMessage } from '../actions';
-import Header from './Header';
-import Footer from './Footer';
 
 const Welcome = ({ message, getMessage }) => {
   useEffect(() => {
@@ -13,9 +11,7 @@ const Welcome = ({ message, getMessage }) => {
   }, []);
   return (
     <div>
-      <Header />
       <div>{message}</div>
-      <Footer />
     </div>
   );
 };
