@@ -90,7 +90,7 @@ export const Routes = () => (
       <Route path='/lecture' component={Lecture} />
       <Route path={`/view-lecture/:url`} component={ViewLecture} />
       <Route path='/view-courses' component={ViewCourses} />
-      <Route path='/social-google/:token ' component={SocialGoogle} />
+      <Route path='/social-google' component={SocialGoogle} />
     </div>
   </Router>
 );
