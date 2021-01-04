@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { Typography, Button } from '@material-ui/core';
@@ -6,14 +7,14 @@ import { Typography, Button } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    padding: '16px'
+    padding: '16px',
   },
   teachButton: {
     color: '#8E44AD',
     border: '1px solid #8E44AD',
     borderRadius: '10px',
     backgroundColor: 'white',
-    margin: '5px'
+    margin: '5px',
   },
   text: {
     fontStyle: 'helvetica',
@@ -22,18 +23,18 @@ const useStyles = makeStyles((theme) => ({
     color: '#3c3b37',
     fontWeight: '700',
     margin: '24px',
-    textAlign: 'center'
+    textAlign: 'center',
   },
   div: {
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   divButton: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    margin: '24px 16px'
+    margin: '24px 16px',
   },
   typoGraphy: {
     fontWeight: '400',
@@ -41,12 +42,15 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: '22px',
     color: '#3c3b37',
     marginTop: '0',
-    marginBotom: '0.4rem'
-  }
+    marginBotom: '0.4rem',
+  },
 }));
 
 const BecomeTeacher = () => {
   const classes = useStyles();
+  const history = useHistory();
+
+  const navigateToBecomeTeacherPage = () => history.push('/become-a-teacher');
   return (
     <div className={classes.root}>
       <h3 className={classes.text}>Become a teacher</h3>
@@ -61,7 +65,10 @@ const BecomeTeacher = () => {
         </div>
       </Grid>
       <div className={classes.divButton}>
-        <Button className={classes.teachButton} variant='contained'>
+        <Button
+          className={classes.teachButton}
+          variant='contained'
+          onClick={navigateToBecomeTeacherPage}>
           Start teaching today
         </Button>
       </div>

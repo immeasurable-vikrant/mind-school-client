@@ -19,6 +19,7 @@ import ViewLecture from '../components/ViewLecture';
 import SocialGoogle from '../components/SocialGoogle';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import BecomeATeacher from '../components/BecomeATeacher/index';
 
 export const history = createBrowserHistory({
   forceRefresh: true,
@@ -39,6 +40,7 @@ export const Routes = () => (
       <Route path={`/view-lecture/:url`} component={ViewLecture} />
       <Route path='/view-courses' component={ViewCourses} />
       <Route path='/social-google' component={SocialGoogle} />
+      <Route path='/become-a-teacher' component={BecomeATeacher} />
     </div>
     <Footer />
   </Router>

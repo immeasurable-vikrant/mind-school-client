@@ -1,10 +1,13 @@
+/** @format */
+
 import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { CssBaseline, Container } from '@material-ui/core';
 import HomePage from './HomePage';
 import HomePageSecondary from './HomePageSecondary';
-import Wrapper from './Wrapper';
-import WhyLearn from './WhyLearn';
+// import Wrapper from './Wrapper';
+import HeroImage from '../common-components/heroImage/heroImage.component';
+import WhyLearn from './whyLearn/index';
 import BecomeTeacher from './BecomeTeacher';
 
 const useStyles = makeStyles((theme) => ({
@@ -17,7 +20,8 @@ const App = () => {
   const classes = useStyles();
   return (
     <Fragment>
-      <Wrapper />
+      <HeroImage />
+      {/* <Wrapper /> */}
       <CssBaseline />
       <Container maxWidth='md' className={classes.container}>
         <HomePage />
