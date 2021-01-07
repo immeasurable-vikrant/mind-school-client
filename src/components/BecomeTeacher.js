@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
 const BecomeTeacher = () => {
   const classes = useStyles();
   const history = useHistory();
-  const navigateToBecomeTeacherPage = () => history.push('/become-a-teacher');
+  const navigateToBecomeTeacherPage = () => history.push('/become-teacher');
   return (
     <div className={classes.root}>
       <h3 className={classes.text}>Become a teacher</h3>

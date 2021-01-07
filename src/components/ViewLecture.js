@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { hostUrl } from '../../config';
-import ReactPlayer from 'react-player';
+import ReactWebMediaPlayer from 'react-web-media-player';
 import $ from 'jquery';
 
 let timeout = null;
@@ -414,15 +414,12 @@ const ViewLecture = ({ match }) => {
     return (
       <div>
         <div id='videoContainer' className='videoContainer'>
-          <ReactPlayer
-            // ref={(player) => {
-            //   this.player = player;
-            // }}
-            width='100vw'
-            // height='100vh'
-            url={`${hostUrl}/video/lecture-${url}.mp4`}
-            playing={true}
-            controls={false}
+
+          <ReactWebMediaPlayer
+            title="Power of Courage"
+            video={`${hostUrl}/video/lecture-${url}.mp4`}
+            thumbnail='link-to-my-thumbnail.jpg'
+            style={{ marginLeft: 'auto', width: '100px', height: '100px', marginRight: 'auto' }}
             fileConfig={{ attributes: { preload: true } }}
           />
           {renderControl()}
