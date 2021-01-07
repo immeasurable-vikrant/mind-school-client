@@ -18,9 +18,14 @@ const useStyles = makeStyles((theme) => ({
 
 const App = () => {
   const classes = useStyles();
+  const auth = 'Vikrant Singh';
   return (
     <Fragment>
-      <HeroImage />
+      <HeroImage
+        heading={`Welcome ${auth}`}
+        subHeading='Keep learning in the moments that matter'
+        description='Courses for every step of your career. Instructors with real-world experience.'
+      />
       {/* <Wrapper /> */}
       <CssBaseline />
       <Container maxWidth='md' className={classes.container}>

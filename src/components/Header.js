@@ -1,3 +1,5 @@
+/** @format */
+
 import React, { useState, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { withRouter, useHistory } from 'react-router-dom';
@@ -268,6 +270,7 @@ const Header = withRouter(({ logged, logOut }) => {
   };
 
   const onHandleSearch = (e) => {
+    // debugger;
     setState({ [e.target.name]: e.target.value });
   };
 

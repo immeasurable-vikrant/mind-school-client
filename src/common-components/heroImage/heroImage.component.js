@@ -8,38 +8,48 @@ import { userInfo } from '../../actions';
 import getIn from '../../utility/getIn';
 import './heroImage.styles.scss';
 
-const HeroImage = ({ auth, fetchUserInfo }) => {
+const HeroImage = ({
+  auth,
+  fetchUserInfo,
+  heading,
+  subHeading,
+  description,
+}) => {
   useEffect(() => {
     fetchUserInfo();
   }, []);
 
   return (
-    <div className='hero-image' style={{ height: '100%' }}>
-      <div className='hero-text'>
-        <h1 className='hero-image-heading'>Canada Goose</h1>
-        <p className='hero-image-para'>spring styles have arrived</p>
-        <button>SHOP NOW</button>
+    <section className='top-banner-section'>
+      <div className='banner-image-div'>
+        <img
+          className='banner-image'
+          src='https://source.unsplash.com/random'
+          alt='Banner Image'
+        />
       </div>
-      <div className='hero-exclusions'>
-        <p className='exclusions'>*click here for details</p>
+      <div className='banner-overlay-div'></div>
+      <div className='banner-text-div'>
+        <span className='banner-text'>
+          <p className='banner-h1-text'>
+            {heading} {auth}
+          </p>
+          <p className='banner-h1-text'>{subHeading}</p>
+          <p className='banner-body-text'>{description}</p>
+          <p className='banner-btn'>
+            <a className='banner-btn-item' href='https://www.cambermast.com'>
+              Get started &#8594;
+            </a>
+          </p>
+        </span>
       </div>
-      <div id='popup1' className='overlay'>
-        <div className='popup'>
-          <a className='close' href='#'>
-            &times;
-          </a>
-          <div className='content'>
-            <h2>Promotional Information & Exclusions</h2>
-            This is a list of exclusions
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };
 
 const mapStateToProps = (state) => {
   const auth = getIn(state, ['auth', 'user', 'profile', 'name']);
+  console.log('state', state);
   return {
     auth,
   };
