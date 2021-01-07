@@ -1,35 +1,20 @@
 import _ from 'lodash';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Dialog } from '@material-ui/core';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { fetchLecture, viewLecture } from '../actions/lecture';
-import { userInfo } from '../actions';
-import SignIn from '../auth/SignIn';
+import { fetchLecture, viewLecture } from '../../actions/lecture';
+import { userInfo } from '../../actions';
+import SignIn from '../../auth/SignIn';
+import './index.scss';
 
 import { makeStyles } from '@material-ui/core/styles';
-import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Typography
-} from '@material-ui/core';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '100%'
+    width: '100%',
   },
-  heading: {
-    fontSize: theme.typography.pxToRem(15),
-    flexBasis: '33.33%',
-    flexShrink: 0
-  },
-  secondaryHeading: {
-    fontSize: theme.typography.pxToRem(15),
-    color: theme.palette.text.secondary
-  }
 }));
 
 const styles = {
@@ -37,16 +22,16 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: 0
+    paddingTop: 0,
   },
   dialogContent: {
     position: 'relative',
     width: '80vw',
-    transform: ''
+    transform: '',
   },
   dialogBody: {
-    paddingBottom: 0
-  }
+    paddingBottom: 0,
+  },
 };
 
 const Curriculum = (props) => {
@@ -58,7 +43,7 @@ const Curriculum = (props) => {
     setExpanded(isExpanded && panel);
   };
   const [state, setState] = useState({
-    open: false
+    open: false,
   });
 
   useEffect(() => {
@@ -158,29 +143,28 @@ const Curriculum = (props) => {
   };
 
   const lectureHeader = (lectures) => {
+    // debugger;
     return _.map(lectures.header, (header, i) => {
       return (
-        <Accordion
-          key={i}
-          expanded={expanded === 'panel1'}
-          onChange={handleChange('panel1')}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls='panel1bh-content'
-            id='panel1bh-header'>
-            {' '}
-            {header.title}
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>{lectureBody(header)}</Typography>
-          </AccordionDetails>
-        </Accordion>
+        <div class='row'>
+          <div class='col'>
+            <div class='tabs'>
+              <div class='tab'>
+                <input type='checkbox' id={header.title} />
+                <label class='tab-label' for={header.title}>
+                  {header.title}
+                </label>
+                <div class='tab-content'>{lectureBody(header)}</div>
+              </div>
+            </div>
+          </div>
+        </div>
       );
     });
   };
 
   const isFirstUpdate = useRef(true);
-  
+
   useEffect(() => {
     if (isFirstUpdate.current) {
       isFirstUpdate.current = false;
@@ -197,15 +181,9 @@ const Curriculum = (props) => {
     }
 
     return (
-      <div>
-        <div
-          className='container'
-          style={{
-            textAlign: 'center',
-            width: '100%'
-          }}></div>
-        <div className={classes.root}>{lectureHeader(lecture)}</div>
-      </div>
+      <Fragment>
+        <div>{lectureHeader(lecture)}</div>
+      </Fragment>
     );
   };
 
@@ -225,7 +203,7 @@ Curriculum.propTypes = {
   user: PropTypes.object,
   hasError: PropTypes.bool,
   isLoading: PropTypes.bool,
-  lecture: PropTypes.object
+  lecture: PropTypes.object,
 };
 
 const mapStateToProps = (state) => {
@@ -234,7 +212,7 @@ const mapStateToProps = (state) => {
     user: state.auth.user,
     lecture: state.lecture.lecture,
     hasError: state.lecture.error,
-    isLoading: state.lecture.loading
+    isLoading: state.lecture.loading,
   };
 };
 
@@ -243,12 +221,12 @@ const mapDispatchToProps = (dispatch) => {
     getLecture: (course_no) => dispatch(fetchLecture(course_no)),
     fetchUserInfo: () => dispatch(userInfo()),
     fetchViewLecture: (lecture_no, header_no, sub_no) =>
-      dispatch(viewLecture(lecture_no, header_no, sub_no))
+      dispatch(viewLecture(lecture_no, header_no, sub_no)),
   };
 };
 
 export default withRouter(
   connect(mapStateToProps, mapDispatchToProps, null, { forwardRef: true })(
-    Curriculum
-  )
+    Curriculum,
+  ),
 );

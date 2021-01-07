@@ -8,7 +8,7 @@ import { fetchDetailCourse } from '../actions/course';
 import { CircularProgress } from '@material-ui/core';
 import ShowMore from 'react-show-more';
 import CartBanner from './CartBanner';
-import Curriculum from './Curriculum';
+import Curriculum from './Curriculum/index';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import englishIcon from '../../public/assets/images/english.png';
