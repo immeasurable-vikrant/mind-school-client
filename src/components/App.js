@@ -1,6 +1,5 @@
-/** @format */
-
 import React, { Fragment } from 'react';
+import { connect } from 'react-redux';
 import { makeStyles } from '@material-ui/core/styles';
 import { CssBaseline, Container } from '@material-ui/core';
 import HomePage from './HomePage';
@@ -26,7 +25,6 @@ const App = () => {
         subHeading='Keep learning in the moments that matter'
         description='Courses for every step of your career. Instructors with real-world experience.'
       />
-      {/* <Wrapper /> */}
       <CssBaseline />
       <Container maxWidth='md' className={classes.container}>
         <HomePage />
@@ -41,4 +39,11 @@ const App = () => {
     </Fragment>
   );
 };
-export default App;
+
+const mapStateToProps = (state) => {
+  return {
+    auth,
+  };
+};
+
+export default connect(null, null)(App);

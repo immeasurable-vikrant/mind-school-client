@@ -1,28 +1,30 @@
-/** @format */
-
+//library
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import thunk from 'redux-thunk';
 import { createStore, applyMiddleware } from 'redux';
-import Loadable from 'react-loadable';
 import { createBrowserHistory } from 'history';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import composedAuth from '../middlewares/composedAuth';
+import Loadable from 'react-loadable';
+//redux
 import reducers from '../reducers';
-// import SignIn from '../auth/SignIn';
-// import SignUp from '../auth/SignUp';
+//components
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 import ListCart from '../components/ListCart';
 import Lecture from '../components/Lecture';
 import ViewLecture from '../components/ViewLecture';
 import SocialGoogle from '../components/SocialGoogle';
 import BecomeATeacher from '../components/BecomeATeacher/index';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
+//pageRoutes
+import * as pageRoutes from './pageRoutes';
 
 export const history = createBrowserHistory({
   forceRefresh: true,
 });
 
 export const LoadingComponent = ({ isLoading, error }) => {
+  console.log('isLoading', isLoading, error);
   // Handle the Loading State
   if (isLoading) {
     return <div>Loading...</div>;
@@ -76,17 +78,17 @@ export const Routes = () => (
   <Router>
     <Header />
     <div>
-      <Route exact path='/' component={App} />
-      <Route path='/signup' component={SignUp} />
-      <Route path='/signin' component={SignIn} />
-      <Route path='/detail' component={Details} />
-      <Route path={`/detail/:id`} component={DetailCourse} />
-      <Route path='/list-cart' component={composedAuth(ListCart)} />
-      <Route path='/lecture' component={Lecture} />
-      <Route path={`/view-lecture/:url`} component={ViewLecture} />
-      <Route path='/view-courses' component={ViewCourses} />
-      <Route path='/social-google' component={SocialGoogle} />
-      <Route path='/become-a-teacher' component={BecomeATeacher} />
+      <Route exact path={pageRoutes.homePage} component={App} />
+      <Route path={pageRoutes.signUp} component={SignUp} />
+      <Route path={pageRoutes.signIn} component={SignIn} />
+      <Route path={pageRoutes.details} component={Details} />
+      <Route path={pageRoutes.detailCourse} component={DetailCourse} />
+      <Route path={pageRoutes.listCart} component={composedAuth(ListCart)} />
+      <Route path={pageRoutes.lecture} component={Lecture} />
+      <Route path={pageRoutes.viewLecture} component={ViewLecture} />
+      <Route path={pageRoutes.viewCourses} component={ViewCourses} />
+      <Route path={pageRoutes.socialGoogle} component={SocialGoogle} />
+      <Route path={pageRoutes.becomeATeacher} component={BecomeATeacher} />
     </div>
     <Footer />
   </Router>
