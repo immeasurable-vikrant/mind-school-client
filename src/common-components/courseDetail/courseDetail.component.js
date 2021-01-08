@@ -26,7 +26,7 @@ const CourseDetail = ({ course }) => {
         <li class='cards_item'>
           <div class='card'>
             <div class='card_image'>
-              <img src={`${hostUrl}/images/${course.picture}`} width='100%' />
+              <img src={`${hostUrl}/images/${course?.picture}`} width='100%' />
             </div>
             <div class='card_content'>
               <h2 class='card_title'>

@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import { makeStyles } from '@material-ui/core/styles';
 import { CssBaseline, Container } from '@material-ui/core';
-// import HomePage from './HomePage';
 import HomePage from './HomePage/index';
 import HomePageSecondary from './HomePageSecondary';
 // import Wrapper from './Wrapper';
@@ -28,7 +27,7 @@ const App = () => {
       />
       <CssBaseline />
       <Container maxWidth='md' className={classes.container}>
-        <HomePage />
+        {/* <HomePage /> */}
       </Container>
       <hr />
       <WhyLearn />

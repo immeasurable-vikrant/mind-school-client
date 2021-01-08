@@ -4,7 +4,6 @@ import './courseAuthor.styles.scss';
 
 const CourseAuthors = ({ authors }) => {
   return _.map(authors, (author, i) => {
-    console.log('AUTHORS', author);
     return (
       <div key={i}>
         <div>
