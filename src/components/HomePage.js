@@ -1,5 +1,3 @@
-/** @format */
-
 import _ from 'lodash';
 import React, { useEffect, useState, Fragment } from 'react';
 import { withRouter, useHistory } from 'react-router-dom';

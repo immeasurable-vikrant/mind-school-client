@@ -58,7 +58,7 @@ export const SignIn = Loadable({
 // });
 
 export const Details = Loadable({
-  loader: () => import('../components/detail/Details'),
+  loader: () => import('../components/Detail/Details'),
   loading: LoadingComponent,
 });
 

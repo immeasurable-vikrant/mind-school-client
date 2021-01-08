@@ -6,7 +6,7 @@ import HomePage from './HomePage';
 import HomePageSecondary from './HomePageSecondary';
 // import Wrapper from './Wrapper';
 import HeroImage from '../common-components/heroImage/heroImage.component';
-import WhyLearn from './whyLearn/index';
+import WhyLearn from './WhyLearn/index';
 import BecomeTeacher from './BecomeTeacher';
 
 const useStyles = makeStyles((theme) => ({
