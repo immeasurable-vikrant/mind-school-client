@@ -1,3 +1,4 @@
+
 import _ from 'lodash';
 import React, { useEffect, useState, Fragment } from 'react';
 import { withRouter, useHistory } from 'react-router-dom';
@@ -9,16 +10,7 @@ import { signError } from '../actions';
 import { useMediaQuery } from '@material-ui/core';
 import { paginate, paginateReset, paginateLoading } from '../actions/course';
 import { makeStyles } from '@material-ui/core/styles';
-import {
-  Grid,
-  Card,
-  CardActionArea,
-  CardContent,
-  CardMedia,
-  CardActions,
-  Button,
-  Typography,
-} from '@material-ui/core';
+import './homepage.styles.scss';
 import { hostUrl } from '../../config';
 import './style.css';
 
@@ -119,12 +111,10 @@ const HomePage = ({
     return _.map(authors, (author, i) => {
       return (
         <div key={i}>
-          {
-            <div>
-              <h5>{author.name}</h5>
-              <h6>{`${numberWithCommas(author.students)} Students`}</h6>
-            </div>
-          }
+          <div>
+            <h5>{author.name}</h5>
+            <h6>{`${numberWithCommas(author.students)} Students`}</h6>
+          </div>
         </div>
       );
     });
@@ -136,39 +126,30 @@ const HomePage = ({
     )} students enrolled, rating: ${course.average} (${numberWithCommas(
       course.reviews,
     )} reviews), Last updated ${dateFormat(course?.updated, 'm/yyyy')}`;
-
     return (
-      <Card className={classes.card} onClick={(e) => handleDetail(e, course)}>
-        <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image={`${hostUrl}/images/${course.picture}`}
-            title={course?.title}
-          />
-          <CardContent>
-            <Typography gutterBottom variant='h5' component='h2'>
-              {renderAuthor(course._authors)}
-            </Typography>
-            <Typography variant='body2' color='textSecondary' component='p'>
-              {text}
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size='small' color='primary' className={classes.cardButton}>
-            Learn More
-          </Button>
-        </CardActions>
-      </Card>
+      <div class='main' onClick={(e) => handleDetail(e, course)}>
+        <ul class='cards'>
+          <li class='cards_item'>
+            <div class='card'>
+              <div class='card_image'>
+                <img src={`${hostUrl}/images/${course.picture}`} width='100%' />
+              </div>
+              <div class='card_content'>
+                <h2 class='card_title'>{renderAuthor(course._authors)}</h2>
+                <p class='card_text'>{text}</p>
+                <button class='btn card_btn'>Read More</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     );
   };
 
   const renderCourses = () => {
     return _.map(courses, (course, i) => {
       return matches ? (
-        <Grid item xs={3} key={i}>
-          {courseDetail(course)}
-        </Grid>
+        <Fragment key={i}>{courseDetail(course)}</Fragment>
       ) : (
         <div key={i} className='item'>
           {courseDetail(course)}
@@ -197,9 +178,7 @@ const HomePage = ({
         <Fragment>
           <div>
             {matches ? (
-              <Grid container spacing={3}>
-                {renderCourses()}
-              </Grid>
+              renderCourses()
             ) : (
               <div className='horizontal_slider'>
                 <div className='slider_container'>{renderCourses()}</div>
@@ -258,3 +237,28 @@ const mapDispatchToProps = (dispatch) => {
 export default withRouter(
   connect(mapStateToProps, mapDispatchToProps)(HomePage),
 );
+
+// return (
+//   <Card className={classes.card} onClick={(e) => handleDetail(e, course)}>
+//     <CardActionArea>
+//       <CardMedia
+//         className={classes.media}
+//         image={`${hostUrl}/images/${course.picture}`}
+//         title={course?.title}
+//       />
+//       <CardContent>
+//         <Typography gutterBottom variant='h5' component='h2'>
+//           {renderAuthor(course._authors)}
+//         </Typography>
+//         <Typography variant='body2' color='textSecondary' component='p'>
+//           {text}
+//         </Typography>
+//       </CardContent>
+//     </CardActionArea>
+//     <CardActions>
+//       <Button size='small' color='primary' className={classes.cardButton}>
+//         Learn More
+//       </Button>
+//     </CardActions>
+//   </Card>
+// );
