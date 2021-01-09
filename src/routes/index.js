@@ -52,11 +52,6 @@ export const SignIn = Loadable({
   loading: LoadingComponent,
 });
 
-// export const SignOut = Loadable({
-//   loader: () => import('../auth/SignOut'),
-//   loading: LoadingComponent,
-// });
-
 export const Details = Loadable({
   loader: () => import('../components/Detail/Details'),
   loading: LoadingComponent,

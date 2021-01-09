@@ -258,8 +258,6 @@ h6 {
 }
 
 .item img {
-  width: 100px;
-  height: 225px;
   object-fit: cover;
 }
 

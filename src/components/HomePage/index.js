@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import React, { Fragment } from 'react';
-import { withRouter, useHistory } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { useMediaQuery } from '@material-ui/core';
@@ -21,25 +21,11 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: '700',
     padding: '16px',
   },
-  card: {
-    width: '240px',
-    height: '300px',
-    backgroundColor: 'white',
-    border: 'none',
-  },
-  cardButton: {
-    border: 'none',
-  },
-  media: {
-    height: 140,
-  },
 }));
 
 const HomePage = ({ isLoading, courses, hasError }) => {
   const matches = useMediaQuery('(min-width:600px)');
-  const history = useHistory();
   const classes = useStyles();
-
   return (
     <Fragment>
       <h1 className={classes.text}>Browse All Courses</h1>
@@ -55,11 +41,7 @@ const HomePage = ({ isLoading, courses, hasError }) => {
             <div className='horizontal_slider'>
               <div className='slider_container'>
                 {_.map(courses, (course, i) => {
-                  return matches ? (
-                    <Fragment key={i}>
-                      <CourseDetail />
-                    </Fragment>
-                  ) : (
+                  return (
                     <div key={i} className='item'>
                       <CourseDetail key={course.id} course={course} />
                     </div>
