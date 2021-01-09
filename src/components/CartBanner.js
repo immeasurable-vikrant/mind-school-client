@@ -1,3 +1,5 @@
+/** @format */
+
 import React, { useState, useEffect, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Dialog, Paper, Button } from '@material-ui/core';
@@ -21,12 +23,12 @@ const numberWithCommas = (x) => {
 const useStyles = makeStyles((theme) => ({
   buttonBuyNow: {
     backgroundColor: '#0f7c90',
-    color: '#ffffff'
+    color: '#ffffff',
   },
   buttonAddToCart: {
     backgroundColor: '#D0021B !important',
-    color: '#ffffff'
-  }
+    color: '#ffffff',
+  },
 }));
 
 const CartBanner = ({
@@ -36,11 +38,11 @@ const CartBanner = ({
   authorNames,
   fetchUserInfo,
   fetchBuyCourse,
-  fetchAddCart
+  fetchAddCart,
 }) => {
   const classes = useStyles();
   const [state, setState] = useState({
-    open: false
+    open: false,
   });
 
   useEffect(() => {
@@ -85,14 +87,14 @@ const CartBanner = ({
   const onBuyCourse = async () => {
     if (logged) {
       const result = await loadScript(
-        'https://checkout.razorpay.com/v1/checkout.js'
+        'https://checkout.razorpay.com/v1/checkout.js',
       );
       if (!result) {
         alert('RazorPay SDK failed to load. Are you online ?');
         return;
       }
-      const data = await fetch('http://localhost:5000/razorpay', {
-        method: 'POST'
+      const data = await fetch(`${hostUrl}/razorpay`, {
+        method: 'POST',
       }).then((t) => t.json());
       const options = {
         //   key: __DEV__
@@ -113,14 +115,14 @@ const CartBanner = ({
         prefill: {
           name: 'Gaurav Kumar',
           email: 'gaurav.kumar@example.com',
-          contact: '9999999999'
+          contact: '9999999999',
         },
         notes: {
-          address: 'Razorpay Corporate Office'
+          address: 'Razorpay Corporate Office',
         },
         theme: {
-          color: '#F37254'
-        }
+          color: '#F37254',
+        },
       };
       const paymentObject = new window.Razorpay(options);
       paymentObject.open();
@@ -147,7 +149,7 @@ const CartBanner = ({
     return (
       <div>
         <Dialog
-        onClose={handleClose}
+          onClose={handleClose}
           modal={false}
           open={state.open}
           onRequestClose={handleClose}
@@ -277,14 +279,14 @@ const CartBanner = ({
               </div>
               <div className='cart-price-div'>
                 <span className='cart-price'>
-                &#8377;{numberWithCommas(course.price)}
+                  &#8377;{numberWithCommas(course.price)}
                 </span>
                 <del className='cart-price-striked'> &#8377;700</del>
                 <span>65% off</span>
               </div>
             </div>
             <div className='cart-banner-buttons-div'>
-            {renderButton(course)}
+              {renderButton(course)}
             </div>
           </div>
         </Paper>
@@ -307,13 +309,13 @@ CartBanner.propTypes = {
   fetchAddCart: PropTypes.func,
   fetchBuyCourse: PropTypes.func,
   fetchUserInfo: PropTypes.func,
-  authorNames: PropTypes.func
+  authorNames: PropTypes.func,
 };
 
 const mapStateToProps = (state) => {
   return {
     logged: state.auth.logged,
-    user: state.auth.user
+    user: state.auth.user,
   };
 };
 
@@ -321,10 +323,10 @@ const mapDispatchToProps = (dispatch) => {
   return {
     fetchBuyCourse: (course_no) => dispatch(buyCourse(course_no)),
     fetchAddCart: (course_no) => dispatch(addCart(course_no)),
-    fetchUserInfo: () => dispatch(userInfo())
+    fetchUserInfo: () => dispatch(userInfo()),
   };
 };
 
 export default withRouter(
-  connect(mapStateToProps, mapDispatchToProps)(CartBanner)
+  connect(mapStateToProps, mapDispatchToProps)(CartBanner),
 );
