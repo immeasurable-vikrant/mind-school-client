@@ -422,7 +422,7 @@ const ViewLecture = ({ match }) => {
             // height='100vh'
             url={`${hostUrl}/video/lecture-${url}.mp4`}
             playing={true}
-            controls={false}
+            controls={true}
             fileConfig={{ attributes: { preload: true } }}
           />
           {renderControl()}
