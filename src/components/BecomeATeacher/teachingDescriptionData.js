@@ -1,9 +1,10 @@
+/** @format */
+
 const TEACHING_DESCRIPTION_DATA = [
   {
     id: 0,
     title: 'Earn money',
-    subTitle:
-      'Earn money every time a student purchases your course. Get paid monthly through PayPal or Payoneer, it’s your choice.',
+    subTitle: 'Earn money every time a student purchases your course. ',
     imageUrl: '../../public/assets/images/cardiogram.svg',
     price: 25,
   },

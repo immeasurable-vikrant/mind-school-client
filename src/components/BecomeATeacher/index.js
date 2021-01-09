@@ -2,7 +2,7 @@
 
 import React, { Fragment, useState } from 'react';
 import HeroImage from '../../common-components/heroImage/heroImage.component';
-import TeachingDescription from '../../common-components/description/description.component';
+import Description from '../../common-components/description/description.component';
 import TEACHING_DESCRIPTION_DATA from './teachingDescriptionData';
 import './index.scss';
 
@@ -24,7 +24,7 @@ const BecomeATeacher = ({ heading }) => {
         {teachingDescriptions.map(({ id, ...otherProps }) => {
           return (
             <Fragment key={id}>
-              <TeachingDescription {...otherProps} />
+              <Description {...otherProps} />
             </Fragment>
           );
         })}

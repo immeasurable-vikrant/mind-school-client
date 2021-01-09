@@ -326,7 +326,6 @@ const Header = withRouter(({ logged, logOut }) => {
       </div>
     );
   };
-  console.log('AKKKKKKKKKKKKKKK', logged);
   return <div className='App'>{renderNav()}</div>;
 });
 

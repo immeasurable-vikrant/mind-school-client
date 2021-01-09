@@ -1,7 +1,9 @@
+/** @format */
+
 import React from 'react';
 import './description.styles.scss';
 
-const TeachingDescription = ({ ...otherProps }) => {
+const Description = ({ ...otherProps }) => {
   const { title, subTitle, imageUrl } = otherProps;
   return (
     <div className='description-container'>
@@ -16,4 +18,4 @@ const TeachingDescription = ({ ...otherProps }) => {
   );
 };
 
-export default TeachingDescription;
+export default Description;

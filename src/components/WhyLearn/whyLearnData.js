@@ -3,7 +3,7 @@ const WHY_LEARN_DATA = [
     id: 0,
     title: 'Earn money',
     subTitle:
-      'Our comprehensive courses have 300+ hours (and counting) of lessons available 24/7. You’ll learn everything from beginner programming fundamentals to the most advanced concepts.',
+      'Our comprehensive courses have 300+ hours (and counting) of lessons available concepts.',
     imageUrl: '../../public/assets/images/cardiogram.svg',
     price: 25,
   },

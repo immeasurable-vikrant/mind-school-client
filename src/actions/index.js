@@ -12,7 +12,7 @@ export function signError(error = '') {
   return (dispatch) => {
     return dispatch({
       type: SIGN_ERROR,
-      payload: error
+      payload: error,
     });
   };
 }
@@ -21,7 +21,7 @@ export function userData(data = null) {
   return (dispatch) => {
     return dispatch({
       type: USER_INFO,
-      user: data
+      user: data,
     });
   };
 }
@@ -33,8 +33,8 @@ export function userInfo() {
       axios
         .get(`${hostUrl}/token`, {
           headers: {
-            authorization: token
-          }
+            authorization: token,
+          },
         })
         .then((response) => {
           return dispatch(userData(response.data));
@@ -51,7 +51,7 @@ export function userInfo() {
 export function signIn() {
   return (dispatch) => {
     return dispatch({
-      type: SIGN_IN
+      type: SIGN_IN,
     });
   };
 }
@@ -70,6 +70,7 @@ export function signUp({ email, password, name, avatar, failed = null }) {
     axios
       .post(`${hostUrl}/signup`, formData)
       .then((response) => {
+        console.log('qwertyuytrew', response);
         localStorage.setItem('token', response.data.token);
 
         dispatch(signIn());
@@ -110,7 +111,7 @@ export function logIn({ email, password, redirect = null, failed = null }) {
 export function signOut() {
   return (dispatch) => {
     return dispatch({
-      type: SIGN_OUT
+      type: SIGN_OUT,
     });
   };
 }
@@ -121,8 +122,8 @@ export function logout() {
     axios
       .get(`${hostUrl}/signout`, {
         headers: {
-          authorization: token
-        }
+          authorization: token,
+        },
       })
       .then((response) => {
         localStorage.removeItem('token');
@@ -139,7 +140,7 @@ export function messageData(data) {
   return (dispatch) => {
     return dispatch({
       type: FETCH_MESSAGE,
-      payload: data
+      payload: data,
     });
   };
 }
@@ -148,7 +149,7 @@ export function fetchMessage() {
   return function (dispatch) {
     axios
       .get(hostUrl, {
-        headers: { authorization: localStorage.getItem('token') }
+        headers: { authorization: localStorage.getItem('token') },
       })
       .then((response) => {
         dispatch(messageData(response.data.message));

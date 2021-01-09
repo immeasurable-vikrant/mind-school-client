@@ -24,7 +24,6 @@ export const history = createBrowserHistory({
 });
 
 export const LoadingComponent = ({ isLoading, error }) => {
-  console.log('isLoading', isLoading, error);
   // Handle the Loading State
   if (isLoading) {
     return <div>Loading...</div>;
