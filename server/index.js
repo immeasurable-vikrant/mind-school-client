@@ -30,7 +30,7 @@ const app = express();
 mongoose.Promise = require('bluebird');
 
 const MONGODB_URI =
-  'mongodb+srv://vikrantsinghbandral:Sonchiriya%402019@cluster0.gn6ju.mongodb.net/database?retryWrites=true&w=majority';
+  'mongodb+srv://vikrantsinghbandral:Sonchiriya%402019@cluster0.gn6ju.mongodb.net/database?authSource=admin&retryWrites=true&w=majority';
 
 mongoose
   .connect(MONGODB_URI || 'mongodb://localhost:27017/', {
