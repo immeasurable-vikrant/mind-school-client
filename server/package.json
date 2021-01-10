@@ -12,8 +12,7 @@
     "server": "npm run clean && node -r babel-register index.js",
     "db": "INITDB=TRUE npm run server",
     "start": "nodemon index.js --exec babel-node",
-    "test": "mocha --compilers js:babel-register",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "test": "mocha --compilers js:babel-register"
   },
   "author": "",
   "license": "ISC",
