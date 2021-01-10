@@ -1,0 +1,750 @@
+{
+  "no": 7,
+  "total": {
+    "lectures": 113,
+    "time": "17:38:09"
+  },
+  "header": [
+    {
+      "no": 0,
+      "title": "Course Introduction",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Welcome to This Course",
+          "preview": false,
+          "time": "04:06"
+        },
+        {
+          "sub_no": 1,
+          "content": "READ BEFORE YOU START!",
+          "preview": true,
+          "time": "02:11"
+        },
+        {
+          "sub_no": 2,
+          "content": "Get My Best Design and Coding Resources",
+          "preview": false,
+          "time": "00:24"
+        },
+        {
+          "sub_no": 3,
+          "content": "Setting up Our Tools: Brackets and Google Chrome",
+          "preview": false,
+          "time": "04:12"
+        }
+      ],
+      "lectures": 4
+    },
+    {
+      "no": 1,
+      "title": "JavaScript Language Basics",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Section Intro",
+          "preview": true,
+          "time": "00:58"
+        },
+        {
+          "sub_no": 1,
+          "content": "Download the Code",
+          "preview": true,
+          "time": "00:29"
+        },
+        {
+          "sub_no": 2,
+          "content": "Introduction to JavaScript",
+          "preview": false,
+          "time": "04:34"
+        },
+        {
+          "sub_no": 3,
+          "content": "Getting Started with JavaScript",
+          "preview": true,
+          "time": "04:58"
+        },
+        {
+          "sub_no": 4,
+          "content": "Variables and Data Types",
+          "preview": true,
+          "time": "09:02"
+        },
+        {
+          "sub_no": 5,
+          "content": "Variable Mutation and Type Coercion",
+          "preview": true,
+          "time": "15:37"
+        },
+        {
+          "sub_no": 6,
+          "content": "Operators",
+          "preview": true,
+          "time": "14:14"
+        },
+        {
+          "sub_no": 7,
+          "content": "If / else Statements",
+          "preview": true,
+          "time": "09:17"
+        },
+        {
+          "sub_no": 8,
+          "content": "Boolean Logic and Switch Statements",
+          "preview": true,
+          "time": "16:06"
+        },
+        {
+          "sub_no": 9,
+          "content": "Coding Challenge 1",
+          "preview": true,
+          "time": "02:01"
+        },
+        {
+          "sub_no": 10,
+          "content": "Coding Challenge 1: Solution",
+          "preview": true,
+          "time": "14:06"
+        },
+        {
+          "sub_no": 11,
+          "content": "Functions",
+          "preview": true,
+          "time": "15:54"
+        },
+        {
+          "sub_no": 12,
+          "content": "Statements and Expressions",
+          "preview": true,
+          "time": "03:05"
+        },
+        {
+          "sub_no": 13,
+          "content": "Arrays",
+          "preview": true,
+          "time": "11:27"
+        },
+        {
+          "sub_no": 14,
+          "content": "Objects and Properties",
+          "preview": true,
+          "time": "09:24"
+        },
+        {
+          "sub_no": 15,
+          "content": "Objects and Methods",
+          "preview": true,
+          "time": "15:16"
+        },
+        {
+          "sub_no": 16,
+          "content": "Loops and Iteration",
+          "preview": true,
+          "time": "19:27"
+        },
+        {
+          "sub_no": 17,
+          "content": "Coding Challenge 2",
+          "preview": true,
+          "time": "03:13"
+        },
+        {
+          "sub_no": 18,
+          "content": "Coding Challenge 2: Solution",
+          "preview": true,
+          "time": "13:18"
+        },
+        {
+          "sub_no": 19,
+          "content": "Important Note: ES5, ES6 / ES2015 and ES2016",
+          "preview": true,
+          "time": "05:33"
+        }
+      ],
+      "lectures": 20
+    },
+    {
+      "no": 2,
+      "title": "How JavaScript Works Behind the Scenes",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Section Intro",
+          "preview": true,
+          "time": "01:19"
+        },
+        {
+          "sub_no": 1,
+          "content": "Download the Code",
+          "preview": false,
+          "time": "00:30"
+        },
+        {
+          "sub_no": 2,
+          "content": "How Our Code Is Executed: JavaScript Parsers and Engines",
+          "preview": false,
+          "time": "02:51"
+        },
+        {
+          "sub_no": 3,
+          "content": "Execution Contexts and the Execution Stack",
+          "preview": false,
+          "time": "06:04"
+        },
+        {
+          "sub_no": 4,
+          "content": "Execution Contexts in Detail: Creation and Execution Phases and Hoisting",
+          "preview": false,
+          "time": "04:25"
+        },
+        {
+          "sub_no": 5,
+          "content": "Hoisting in Practice",
+          "preview": false,
+          "time": "12:34"
+        },
+        {
+          "sub_no": 6,
+          "content": "Scoping and the Scope Chain",
+          "preview": false,
+          "time": "13:11"
+        },
+        {
+          "sub_no": 7,
+          "content": "The 'this' Keyword",
+          "preview": false,
+          "time": "02:23"
+        },
+        {
+          "sub_no": 8,
+          "content": "The 'this' Keyword in Practice",
+          "preview": false,
+          "time": "11:24"
+        }
+      ],
+      "lectures": 9
+    },
+    {
+      "no": 3,
+      "title": "JavaScript in the Browser: DOM Manipulation and Events",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Section Intro",
+          "preview": false,
+          "time": "00:53"
+        },
+        {
+          "sub_no": 1,
+          "content": "Download the Code",
+          "preview": false,
+          "time": "00:29"
+        },
+        {
+          "sub_no": 2,
+          "content": "The DOM and DOM Manipulation",
+          "preview": false,
+          "time": "02:14"
+        },
+        {
+          "sub_no": 3,
+          "content": "5-Minute HTML and CSS Crash Course",
+          "preview": false,
+          "time": "05:44"
+        },
+        {
+          "sub_no": 4,
+          "content": "Project Setup and Details",
+          "preview": false,
+          "time": "04:39"
+        },
+        {
+          "sub_no": 5,
+          "content": "First DOM Access and Manipulation",
+          "preview": false,
+          "time": "19:56"
+        },
+        {
+          "sub_no": 6,
+          "content": "Events and Event Handling: Rolling the Dice",
+          "preview": false,
+          "time": "17:39"
+        },
+        {
+          "sub_no": 7,
+          "content": "Updating Scores and Changing the Active Player",
+          "preview": false,
+          "time": "14:23"
+        },
+        {
+          "sub_no": 8,
+          "content": "Implementing Our 'Hold' Function and the DRY Principle",
+          "preview": false,
+          "time": "17:28"
+        },
+        {
+          "sub_no": 9,
+          "content": "Creating a Game Initialization Function",
+          "preview": false,
+          "time": "11:28"
+        },
+        {
+          "sub_no": 10,
+          "content": "Finishing Touches: State Variables",
+          "preview": false,
+          "time": "07:48"
+        },
+        {
+          "sub_no": 11,
+          "content": "Coding Challenge 3",
+          "preview": false,
+          "time": "02:34"
+        },
+        {
+          "sub_no": 12,
+          "content": "Coding Challenge 3: Solution, Part 1",
+          "preview": false,
+          "time": "06:31"
+        },
+        {
+          "sub_no": 13,
+          "content": "Coding Challenge 3: Solution, Part 2",
+          "preview": false,
+          "time": "09:05"
+        },
+        {
+          "sub_no": 14,
+          "content": "Coding Challenge 3: Solution, Part 3",
+          "preview": false,
+          "time": "07:11"
+        }
+      ],
+      "lectures": 15
+    },
+    {
+      "no": 4,
+      "title": "Advanced JavaScript: Objects and Functions",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Section Intro",
+          "preview": false,
+          "time": "01:12"
+        },
+        {
+          "sub_no": 1,
+          "content": "Download the Code",
+          "preview": false,
+          "time": "00:29"
+        },
+        {
+          "sub_no": 2,
+          "content": "Everything Is an Object: Inheritance and the Prototype Chain",
+          "preview": false,
+          "time": "10:25"
+        },
+        {
+          "sub_no": 3,
+          "content": "Creating Objects: Function Constructors",
+          "preview": false,
+          "time": "14:26"
+        },
+        {
+          "sub_no": 4,
+          "content": "The Prototype Chain in the Console",
+          "preview": false,
+          "time": "08:44"
+        },
+        {
+          "sub_no": 5,
+          "content": "Creating Objects: Object.create",
+          "preview": false,
+          "time": "06:45"
+        },
+        {
+          "sub_no": 6,
+          "content": "Primitives vs. Objects",
+          "preview": false,
+          "time": "08:43"
+        },
+        {
+          "sub_no": 7,
+          "content": "First Class Functions: Passing Functions as Arguments",
+          "preview": false,
+          "time": "15:13"
+        },
+        {
+          "sub_no": 8,
+          "content": "First Class Functions: Functions Returning Functions",
+          "preview": false,
+          "time": "08:49"
+        },
+        {
+          "sub_no": 9,
+          "content": "Immediately Invoked Function Expressions (IIFE)",
+          "preview": false,
+          "time": "06:46"
+        },
+        {
+          "sub_no": 10,
+          "content": "Closures",
+          "preview": false,
+          "time": "17:24"
+        },
+        {
+          "sub_no": 11,
+          "content": "Bind, Call and Apply",
+          "preview": false,
+          "time": "17:08"
+        },
+        {
+          "sub_no": 12,
+          "content": "Coding Challenge 4",
+          "preview": false,
+          "time": "07:11"
+        },
+        {
+          "sub_no": 13,
+          "content": "Coding Challenge 4: Solution, Part 1",
+          "preview": false,
+          "time": "18:08"
+        },
+        {
+          "sub_no": 14,
+          "content": "Coding Challenge 4: Solution, Part 2",
+          "preview": false,
+          "time": "16:02"
+        }
+      ],
+      "lectures": 15
+    },
+    {
+      "no": 5,
+      "title": "Putting It All Together: The Budget App Project",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Section Intro",
+          "preview": false,
+          "time": "01:20"
+        },
+        {
+          "sub_no": 1,
+          "content": "Download the Code",
+          "preview": false,
+          "time": "00:39"
+        },
+        {
+          "sub_no": 2,
+          "content": "Project Setup and Details",
+          "preview": false,
+          "time": "04:45"
+        },
+        {
+          "sub_no": 3,
+          "content": "Project Planning and Architecture: Step 1",
+          "preview": false,
+          "time": "06:00"
+        },
+        {
+          "sub_no": 4,
+          "content": "Implementing the Module Pattern",
+          "preview": false,
+          "time": "17:38"
+        },
+        {
+          "sub_no": 5,
+          "content": "Setting up the First Event Listeners",
+          "preview": false,
+          "time": "16:07"
+        },
+        {
+          "sub_no": 6,
+          "content": "Reading Input Data",
+          "preview": false,
+          "time": "16:31"
+        },
+        {
+          "sub_no": 7,
+          "content": "Creating an Initialization Function",
+          "preview": false,
+          "time": "05:26"
+        },
+        {
+          "sub_no": 8,
+          "content": "Creating Income and Expense Function Constructors",
+          "preview": false,
+          "time": "09:37"
+        },
+        {
+          "sub_no": 9,
+          "content": "Adding a New Item to Our Budget Controller",
+          "preview": false,
+          "time": "18:25"
+        },
+        {
+          "sub_no": 10,
+          "content": "Adding a New Item to the UI",
+          "preview": false,
+          "time": "19:52"
+        },
+        {
+          "sub_no": 11,
+          "content": "Clearing Our Input Fields",
+          "preview": false,
+          "time": "11:50"
+        },
+        {
+          "sub_no": 12,
+          "content": "Updating the Budget: Controller",
+          "preview": false,
+          "time": "11:18"
+        },
+        {
+          "sub_no": 13,
+          "content": "Updating the Budget: Budget Controller",
+          "preview": false,
+          "time": "21:00"
+        },
+        {
+          "sub_no": 14,
+          "content": "Updating the Budget: UI Controller",
+          "preview": false,
+          "time": "11:55"
+        },
+        {
+          "sub_no": 15,
+          "content": "Project Planning and Architecture: Step 2",
+          "preview": false,
+          "time": "02:41"
+        },
+        {
+          "sub_no": 16,
+          "content": "Event Delegation",
+          "preview": false,
+          "time": "04:01"
+        },
+        {
+          "sub_no": 17,
+          "content": "Setting up the Delete Event Listener Using Event Delegation",
+          "preview": false,
+          "time": "19:34"
+        },
+        {
+          "sub_no": 18,
+          "content": "Deleting an Item from Our Budget Controller",
+          "preview": false,
+          "time": "17:33"
+        },
+        {
+          "sub_no": 19,
+          "content": "Deleting an Item from the UI",
+          "preview": false,
+          "time": "08:08"
+        },
+        {
+          "sub_no": 20,
+          "content": "Project Planning and Architecture: Step 3",
+          "preview": false,
+          "time": "02:03"
+        },
+        {
+          "sub_no": 21,
+          "content": "Updating the Percentages: Controller",
+          "preview": false,
+          "time": "03:56"
+        },
+        {
+          "sub_no": 22,
+          "content": "Updating the Percentages: Budget Controller",
+          "preview": false,
+          "time": "14:42"
+        },
+        {
+          "sub_no": 23,
+          "content": "Updating the Percentages: UI Controller",
+          "preview": false,
+          "time": "12:07"
+        },
+        {
+          "sub_no": 24,
+          "content": "Formatting Our Budget Numbers: String Manipulation",
+          "preview": false,
+          "time": "19:39"
+        },
+        {
+          "sub_no": 25,
+          "content": "Displaying the Current Month and Year",
+          "preview": false,
+          "time": "07:08"
+        },
+        {
+          "sub_no": 26,
+          "content": "Finishing Touches: Improving the UX",
+          "preview": false,
+          "time": "10:39"
+        },
+        {
+          "sub_no": 27,
+          "content": "We’ve Made It! Final Considerations",
+          "preview": false,
+          "time": "01:40"
+        }
+      ],
+      "lectures": 28
+    },
+    {
+      "no": 6,
+      "title": "Get Ready for the Future: ES6 / ES2015",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Section Intro",
+          "preview": false,
+          "time": "01:01"
+        },
+        {
+          "sub_no": 1,
+          "content": "Download the Code",
+          "preview": false,
+          "time": "00:28"
+        },
+        {
+          "sub_no": 2,
+          "content": "What's new in ES6 / ES2015",
+          "preview": false,
+          "time": "05:19"
+        },
+        {
+          "sub_no": 3,
+          "content": "Variable Declarations with let and const",
+          "preview": false,
+          "time": "16:44"
+        },
+        {
+          "sub_no": 4,
+          "content": "Blocks and IIFEs",
+          "preview": false,
+          "time": "03:54"
+        },
+        {
+          "sub_no": 5,
+          "content": "Strings in ES6 / ES2015",
+          "preview": false,
+          "time": "10:21"
+        },
+        {
+          "sub_no": 6,
+          "content": "Arrow Functions: Basics",
+          "preview": false,
+          "time": "08:22"
+        },
+        {
+          "sub_no": 7,
+          "content": "Arrow Functions: Lexical 'this' Keyword",
+          "preview": false,
+          "time": "19:34"
+        },
+        {
+          "sub_no": 8,
+          "content": "Destructuring",
+          "preview": false,
+          "time": "08:04"
+        },
+        {
+          "sub_no": 9,
+          "content": "Arrays in ES6 / ES2015",
+          "preview": false,
+          "time": "17:52"
+        },
+        {
+          "sub_no": 10,
+          "content": "The Spread Operator",
+          "preview": false,
+          "time": "10:12"
+        },
+        {
+          "sub_no": 11,
+          "content": "Rest Parameters",
+          "preview": false,
+          "time": "13:48"
+        },
+        {
+          "sub_no": 12,
+          "content": "Default Parameters",
+          "preview": false,
+          "time": "08:07"
+        },
+        {
+          "sub_no": 13,
+          "content": "Maps",
+          "preview": false,
+          "time": "20:34"
+        },
+        {
+          "sub_no": 14,
+          "content": "Classes",
+          "preview": false,
+          "time": "10:01"
+        },
+        {
+          "sub_no": 15,
+          "content": "Classes with Subclasses",
+          "preview": false,
+          "time": "16:12"
+        },
+        {
+          "sub_no": 16,
+          "content": "Coding Challenge 5",
+          "preview": false,
+          "time": "03:04"
+        },
+        {
+          "sub_no": 17,
+          "content": "Coding Challenge 5: Solution",
+          "preview": false,
+          "time": "31:25"
+        },
+        {
+          "sub_no": 18,
+          "content": "How to use ES2015 / ES6 Today!",
+          "preview": false,
+          "time": "14:37"
+        }
+      ],
+      "lectures": 19
+    },
+    {
+      "no": 7,
+      "title": "Final Course Exam: 30 Questions to Test Your JavaScript Knowledge",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Some Considerations Before You Start",
+          "preview": false,
+          "time": "01:11"
+        }
+      ],
+      "lectures": 1
+    },
+    {
+      "no": 8,
+      "title": "Conclusion",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "30 Questions to Test Your JavaScript Knowledge",
+          "preview": false,
+          "time": "30 questions"
+        },
+        {
+          "sub_no": 1,
+          "content": "Where to Go from Here",
+          "preview": false,
+          "time": "01:55"
+        }
+      ],
+      "lectures": 2
+    }
+  ]
+}

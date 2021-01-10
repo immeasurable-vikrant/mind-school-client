@@ -1,0 +1,762 @@
+{
+  "no": 9,
+  "total": {
+    "lectures": 174,
+    "time": "10:04:57"
+  },
+  "header": [
+    {
+      "no": 0,
+      "title": "Welcome! Course Introduction",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "What Does the Course Cover?",
+          "preview": false,
+          "time": "03:26"
+        },
+        {
+          "sub_no": 1,
+          "content": "Everything We Will Learn Has a Practical Application",
+          "preview": true,
+          "time": "03:27"
+        },
+        {
+          "sub_no": 2,
+          "content": "The Best Way to Take This Course",
+          "preview": true,
+          "time": "02:16"
+        }
+      ],
+      "lectures": 3
+    },
+    {
+      "no": 1,
+      "title": "Microsoft Excel - Quick Introduction",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Microsoft Excel: The World's #1 Software for the Office",
+          "preview": false,
+          "time": "01:00"
+        },
+        {
+          "sub_no": 1,
+          "content": "Excel Made Easy: A Beginner's Guide to Excel Spreadsheets",
+          "preview": false,
+          "time": "03:32"
+        },
+        {
+          "sub_no": 2,
+          "content": "Data Entry Techniques in Excel",
+          "preview": false,
+          "time": "03:00"
+        },
+        {
+          "sub_no": 3,
+          "content": "How to Make Your Spreadsheets Look Professional",
+          "preview": false,
+          "time": "05:49"
+        },
+        {
+          "sub_no": 4,
+          "content": "Data Entry Techniques in Excel",
+          "preview": false,
+          "time": "1 question"
+        },
+        {
+          "sub_no": 5,
+          "content": "Inserting, Deleting, and Modifying Rows &amp; Columns",
+          "preview": false,
+          "time": "01:44"
+        },
+        {
+          "sub_no": 6,
+          "content": "Inserting, Deleting, and Modifying Rows &amp; Columns",
+          "preview": false,
+          "time": "1 question"
+        },
+        {
+          "sub_no": 7,
+          "content": "Excel Formulas for Beginners",
+          "preview": false,
+          "time": "02:54"
+        },
+        {
+          "sub_no": 8,
+          "content": "Excel Formulas for Beginners",
+          "preview": false,
+          "time": "1 question"
+        }
+      ],
+      "lectures": 9
+    },
+    {
+      "no": 2,
+      "title": "Microsoft Excel - Useful Tools",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "A Beginner's Introduction to Excel Functions",
+          "preview": false,
+          "time": "03:41"
+        },
+        {
+          "sub_no": 1,
+          "content": "Work Efficiently by Using Cut, Copy, and Paste",
+          "preview": false,
+          "time": "02:10"
+        },
+        {
+          "sub_no": 2,
+          "content": "Work Efficiently by Using Cut, Copy, and Paste",
+          "preview": false,
+          "time": "1 question"
+        },
+        {
+          "sub_no": 3,
+          "content": "Pasting Values, Formulas and Formats with Paste Special",
+          "preview": false,
+          "time": "01:33"
+        },
+        {
+          "sub_no": 4,
+          "content": "Inserting a Line Break with Alt + Enter",
+          "preview": false,
+          "time": "00:54"
+        },
+        {
+          "sub_no": 5,
+          "content": "Do More with Your Sales Data with Excel's Text to Columns Feature",
+          "preview": false,
+          "time": "01:52"
+        },
+        {
+          "sub_no": 6,
+          "content": "Do More with Your Sales Data with Excel's Text to Columns Feature",
+          "preview": false,
+          "time": "1 question"
+        },
+        {
+          "sub_no": 7,
+          "content": "Create Easily Printable Excel Documents",
+          "preview": false,
+          "time": "01:12"
+        }
+      ],
+      "lectures": 8
+    },
+    {
+      "no": 3,
+      "title": "Microsoft Excel - Best Practices That Will Make a Difference",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "How to Wrap Text in Excel and Adjust a Cell's Size",
+          "preview": false,
+          "time": "00:43"
+        },
+        {
+          "sub_no": 1,
+          "content": "Insert Hyperlinks in Excel Spreadsheets",
+          "preview": false,
+          "time": "01:16"
+        },
+        {
+          "sub_no": 2,
+          "content": "Using Excel's Freeze Panes to Handle Large Datasets",
+          "preview": true,
+          "time": "01:12"
+        },
+        {
+          "sub_no": 3,
+          "content": "Find Excel Functionalities in a Quicker Way - Tell Me What You Want to Do",
+          "preview": false,
+          "time": "00:46"
+        },
+        {
+          "sub_no": 4,
+          "content": "A Quick Introduction to Excel's Pivot Tables",
+          "preview": false,
+          "time": "02:17"
+        },
+        {
+          "sub_no": 5,
+          "content": "Initial Formatting Is Key for Creating Professional - Looking Spreadsheets",
+          "preview": false,
+          "time": "02:05"
+        },
+        {
+          "sub_no": 6,
+          "content": "Macros Are a Great Timesaver! Here's Why.",
+          "preview": false,
+          "time": "03:04"
+        },
+        {
+          "sub_no": 7,
+          "content": "Macros Are a Great Timesaver! Here's Why.",
+          "preview": false,
+          "time": "1 question"
+        },
+        {
+          "sub_no": 8,
+          "content": "The Secret to Faster Scrolling in Excel",
+          "preview": false,
+          "time": "01:36"
+        },
+        {
+          "sub_no": 9,
+          "content": "The Secret to Faster Scrolling in Excel",
+          "preview": false,
+          "time": "1 question"
+        },
+        {
+          "sub_no": 10,
+          "content": "Using Absolute and Relative Cell References",
+          "preview": false,
+          "time": "02:20"
+        }
+      ],
+      "lectures": 11
+    },
+    {
+      "no": 4,
+      "title": "Microsoft Excel - Beginner, Intermediate &amp; Advanced Functions",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Using Absolute and Relative Cell References",
+          "preview": false,
+          "time": "1 question"
+        },
+        {
+          "sub_no": 1,
+          "content": "Find and Select Cells That Meet Specific Conditions",
+          "preview": false,
+          "time": "01:30"
+        },
+        {
+          "sub_no": 2,
+          "content": "Find and Select Cells That Meet Specific Conditions",
+          "preview": false,
+          "time": "1 question"
+        },
+        {
+          "sub_no": 3,
+          "content": "How to Create Dynamic Names in Excel Spreadsheets",
+          "preview": false,
+          "time": "01:27"
+        },
+        {
+          "sub_no": 4,
+          "content": "How to Create Dynamic Names in Excel Spreadsheets",
+          "preview": false,
+          "time": "1 question"
+        },
+        {
+          "sub_no": 5,
+          "content": "Using Named Ranges to Make Formulas More Readable",
+          "preview": false,
+          "time": "01:34"
+        },
+        {
+          "sub_no": 6,
+          "content": "Custom Number Formatting",
+          "preview": false,
+          "time": "01:34"
+        },
+        {
+          "sub_no": 7,
+          "content": "How to Add a Drop-down List in Excel",
+          "preview": false,
+          "time": "01:49"
+        },
+        {
+          "sub_no": 8,
+          "content": "Using Custom-sort to Sort Multiple Columns Within a Table",
+          "preview": false,
+          "time": "01:28"
+        },
+        {
+          "sub_no": 9,
+          "content": "Saving Time in Excel and Doing Everything Faster by Using Excel Shortcuts",
+          "preview": false,
+          "time": "04:15"
+        },
+        {
+          "sub_no": 10,
+          "content": "Quiz Number 1",
+          "preview": false,
+          "time": "5 questions"
+        },
+        {
+          "sub_no": 11,
+          "content": "Key Excel Functions: Sum, Sumif, Sumifs",
+          "preview": false,
+          "time": "04:20"
+        }
+      ],
+      "lectures": 12
+    },
+    {
+      "no": 5,
+      "title": "Microsoft Excel - Practical Exercise \"Build a P&amp;L From Scratch\"",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Key Excel Functions: Count, Counta, Countif, Countifs",
+          "preview": false,
+          "time": "04:06"
+        },
+        {
+          "sub_no": 1,
+          "content": "Key Excel Functions: Average &amp; Averageif",
+          "preview": false,
+          "time": "01:59"
+        },
+        {
+          "sub_no": 2,
+          "content": "Key Excel Functions: Average &amp; Averageif",
+          "preview": false,
+          "time": "1 question"
+        },
+        {
+          "sub_no": 3,
+          "content": "Key Excel Functions: Left, Right, Mid, Upper, Lower, Proper, Concatenate, &amp;",
+          "preview": false,
+          "time": "04:29"
+        },
+        {
+          "sub_no": 4,
+          "content": "Key Excel Functions: Left, Right, Mid, Upper, Lower, Proper, Concatenate, &amp;",
+          "preview": false,
+          "time": "1 question"
+        },
+        {
+          "sub_no": 5,
+          "content": "Find the Highest and the Lowest Values in a Range: Max &amp; Min",
+          "preview": false,
+          "time": "00:52"
+        },
+        {
+          "sub_no": 6,
+          "content": "Use Round in Your Financial Models",
+          "preview": false,
+          "time": "01:01"
+        },
+        {
+          "sub_no": 7,
+          "content": "Excel's Lookup Functions: Vlookup &amp; Hlookup Made Easy",
+          "preview": false,
+          "time": "07:43"
+        },
+        {
+          "sub_no": 8,
+          "content": "Index, Match, and Their Combination - The Perfect Substitute of Vlookup",
+          "preview": false,
+          "time": "07:27"
+        },
+        {
+          "sub_no": 9,
+          "content": "Index, Match, and Their Combination - The Perfect Substitute of Vlookup",
+          "preview": false,
+          "time": "1 question"
+        },
+        {
+          "sub_no": 10,
+          "content": "Using Excel's Iferror Function to Trap Spreadsheet Errors",
+          "preview": false,
+          "time": "01:43"
+        },
+        {
+          "sub_no": 11,
+          "content": "Create Flexible Financial Models with Choose",
+          "preview": false,
+          "time": "02:24"
+        },
+        {
+          "sub_no": 12,
+          "content": "Goal Seek Will Help You Find the Result You Are Looking For",
+          "preview": false,
+          "time": "02:17"
+        }
+      ],
+      "lectures": 13
+    },
+    {
+      "no": 6,
+      "title": "Microsoft Excel - Building Professional Charts in Excel",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Goal Seek Will Help You Find the Result You Are Looking For",
+          "preview": false,
+          "time": "1 question"
+        },
+        {
+          "sub_no": 1,
+          "content": "Perform Sensitivity Analysis with Excel's Data Tables Functionality",
+          "preview": false,
+          "time": "04:10"
+        },
+        {
+          "sub_no": 2,
+          "content": "Perform Sensitivity Analysis with Excel's Data Tables Functionality",
+          "preview": false,
+          "time": "1 question"
+        },
+        {
+          "sub_no": 3,
+          "content": "Quiz Number 2",
+          "preview": false,
+          "time": "5 questions"
+        },
+        {
+          "sub_no": 4,
+          "content": "Understand Your Data Source Before You Start Working on It",
+          "preview": false,
+          "time": "02:42"
+        },
+        {
+          "sub_no": 5,
+          "content": "Ordering the Source Worksheet",
+          "preview": false,
+          "time": "02:03"
+        },
+        {
+          "sub_no": 6,
+          "content": "Create a Code: The Best Way to Organize Your Data and Work Efficiently with It",
+          "preview": false,
+          "time": "01:54"
+        }
+      ],
+      "lectures": 7
+    },
+    {
+      "no": 7,
+      "title": "Microsoft Excel - Working with Pivot Tables in Excel",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Learn How to Create a Database",
+          "preview": false,
+          "time": "02:00"
+        },
+        {
+          "sub_no": 1,
+          "content": "Using Lookup Functions (Vlookup) to Fill the Database Sheet",
+          "preview": false,
+          "time": "05:26"
+        },
+        {
+          "sub_no": 2,
+          "content": "Use Sumif to Complete the Database Sheet",
+          "preview": false,
+          "time": "04:10"
+        },
+        {
+          "sub_no": 3,
+          "content": "Using Index &amp; Match as a Substitute of Vlookup",
+          "preview": false,
+          "time": "04:04"
+        },
+        {
+          "sub_no": 4,
+          "content": "Mapping of the Rows in the Database Sheet",
+          "preview": false,
+          "time": "02:12"
+        },
+        {
+          "sub_no": 5,
+          "content": "Building the Structure of the P&amp;L Sheet",
+          "preview": false,
+          "time": "02:13"
+        },
+        {
+          "sub_no": 6,
+          "content": "A Practical Example of Professional Formatting in Excel",
+          "preview": false,
+          "time": "03:23"
+        },
+        {
+          "sub_no": 7,
+          "content": "Populate the P&amp;L Sheet with Sumif",
+          "preview": false,
+          "time": "05:32"
+        }
+      ],
+      "lectures": 8
+    },
+    {
+      "no": 8,
+      "title": "Pivot Tables &amp; Slicers in Practice - World-Class Financial Reporting Shown Here",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Learn How to Find Mistakes with Countif",
+          "preview": false,
+          "time": "02:24"
+        },
+        {
+          "sub_no": 1,
+          "content": "Calculating Growth Rates in Excel",
+          "preview": false,
+          "time": "03:10"
+        },
+        {
+          "sub_no": 2,
+          "content": "Quiz Number 3",
+          "preview": false,
+          "time": "3 questions"
+        },
+        {
+          "sub_no": 3,
+          "content": "Introduction to Excel Charts",
+          "preview": false,
+          "time": "01:11"
+        },
+        {
+          "sub_no": 4,
+          "content": "Beginner's Guide to Inserting Charts in Excel",
+          "preview": false,
+          "time": "02:10"
+        },
+        {
+          "sub_no": 5,
+          "content": "Modifying Excel Charts - The Easy Way to Do It",
+          "preview": false,
+          "time": "02:29"
+        },
+        {
+          "sub_no": 6,
+          "content": "Make Your Excel Charts Look Sexier - Proven Tips",
+          "preview": false,
+          "time": "03:09"
+        },
+        {
+          "sub_no": 7,
+          "content": "Creating a Bridge Chart in Excel 2016 - As Easy as It Gets",
+          "preview": false,
+          "time": "01:42"
+        },
+        {
+          "sub_no": 8,
+          "content": "New Ways to Visualize Your Data - Treemap Charts",
+          "preview": false,
+          "time": "01:31"
+        },
+        {
+          "sub_no": 9,
+          "content": "How to Represent Trends with Sparklines",
+          "preview": false,
+          "time": "03:52"
+        },
+        {
+          "sub_no": 10,
+          "content": "Pivot Tables - Excel's Dynamic and Interactive Tables",
+          "preview": false,
+          "time": "01:35"
+        }
+      ],
+      "lectures": 11
+    },
+    {
+      "no": 9,
+      "title": "Building a complete 3-statement model",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Creating a Pivot Table: Choosing Row and Column Parameters",
+          "preview": false,
+          "time": "03:47"
+        },
+        {
+          "sub_no": 1,
+          "content": "Design the Layout and Format of Your Pivot Tables",
+          "preview": false,
+          "time": "02:14"
+        },
+        {
+          "sub_no": 2,
+          "content": "Additional Techniques That Will Ease Your Work with Pivot Tables",
+          "preview": false,
+          "time": "04:33"
+        },
+        {
+          "sub_no": 3,
+          "content": "One of the Most Useful Excel Functions - GetPivotData",
+          "preview": false,
+          "time": "03:45"
+        },
+        {
+          "sub_no": 4,
+          "content": "Welcome to the Future - Pivot Table Slicers",
+          "preview": false,
+          "time": "04:20"
+        },
+        {
+          "sub_no": 5,
+          "content": "Introduction to the Course Challenge",
+          "preview": false,
+          "time": "01:04"
+        },
+        {
+          "sub_no": 6,
+          "content": "COURSE CHALLENGE - Part 1",
+          "preview": false,
+          "time": "01:26"
+        },
+        {
+          "sub_no": 7,
+          "content": "Introduction to the Case Study",
+          "preview": false,
+          "time": "02:09"
+        }
+      ],
+      "lectures": 8
+    },
+    {
+      "no": 10,
+      "title": "Let's build a flexible model with multiple scenarios",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Working with an SAP data extraction",
+          "preview": false,
+          "time": "03:23"
+        },
+        {
+          "sub_no": 1,
+          "content": "Preliminary mapping of the data extraction",
+          "preview": false,
+          "time": "02:10"
+        },
+        {
+          "sub_no": 2,
+          "content": "Creating an output structure of the FMCG model",
+          "preview": false,
+          "time": "02:29"
+        },
+        {
+          "sub_no": 3,
+          "content": "Improving the layout and appearance of the FMCG report",
+          "preview": false,
+          "time": "03:59"
+        },
+        {
+          "sub_no": 4,
+          "content": "Inserting formulas and automating calculations",
+          "preview": false,
+          "time": "02:30"
+        }
+      ],
+      "lectures": 5
+    },
+    {
+      "no": 11,
+      "title": "We are almost there! Completing the 3-statement model",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Creating a Master Pivot Table: The main data source for the FMCG report",
+          "preview": false,
+          "time": "01:55"
+        },
+        {
+          "sub_no": 1,
+          "content": "GetPivotData is great! Extracting data from the Master Pivot Table",
+          "preview": false,
+          "time": "05:45"
+        },
+        {
+          "sub_no": 2,
+          "content": "Combining Slicers and GetPivotData: The key to our success",
+          "preview": false,
+          "time": "03:20"
+        },
+        {
+          "sub_no": 3,
+          "content": "Getting fancy with Excel slicers - Good-looking Excel slicers",
+          "preview": false,
+          "time": "03:12"
+        },
+        {
+          "sub_no": 4,
+          "content": "This is how the report can be used in practice by high-level executives",
+          "preview": false,
+          "time": "03:59"
+        }
+      ],
+      "lectures": 5
+    },
+    {
+      "no": 12,
+      "title": "Accounting - Introduction to Accounting &amp; Bookkeeping",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Introduction to the Exercise",
+          "preview": false,
+          "time": "03:15"
+        },
+        {
+          "sub_no": 1,
+          "content": "Let's create a mapping of financials",
+          "preview": false,
+          "time": "02:49"
+        },
+        {
+          "sub_no": 2,
+          "content": "Building an output P&amp;L sheet",
+          "preview": false,
+          "time": "04:07"
+        },
+        {
+          "sub_no": 3,
+          "content": "Filling in the output P&amp;L sheet with historical financials",
+          "preview": false,
+          "time": "02:57"
+        }
+      ],
+      "lectures": 4
+    },
+    {
+      "no": 13,
+      "title": "Accounting - The Three Main Statements in Financial Accounting",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Calculating percentage variances and applying conditional formatting",
+          "preview": false,
+          "time": "03:14"
+        },
+        {
+          "sub_no": 1,
+          "content": "Building an output Balance sheet",
+          "preview": false,
+          "time": "03:54"
+        },
+        {
+          "sub_no": 2,
+          "content": "Using Index, Match, Match to fill in the output Balance sheet",
+          "preview": false,
+          "time": "05:10"
+        }
+      ],
+      "lectures": 3
+    },
+    {
+      "no": 14,
+      "title": "Accounting - Understanding the Big Picture: Why, What, When, and How Much",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Adding the forecast period",
+          "preview": false,
+          "time": "04:05"
+        }
+      ],
+      "lectures": 1
+    }
+  ]
+}

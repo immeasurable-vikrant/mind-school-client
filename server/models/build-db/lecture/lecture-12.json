@@ -1,0 +1,451 @@
+{
+  "no": 12,
+  "total": {
+    "lectures": 62,
+    "time": "05:07:59"
+  },
+  "header": [
+    {
+      "no": 0,
+      "title": "Introduction &amp; setting yourself up for success",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "About us: how this course came to be",
+          "preview": false,
+          "time": "08:12"
+        },
+        {
+          "sub_no": 1,
+          "content": "Downloading the course resources &amp; overview",
+          "preview": true,
+          "time": "03:40"
+        },
+        {
+          "sub_no": 2,
+          "content": "Progressive overload &amp; what to do if you get frustrated",
+          "preview": false,
+          "time": "05:47"
+        },
+        {
+          "sub_no": 3,
+          "content": "Personal Goals &amp; Progress Worksheet",
+          "preview": true,
+          "time": "7 pages"
+        },
+        {
+          "sub_no": 4,
+          "content": "Diagnostic Worksheet #1: Establish a baseline reading speed and retention",
+          "preview": true,
+          "time": "4 pages"
+        }
+      ],
+      "lectures": 5
+    },
+    {
+      "no": 1,
+      "title": "Understanding your memory (so that you can improve it!)",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Are we on the same page and ready to learn together?",
+          "preview": true,
+          "time": "5 questions"
+        },
+        {
+          "sub_no": 1,
+          "content": "Misconceptions Pre-Quiz I",
+          "preview": false,
+          "time": "1 page"
+        },
+        {
+          "sub_no": 2,
+          "content": "Why we need to improve our memory first",
+          "preview": false,
+          "time": "07:47"
+        },
+        {
+          "sub_no": 3,
+          "content": "How we store information: a very brief explanation",
+          "preview": false,
+          "time": "09:37"
+        },
+        {
+          "sub_no": 4,
+          "content": "The Importance of Combining Games with Real World Applicatio",
+          "preview": false,
+          "time": "03:32"
+        },
+        {
+          "sub_no": 5,
+          "content": "Chunking: Navigating the brain’s natural limitations",
+          "preview": false,
+          "time": "03:59"
+        },
+        {
+          "sub_no": 6,
+          "content": "Demonstration: Chunking",
+          "preview": false,
+          "time": "03:42"
+        },
+        {
+          "sub_no": 7,
+          "content": "Chunking Worksheet",
+          "preview": false,
+          "time": "2 pages"
+        }
+      ],
+      "lectures": 8
+    },
+    {
+      "no": 2,
+      "title": "The incredible power of visual memory",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Dual coding &amp; ‘brute force’ learning",
+          "preview": false,
+          "time": "03:12"
+        },
+        {
+          "sub_no": 1,
+          "content": "How much do we understand about our memory?",
+          "preview": false,
+          "time": "5 questions"
+        },
+        {
+          "sub_no": 2,
+          "content": "Misconceptions Pre-Quiz II",
+          "preview": false,
+          "time": "1 page"
+        },
+        {
+          "sub_no": 3,
+          "content": "Why images are the most powerful way to remember &amp; learn",
+          "preview": false,
+          "time": "07:08"
+        }
+      ],
+      "lectures": 4
+    },
+    {
+      "no": 3,
+      "title": "Mental markers: visual memory meets learning",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "When &amp; why creativity training may be necessary",
+          "preview": false,
+          "time": "04:57"
+        },
+        {
+          "sub_no": 1,
+          "content": "What types of images come naturally to you?",
+          "preview": false,
+          "time": "04:03"
+        },
+        {
+          "sub_no": 2,
+          "content": "Do we understand how visual memory works?",
+          "preview": false,
+          "time": "4 questions"
+        },
+        {
+          "sub_no": 3,
+          "content": "How do we apply visual memory to reading?",
+          "preview": false,
+          "time": "06:37"
+        },
+        {
+          "sub_no": 4,
+          "content": "Demonstration: Visualization of words and concepts from text",
+          "preview": false,
+          "time": "09:40"
+        },
+        {
+          "sub_no": 5,
+          "content": "Creating effective markers for better memory",
+          "preview": false,
+          "time": "11:09"
+        },
+        {
+          "sub_no": 6,
+          "content": "Logical &amp; creative markers",
+          "preview": false,
+          "time": "03:04"
+        },
+        {
+          "sub_no": 7,
+          "content": "Trying out your new skills",
+          "preview": false,
+          "time": "02:51"
+        }
+      ],
+      "lectures": 8
+    },
+    {
+      "no": 4,
+      "title": "Systems for creating &amp; maintaining long term memories",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Linking &amp; chunking markers for better retention",
+          "preview": false,
+          "time": "10:44"
+        },
+        {
+          "sub_no": 1,
+          "content": "Demonstration: Putting it all together with random facts",
+          "preview": false,
+          "time": "08:19"
+        },
+        {
+          "sub_no": 2,
+          "content": "Demonstration: Putting it all together with written texts",
+          "preview": false,
+          "time": "14:16"
+        },
+        {
+          "sub_no": 3,
+          "content": "How well do we understand markers?",
+          "preview": false,
+          "time": "6 questions"
+        },
+        {
+          "sub_no": 4,
+          "content": "Misconceptions Pre-Quiz III",
+          "preview": false,
+          "time": "1 page"
+        }
+      ],
+      "lectures": 5
+    },
+    {
+      "no": 5,
+      "title": "Pre-reading and preparation",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Using Spaced Repetition to Help Us Maintain Memories",
+          "preview": false,
+          "time": "04:49"
+        },
+        {
+          "sub_no": 1,
+          "content": "Mind Mapping",
+          "preview": false,
+          "time": "08:27"
+        },
+        {
+          "sub_no": 2,
+          "content": "Memory Palaces",
+          "preview": false,
+          "time": "09:03"
+        },
+        {
+          "sub_no": 3,
+          "content": "Number memorization systems",
+          "preview": false,
+          "time": "07:02"
+        },
+        {
+          "sub_no": 4,
+          "content": "Do you know how to maintain your memories long term?",
+          "preview": false,
+          "time": "5 questions"
+        }
+      ],
+      "lectures": 5
+    },
+    {
+      "no": 6,
+      "title": "Read with your eyes, not with your inner voice",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Misconceptions Pre-Quiz IV",
+          "preview": false,
+          "time": "1 page"
+        },
+        {
+          "sub_no": 1,
+          "content": "Introducing the SQ3R System",
+          "preview": false,
+          "time": "03:19"
+        },
+        {
+          "sub_no": 2,
+          "content": "Pre-read before you read",
+          "preview": false,
+          "time": "03:42"
+        },
+        {
+          "sub_no": 3,
+          "content": "Creating burning interest: Perspectives, prior knowledge, &amp; W/H questions",
+          "preview": false,
+          "time": "05:58"
+        },
+        {
+          "sub_no": 4,
+          "content": "Demonstration: Pre-reading",
+          "preview": false,
+          "time": "06:59"
+        },
+        {
+          "sub_no": 5,
+          "content": "Are we all clear on pre-reading?",
+          "preview": false,
+          "time": "4 questions"
+        },
+        {
+          "sub_no": 6,
+          "content": "How to properly test your comprehension without fooling yourself",
+          "preview": false,
+          "time": "03:57"
+        },
+        {
+          "sub_no": 7,
+          "content": "Diagnostic Worksheet #2: Establish a new reading speed and retention",
+          "preview": false,
+          "time": "4 pages"
+        },
+        {
+          "sub_no": 8,
+          "content": "Misconceptions Pre-Quiz V",
+          "preview": false,
+          "time": "1 page"
+        }
+      ],
+      "lectures": 9
+    },
+    {
+      "no": 7,
+      "title": "Let's speed things up!",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "How most people read: subvocalization",
+          "preview": false,
+          "time": "05:58"
+        },
+        {
+          "sub_no": 1,
+          "content": "Saccades: using your eyes as effectively as possible",
+          "preview": false,
+          "time": "04:07"
+        },
+        {
+          "sub_no": 2,
+          "content": "Improving your eye span: wider saccades",
+          "preview": false,
+          "time": "02:00"
+        },
+        {
+          "sub_no": 3,
+          "content": "Using saccades across various devices and media",
+          "preview": false,
+          "time": "04:29"
+        },
+        {
+          "sub_no": 4,
+          "content": "Final thoughts on saccades",
+          "preview": false,
+          "time": "02:45"
+        },
+        {
+          "sub_no": 5,
+          "content": "Demonstration: Saccades in action",
+          "preview": false,
+          "time": "03:26"
+        },
+        {
+          "sub_no": 6,
+          "content": "Do we understand how speed reading works?",
+          "preview": false,
+          "time": "5 questions"
+        },
+        {
+          "sub_no": 7,
+          "content": "Speed training with a card",
+          "preview": false,
+          "time": "03:27"
+        },
+        {
+          "sub_no": 8,
+          "content": "Progressive Overload Revisited: Training at the speed you wish to read",
+          "preview": false,
+          "time": "08:55"
+        }
+      ],
+      "lectures": 9
+    },
+    {
+      "no": 8,
+      "title": "Good learning habits",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Speed Tip: Tricking your brain into speeding up",
+          "preview": false,
+          "time": "01:48"
+        },
+        {
+          "sub_no": 1,
+          "content": "Managing pauses to create markers while speed reading",
+          "preview": false,
+          "time": "06:17"
+        },
+        {
+          "sub_no": 2,
+          "content": "A Discussion of Marker Density",
+          "preview": false,
+          "time": "05:22"
+        }
+      ],
+      "lectures": 3
+    },
+    {
+      "no": 9,
+      "title": "Applying your new skills to anything and everything",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Demonstration: Creating markers while speed reading",
+          "preview": false,
+          "time": "08:19"
+        },
+        {
+          "sub_no": 1,
+          "content": "Text structure and marker hierarchy",
+          "preview": false,
+          "time": "04:19"
+        },
+        {
+          "sub_no": 2,
+          "content": "Training Going Forward &amp; what to do if you backslide",
+          "preview": false,
+          "time": "05:01"
+        },
+        {
+          "sub_no": 3,
+          "content": "Diagnostic Worksheet #3: Establish an “after” reading speed and retention",
+          "preview": false,
+          "time": "4 pages"
+        },
+        {
+          "sub_no": 4,
+          "content": "Do we fully understand speed reading?",
+          "preview": false,
+          "time": "4 questions"
+        },
+        {
+          "sub_no": 5,
+          "content": "Misconceptions Pre-Quiz VI",
+          "preview": false,
+          "time": "1 page"
+        }
+      ],
+      "lectures": 6
+    }
+  ]
+}

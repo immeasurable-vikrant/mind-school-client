@@ -1,0 +1,1148 @@
+{
+  "no": 5,
+  "total": {
+    "lectures": 272,
+    "time": "32:30:43"
+  },
+  "header": [
+    {
+      "no": 0,
+      "title": "What Does The Course Cover?",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "What does the course cover?",
+          "preview": false,
+          "time": "01:33"
+        },
+        {
+          "sub_no": 1,
+          "content": "How To Get All The Free Stuff",
+          "preview": true,
+          "time": "02:40"
+        },
+        {
+          "sub_no": 2,
+          "content": "Frequently Asked Questions",
+          "preview": true,
+          "time": "01:07"
+        },
+        {
+          "sub_no": 3,
+          "content": "Asking Great Questions &amp; Debugging Your Code",
+          "preview": true,
+          "time": "04:38"
+        }
+      ],
+      "lectures": 4
+    },
+    {
+      "no": 1,
+      "title": "Introduction To Android Studio",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Introduction",
+          "preview": true,
+          "time": "01:10"
+        },
+        {
+          "sub_no": 1,
+          "content": "IMPORTANT: Android Studio Versions",
+          "preview": true,
+          "time": "00:19"
+        },
+        {
+          "sub_no": 2,
+          "content": "Installing Android Studio On MacOS",
+          "preview": false,
+          "time": "01:31"
+        },
+        {
+          "sub_no": 3,
+          "content": "Installing Android Studio On Windows",
+          "preview": true,
+          "time": "02:10"
+        },
+        {
+          "sub_no": 4,
+          "content": "Android Studio Overview",
+          "preview": true,
+          "time": "16:38"
+        },
+        {
+          "sub_no": 5,
+          "content": "Opening Sample Projects",
+          "preview": true,
+          "time": "02:17"
+        },
+        {
+          "sub_no": 6,
+          "content": "Opening Sample Projects (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 7,
+          "content": "Formatting Text",
+          "preview": false,
+          "time": "15:33"
+        },
+        {
+          "sub_no": 8,
+          "content": "Formatting Text (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 9,
+          "content": "Buttons",
+          "preview": false,
+          "time": "17:41"
+        },
+        {
+          "sub_no": 10,
+          "content": "Buttons (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 11,
+          "content": "TextFields",
+          "preview": false,
+          "time": "17:51"
+        },
+        {
+          "sub_no": 12,
+          "content": "TextFields (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 13,
+          "content": "Displaying Messages",
+          "preview": false,
+          "time": "11:46"
+        },
+        {
+          "sub_no": 14,
+          "content": "Displaying Messages (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 15,
+          "content": "Images",
+          "preview": false,
+          "time": "12:45"
+        },
+        {
+          "sub_no": 16,
+          "content": "Images (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 17,
+          "content": "Currency Converter",
+          "preview": false,
+          "time": "15:07"
+        },
+        {
+          "sub_no": 18,
+          "content": "Currency Converter (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        }
+      ],
+      "lectures": 19
+    },
+    {
+      "no": 2,
+      "title": "Java Deep Dive",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Introduction To Android Studio Quiz",
+          "preview": false,
+          "time": "5 questions"
+        },
+        {
+          "sub_no": 1,
+          "content": "Introduction",
+          "preview": false,
+          "time": "01:21"
+        },
+        {
+          "sub_no": 2,
+          "content": "Hello World With Java",
+          "preview": false,
+          "time": "17:24"
+        },
+        {
+          "sub_no": 3,
+          "content": "Hello World With Java (Java files)",
+          "preview": false,
+          "time": "00:05"
+        },
+        {
+          "sub_no": 4,
+          "content": "Variables",
+          "preview": false,
+          "time": "19:07"
+        },
+        {
+          "sub_no": 5,
+          "content": "Variables (Java files)",
+          "preview": false,
+          "time": "00:03"
+        },
+        {
+          "sub_no": 6,
+          "content": "Arrays And Maps",
+          "preview": false,
+          "time": "15:01"
+        },
+        {
+          "sub_no": 7,
+          "content": "Arrays And Maps (Java files)",
+          "preview": false,
+          "time": "00:03"
+        },
+        {
+          "sub_no": 8,
+          "content": "If Statements",
+          "preview": false,
+          "time": "10:44"
+        },
+        {
+          "sub_no": 9,
+          "content": "If Statements (Java Files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 10,
+          "content": "Higher Or Lower",
+          "preview": false,
+          "time": "19:24"
+        },
+        {
+          "sub_no": 11,
+          "content": "Higher Or Lower (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 12,
+          "content": "Loops",
+          "preview": false,
+          "time": "18:36"
+        },
+        {
+          "sub_no": 13,
+          "content": "Loops (Java files)",
+          "preview": false,
+          "time": "00:03"
+        },
+        {
+          "sub_no": 14,
+          "content": "Classes And Objects",
+          "preview": false,
+          "time": "12:38"
+        },
+        {
+          "sub_no": 15,
+          "content": "Classes and Objects (Java files)",
+          "preview": false,
+          "time": "00:03"
+        },
+        {
+          "sub_no": 16,
+          "content": "App Number Shapes",
+          "preview": false,
+          "time": "35:33"
+        },
+        {
+          "sub_no": 17,
+          "content": "App Number Shapes (Java Code and Android Studio files)",
+          "preview": false,
+          "time": "00:10"
+        }
+      ],
+      "lectures": 18
+    },
+    {
+      "no": 3,
+      "title": "Media: Images, Video and Sound",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Java Deep Dive Quiz",
+          "preview": false,
+          "time": "5 questions"
+        },
+        {
+          "sub_no": 1,
+          "content": "CCA Java Level 1",
+          "preview": false,
+          "time": "00:07"
+        },
+        {
+          "sub_no": 2,
+          "content": "Introduction",
+          "preview": false,
+          "time": "01:26"
+        },
+        {
+          "sub_no": 3,
+          "content": "Layout",
+          "preview": false,
+          "time": "08:09"
+        },
+        {
+          "sub_no": 4,
+          "content": "Layout (Android Studio files)",
+          "preview": false,
+          "time": "00:09"
+        },
+        {
+          "sub_no": 5,
+          "content": "Fading Animations",
+          "preview": false,
+          "time": "14:22"
+        },
+        {
+          "sub_no": 6,
+          "content": "Fading Animations (Android Studio files)",
+          "preview": false,
+          "time": "00:08"
+        },
+        {
+          "sub_no": 7,
+          "content": "Other Animations",
+          "preview": false,
+          "time": "13:34"
+        },
+        {
+          "sub_no": 8,
+          "content": "Other Animations (Android Studio files)",
+          "preview": false,
+          "time": "00:08"
+        },
+        {
+          "sub_no": 9,
+          "content": "Game Connect 3",
+          "preview": false,
+          "time": "01:00:07"
+        },
+        {
+          "sub_no": 10,
+          "content": "Game Connect 3 (Android Studio files)",
+          "preview": false,
+          "time": "00:08"
+        },
+        {
+          "sub_no": 11,
+          "content": "Video",
+          "preview": false,
+          "time": "11:05"
+        },
+        {
+          "sub_no": 12,
+          "content": "Video (Android Studio files)",
+          "preview": false,
+          "time": "00:08"
+        },
+        {
+          "sub_no": 13,
+          "content": "Controlling Audio",
+          "preview": false,
+          "time": "13:13"
+        },
+        {
+          "sub_no": 14,
+          "content": "Controlling Audio (Android Studio files)",
+          "preview": false,
+          "time": "00:08"
+        },
+        {
+          "sub_no": 15,
+          "content": "Audio Volume Seeking",
+          "preview": false,
+          "time": "29:15"
+        },
+        {
+          "sub_no": 16,
+          "content": "Audio Volume Seeking (Android Studio files)",
+          "preview": false,
+          "time": "00:08"
+        },
+        {
+          "sub_no": 17,
+          "content": "Grid Layouts",
+          "preview": false,
+          "time": "08:41"
+        },
+        {
+          "sub_no": 18,
+          "content": "Grid Layouts (Android Studio files)",
+          "preview": false,
+          "time": "00:08"
+        }
+      ],
+      "lectures": 19
+    },
+    {
+      "no": 4,
+      "title": "Advanced Android Features",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "App Basic Phrases",
+          "preview": false,
+          "time": "20:01"
+        },
+        {
+          "sub_no": 1,
+          "content": "App Basic Phrases (Android Studio files)",
+          "preview": false,
+          "time": "00:08"
+        },
+        {
+          "sub_no": 2,
+          "content": "Media Quiz",
+          "preview": false,
+          "time": "5 questions"
+        },
+        {
+          "sub_no": 3,
+          "content": "Introduction",
+          "preview": false,
+          "time": "01:00"
+        },
+        {
+          "sub_no": 4,
+          "content": "List Views",
+          "preview": false,
+          "time": "22:14"
+        },
+        {
+          "sub_no": 5,
+          "content": "List Views (Android Studio files)",
+          "preview": false,
+          "time": "00:08"
+        },
+        {
+          "sub_no": 6,
+          "content": "Times Tables Apps",
+          "preview": false,
+          "time": "18:04"
+        },
+        {
+          "sub_no": 7,
+          "content": "Times Tables App (Android Studio Files)",
+          "preview": false,
+          "time": "00:08"
+        },
+        {
+          "sub_no": 8,
+          "content": "Timers In Android",
+          "preview": false,
+          "time": "10:40"
+        },
+        {
+          "sub_no": 9,
+          "content": "Timers In Android (Android Studio files)",
+          "preview": false,
+          "time": "00:08"
+        },
+        {
+          "sub_no": 10,
+          "content": "App: Egg Timer",
+          "preview": false,
+          "time": "38:42"
+        },
+        {
+          "sub_no": 11,
+          "content": "App: Egg Timer (Android Studio files)",
+          "preview": false,
+          "time": "00:08"
+        },
+        {
+          "sub_no": 12,
+          "content": "Showing &amp; Hiding UI Elements",
+          "preview": false,
+          "time": "06:45"
+        },
+        {
+          "sub_no": 13,
+          "content": "Showing &amp; Hiding UI Elements (Android Studio files)",
+          "preview": false,
+          "time": "00:08"
+        },
+        {
+          "sub_no": 14,
+          "content": "App: Brain Trainer",
+          "preview": false,
+          "time": "01:00:02"
+        },
+        {
+          "sub_no": 15,
+          "content": "App: Brain Trainer (Android Studio files)",
+          "preview": false,
+          "time": "00:08"
+        },
+        {
+          "sub_no": 16,
+          "content": "Try And Catch",
+          "preview": false,
+          "time": "08:45"
+        },
+        {
+          "sub_no": 17,
+          "content": "Try And Catch (Java files)",
+          "preview": false,
+          "time": "00:03"
+        },
+        {
+          "sub_no": 18,
+          "content": "Downloading Web Content",
+          "preview": false,
+          "time": "24:52"
+        },
+        {
+          "sub_no": 19,
+          "content": "Downloading Web Content (Android Studio files)",
+          "preview": false,
+          "time": "00:08"
+        },
+        {
+          "sub_no": 20,
+          "content": "Downloading Images",
+          "preview": false,
+          "time": "14:46"
+        },
+        {
+          "sub_no": 21,
+          "content": "Downloading Images (Android Studio files)",
+          "preview": false,
+          "time": "00:08"
+        },
+        {
+          "sub_no": 22,
+          "content": "Advanced String Manipulation",
+          "preview": false,
+          "time": "19:18"
+        },
+        {
+          "sub_no": 23,
+          "content": "Advanced String Manipulation (Java code)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 24,
+          "content": "App Guess The Celebrity",
+          "preview": false,
+          "time": "43:44"
+        },
+        {
+          "sub_no": 25,
+          "content": "App Guess The Celebrity (Android Studio files)",
+          "preview": false,
+          "time": "00:08"
+        },
+        {
+          "sub_no": 26,
+          "content": "Processing JSON Data",
+          "preview": false,
+          "time": "21:51"
+        },
+        {
+          "sub_no": 27,
+          "content": "Processing JSON Data (Android Studio files)",
+          "preview": false,
+          "time": "00:08"
+        },
+        {
+          "sub_no": 28,
+          "content": "App Whats The Weather",
+          "preview": false,
+          "time": "29:18"
+        }
+      ],
+      "lectures": 29
+    },
+    {
+      "no": 5,
+      "title": "Maps &amp; Geolocation",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "App Whats The Weather (Android Studio files)",
+          "preview": false,
+          "time": "00:08"
+        },
+        {
+          "sub_no": 1,
+          "content": "Section Summary",
+          "preview": false,
+          "time": "01:00"
+        },
+        {
+          "sub_no": 2,
+          "content": "Advanced Android Features Quiz",
+          "preview": false,
+          "time": "5 questions"
+        },
+        {
+          "sub_no": 3,
+          "content": "CCA Java Level 2",
+          "preview": false,
+          "time": "00:07"
+        },
+        {
+          "sub_no": 4,
+          "content": "Introduction",
+          "preview": false,
+          "time": "00:53"
+        },
+        {
+          "sub_no": 5,
+          "content": "Using Maps In Your Apps",
+          "preview": false,
+          "time": "09:04"
+        },
+        {
+          "sub_no": 6,
+          "content": "Using Maps In Your Apps (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 7,
+          "content": "Customising Your Maps",
+          "preview": false,
+          "time": "06:33"
+        },
+        {
+          "sub_no": 8,
+          "content": "Customising Your Maps (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 9,
+          "content": "Getting The User's Location",
+          "preview": false,
+          "time": "14:58"
+        },
+        {
+          "sub_no": 10,
+          "content": "Getting The User's Location (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 11,
+          "content": "Showing The Users Location On A Map",
+          "preview": false,
+          "time": "17:03"
+        },
+        {
+          "sub_no": 12,
+          "content": "Showing The Users Location On A Map (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 13,
+          "content": "Getting Information About Locations",
+          "preview": false,
+          "time": "11:58"
+        },
+        {
+          "sub_no": 14,
+          "content": "Getting Information About Locations (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 15,
+          "content": "App: Hiker's Watch",
+          "preview": false,
+          "time": "33:04"
+        },
+        {
+          "sub_no": 16,
+          "content": "App: Hiker's Watch (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        }
+      ],
+      "lectures": 17
+    },
+    {
+      "no": 6,
+      "title": "Permanent Data Storage",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Adding A New Activity",
+          "preview": false,
+          "time": "16:54"
+        },
+        {
+          "sub_no": 1,
+          "content": "Adding A New Activity (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 2,
+          "content": "App: Memorable Places",
+          "preview": false,
+          "time": "48:21"
+        },
+        {
+          "sub_no": 3,
+          "content": "App: Memorable Places (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 4,
+          "content": "Maps &amp; Geolocation Quiz",
+          "preview": false,
+          "time": "5 questions"
+        },
+        {
+          "sub_no": 5,
+          "content": "Introduction",
+          "preview": false,
+          "time": "01:09"
+        },
+        {
+          "sub_no": 6,
+          "content": "Storing Data Permanently",
+          "preview": false,
+          "time": "27:11"
+        },
+        {
+          "sub_no": 7,
+          "content": "Storing Data Permanently (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 8,
+          "content": "Customising The Action Bar",
+          "preview": false,
+          "time": "07:37"
+        },
+        {
+          "sub_no": 9,
+          "content": "Customising The Action Bar (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 10,
+          "content": "Using Alert Dialogs",
+          "preview": false,
+          "time": "19:06"
+        },
+        {
+          "sub_no": 11,
+          "content": "Using Alert Dialogs (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 12,
+          "content": "App: Notes",
+          "preview": false,
+          "time": "34:55"
+        },
+        {
+          "sub_no": 13,
+          "content": "App: Notes (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 14,
+          "content": "SQLite Databases",
+          "preview": false,
+          "time": "22:02"
+        },
+        {
+          "sub_no": 15,
+          "content": "SQLite Databases (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 16,
+          "content": "Advanced SQLite",
+          "preview": false,
+          "time": "15:01"
+        }
+      ],
+      "lectures": 17
+    },
+    {
+      "no": 7,
+      "title": "Instagram Clone",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Advanced SQLite (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 1,
+          "content": "Webviews",
+          "preview": false,
+          "time": "06:48"
+        },
+        {
+          "sub_no": 2,
+          "content": "Webviews (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 3,
+          "content": "App: News Reader",
+          "preview": false,
+          "time": "39:29"
+        },
+        {
+          "sub_no": 4,
+          "content": "App: News Reader (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 5,
+          "content": "Permanent Data Storage Quiz",
+          "preview": false,
+          "time": "5 questions"
+        },
+        {
+          "sub_no": 6,
+          "content": "Introduction",
+          "preview": false,
+          "time": "01:47"
+        },
+        {
+          "sub_no": 7,
+          "content": "Setting Up Parse Server On AWS",
+          "preview": false,
+          "time": "14:29"
+        },
+        {
+          "sub_no": 8,
+          "content": "Setting Up Parse On AWS (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 9,
+          "content": "Advanced Parse Techniques",
+          "preview": false,
+          "time": "17:05"
+        },
+        {
+          "sub_no": 10,
+          "content": "Advanced Parse Techniques (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 11,
+          "content": "Advanced Queries",
+          "preview": false,
+          "time": "11:44"
+        },
+        {
+          "sub_no": 12,
+          "content": "Advanced Queries (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 13,
+          "content": "Parse Users",
+          "preview": false,
+          "time": "07:36"
+        },
+        {
+          "sub_no": 14,
+          "content": "Parse Users (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 15,
+          "content": "Login &amp; Signup",
+          "preview": false,
+          "time": "25:48"
+        },
+        {
+          "sub_no": 16,
+          "content": "Login &amp; Signup (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 17,
+          "content": "Advanced Keyboard Management",
+          "preview": false,
+          "time": "11:08"
+        },
+        {
+          "sub_no": 18,
+          "content": "Advanced Keyboard Management (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        }
+      ],
+      "lectures": 19
+    },
+    {
+      "no": 8,
+      "title": "Uber Clone",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Showing The User List",
+          "preview": false,
+          "time": "11:23"
+        },
+        {
+          "sub_no": 1,
+          "content": "Showing The User List (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 2,
+          "content": "Importing Photos From The Camera",
+          "preview": false,
+          "time": "23:44"
+        },
+        {
+          "sub_no": 3,
+          "content": "Importing Photos From The Camera (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 4,
+          "content": "Viewing Users' Feeds",
+          "preview": false,
+          "time": "20:02"
+        },
+        {
+          "sub_no": 5,
+          "content": "Viewing Users' Feeds (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 6,
+          "content": "Instagram Clone Quiz",
+          "preview": false,
+          "time": "5 questions"
+        },
+        {
+          "sub_no": 7,
+          "content": "Introduction",
+          "preview": false,
+          "time": "01:12"
+        },
+        {
+          "sub_no": 8,
+          "content": "Introducing Uber",
+          "preview": false,
+          "time": "07:39"
+        },
+        {
+          "sub_no": 9,
+          "content": "Introducing Uber (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 10,
+          "content": "Uber Login Page",
+          "preview": false,
+          "time": "16:37"
+        }
+      ],
+      "lectures": 11
+    },
+    {
+      "no": 9,
+      "title": "Flappy Bird Clone",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Uber Login Page (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 1,
+          "content": "The Rider Activity",
+          "preview": false,
+          "time": "32:24"
+        },
+        {
+          "sub_no": 2,
+          "content": "The Rider Activity (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 3,
+          "content": "The Driver Activities",
+          "preview": false,
+          "time": "55:56"
+        },
+        {
+          "sub_no": 4,
+          "content": "The Driver Activities (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 5,
+          "content": "Showing The Driver's Location To The Rider",
+          "preview": false,
+          "time": "30:58"
+        },
+        {
+          "sub_no": 6,
+          "content": "Showing The Driver's Location To The Rider (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 7,
+          "content": "Uber Clone Quiz",
+          "preview": false,
+          "time": "5 questions"
+        },
+        {
+          "sub_no": 8,
+          "content": "Introduction",
+          "preview": false,
+          "time": "00:57"
+        },
+        {
+          "sub_no": 9,
+          "content": "Introducing GDX",
+          "preview": false,
+          "time": "07:40"
+        },
+        {
+          "sub_no": 10,
+          "content": "Introducing GDX (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 11,
+          "content": "Working With Sprites",
+          "preview": false,
+          "time": "14:26"
+        },
+        {
+          "sub_no": 12,
+          "content": "Working With Sprites (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 13,
+          "content": "Interacting With Sprites",
+          "preview": false,
+          "time": "12:52"
+        },
+        {
+          "sub_no": 14,
+          "content": "Interacting With Sprites (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        }
+      ],
+      "lectures": 15
+    },
+    {
+      "no": 10,
+      "title": "The Extras",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Bringing In The Pipes",
+          "preview": false,
+          "time": "23:21"
+        },
+        {
+          "sub_no": 1,
+          "content": "Bringing In The Pipes (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 2,
+          "content": "Collision Detection",
+          "preview": false,
+          "time": "19:21"
+        },
+        {
+          "sub_no": 3,
+          "content": "Collision Detection (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 4,
+          "content": "Scoring",
+          "preview": false,
+          "time": "10:01"
+        },
+        {
+          "sub_no": 5,
+          "content": "Scoring (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 6,
+          "content": "Game Over Screen",
+          "preview": false,
+          "time": "11:08"
+        },
+        {
+          "sub_no": 7,
+          "content": "Game Over Screen (Android Studio files)",
+          "preview": false,
+          "time": "00:04"
+        },
+        {
+          "sub_no": 8,
+          "content": "Flappy Bird Quiz",
+          "preview": false,
+          "time": "5 questions"
+        }
+      ],
+      "lectures": 9
+    }
+  ]
+}

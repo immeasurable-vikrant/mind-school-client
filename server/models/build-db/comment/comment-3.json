@@ -1,0 +1,122 @@
+[
+  {
+    "no": 0,
+    "date": "2017-06-16 04:08:57",
+    "fromNow": "8 days ago",
+    "user": 0,
+    "name": "Sean Vanadia",
+    "rating": 5,
+    "helpful": false,
+    "indent": 0,
+    "origin": "",
+    "content": "This course was great!  I learned so much about Angular in such a short time!  If you are considering learning Angular, take this course for sure.  Amazingly comprehensive, and a very helpful and accessible teacher.  Awesome!"
+  },
+  {
+    "no": 1,
+    "date": "2017-05-31 04:08:57",
+    "fromNow": "24 days ago",
+    "user": 1,
+    "name": "Asaf Einihovich",
+    "rating": 5,
+    "helpful": false,
+    "indent": 0,
+    "origin": "",
+    "content": "if you considering buying this course, you must understand something, not only this course is the best angular and most comprehensive and clear course out there.. you also get the most of learning experience.. this course and generally, any course of Max are the best courses out there."
+  },
+  {
+    "no": 2,
+    "date": "2017-05-24 04:08:57",
+    "fromNow": "a month ago",
+    "user": 2,
+    "name": "Łukasz Bachman",
+    "rating": 4,
+    "helpful": false,
+    "indent": 0,
+    "origin": "",
+    "content": "It's a great introduction to Angular for beginners, but I have doubts if the final application built through the course meets my expectations.  Especially that it heavily relies on Firebase for authentication and handling backend."
+  },
+  {
+    "no": 3,
+    "date": "2017-04-24 04:08:58",
+    "fromNow": "2 months ago",
+    "user": 3,
+    "name": "David Gressett",
+    "rating": 5,
+    "helpful": false,
+    "indent": 0,
+    "origin": "",
+    "content": "His content is almost great, I have a really hard time following him because he shows you how to not code something, then shows you how. I personally learn a lot from my first experience coding something, and would hate to constantly make errors. His examples are great apps that go pretty in depth with angular. He also does some things in coding-wise that bothers me in particular, like same line curly braces for classes and methods, but that's all coding conventions. There's also sometimes where he is doing some coding that I'm trying to follow along with, but when he switches to another file he just says \"now lets switch to the template\" despite not telling you which template to switch to(yes i know we're workin on the same component, but sometimes it gets confusing as an angular beginner) it gets on my nerves, but yet again not that big of a problem, but does slow down the learning process on my end. Edit It's a very good reference of code, so I gave it a 5/5"
+  },
+  {
+    "no": 4,
+    "date": "2017-06-15 04:08:58",
+    "fromNow": "9 days ago",
+    "user": 4,
+    "name": "Raghvendra Singh",
+    "rating": 5,
+    "helpful": false,
+    "indent": 0,
+    "origin": "",
+    "content": "it was even more then what i expected.. in depth knowledge of all the concept of ANGULAR 2..the way it is been explained was simply great..I really love this course.. now i m waiting for your next course.."
+  },
+  {
+    "no": 5,
+    "date": "2017-05-24 04:08:58",
+    "fromNow": "a month ago",
+    "user": 5,
+    "name": "web developer Hari krishnan",
+    "rating": 5,
+    "helpful": false,
+    "indent": 0,
+    "origin": "",
+    "content": "Here is my honest review on the course. Easily, 5 star deserving. The sheer duration of the course, ~22 hours itself is an indication of how in depth the course is and how much the instructor is dedicated in passing across, to the students the best possible content. I have other courses from Max and he make sure almost all aspects are covered in his courses which makes every penny worth of your spent money. I would have liked it more, if there was an intro on FormBuilder, barelling of files, and few of the advanced topics like ngRx or ng2-store as most of the heavy angular 2 apps need state management and ample solid one stop references are not available sadly.  This course will easily be the angular 2 bible if such contents too is included. Awaiting more content and more courses from max! One tip to the other students / people looking to buy:If you want to get the best out of the course, dont recreate the recipe / shopping example max had done as is. Instead, use some css framework, ( bootstrap/ zurb/ bootswatch ), create your own example , say a book store, or a sports-store, take only the concepts and ideas from the course & build the same in parallel.  It took me almost a month to cover 90% of the content in this course, but at the end, i felt confident of getting fully hands on with angular 4 challenges!"
+  },
+  {
+    "no": 6,
+    "date": "2017-03-24 04:08:58",
+    "fromNow": "3 months ago",
+    "user": 6,
+    "name": "Tamas Ledecki",
+    "rating": 5,
+    "helpful": false,
+    "indent": 0,
+    "origin": "",
+    "content": "This course is probably the best that I have ever gone through. I highly recommend it to everyone especially because Max just rerecorded the whole course so that it is truly up to date."
+  },
+  {
+    "no": 7,
+    "date": "2017-01-24 04:08:58",
+    "fromNow": "5 months ago",
+    "user": 7,
+    "name": "Paul Sabini",
+    "rating": 5,
+    "helpful": false,
+    "indent": 0,
+    "origin": "",
+    "content": "Great instructor and course! Very easy to follow along with the material!"
+  },
+  {
+    "no": 8,
+    "date": "2017-04-24 04:08:58",
+    "fromNow": "2 months ago",
+    "user": 8,
+    "name": "Dinesh Venigalla",
+    "rating": 5,
+    "helpful": false,
+    "indent": 0,
+    "origin": "",
+    "content": "I love to learn new & advanced JS topics , I was spent lot of time to find the right place  and finally I got it. These is the right place to learn. The Quality of course is very  good and explanation , teaching is very impressive. The content which was delivered is really satisfactory , which as I expected & need it. Very Informative course."
+  },
+  {
+    "no": 9,
+    "date": "2017-05-24 04:08:58",
+    "fromNow": "a month ago",
+    "user": 9,
+    "name": "Tim Kemper",
+    "rating": 5,
+    "helpful": false,
+    "indent": 0,
+    "origin": "",
+    "content": "Max has built a fantastic course that is organized and comprehensive.  He is an excellent teacher who makes it easy and fun to learn a non-trivial body of knowledge.  The fact that he re-recorded the videos, making them even better, immediately following the release of angular 4 shows he is a true professional who takes great pride in his tremendous course."
+  }
+]

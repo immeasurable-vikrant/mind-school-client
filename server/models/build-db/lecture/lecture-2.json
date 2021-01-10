@@ -1,0 +1,793 @@
+{
+  "no": 2,
+  "total": {
+    "lectures": 339,
+    "time": "42:56:53"
+  },
+  "header": [
+    {
+      "no": 0,
+      "title": "Introduction to this Course",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "A Note On Asking For Help",
+          "preview": false,
+          "time": "01:39"
+        },
+        {
+          "sub_no": 1,
+          "content": "Introducing Our TA",
+          "preview": false,
+          "time": "01:43"
+        },
+        {
+          "sub_no": 2,
+          "content": "Our Class Chat Room",
+          "preview": false,
+          "time": "00:34"
+        },
+        {
+          "sub_no": 3,
+          "content": "Why This Course?",
+          "preview": false,
+          "time": "07:48"
+        },
+        {
+          "sub_no": 4,
+          "content": "Syllabus Download",
+          "preview": true,
+          "time": "2 pages"
+        },
+        {
+          "sub_no": 5,
+          "content": "Syllabus Walkthrough",
+          "preview": true,
+          "time": "09:40"
+        },
+        {
+          "sub_no": 6,
+          "content": "Lecture Slides",
+          "preview": true,
+          "time": "00:03"
+        }
+      ],
+      "lectures": 7
+    },
+    {
+      "no": 1,
+      "title": "Introduction to Front End Development",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Unit Objectives",
+          "preview": false,
+          "time": "01:40"
+        },
+        {
+          "sub_no": 1,
+          "content": "Setting Up Front-End Developer Environment",
+          "preview": true,
+          "time": "03:11"
+        },
+        {
+          "sub_no": 2,
+          "content": "Introduction to the Web",
+          "preview": false,
+          "time": "10:08"
+        },
+        {
+          "sub_no": 3,
+          "content": "The Front End Holy Trinity",
+          "preview": false,
+          "time": "11:46"
+        }
+      ],
+      "lectures": 4
+    },
+    {
+      "no": 2,
+      "title": "Introduction to HTML",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Unit Objectives",
+          "preview": true,
+          "time": "01:38"
+        },
+        {
+          "sub_no": 1,
+          "content": "HTML Basics",
+          "preview": false,
+          "time": "05:53"
+        },
+        {
+          "sub_no": 2,
+          "content": "Introduction to MDN",
+          "preview": false,
+          "time": "01:52"
+        },
+        {
+          "sub_no": 3,
+          "content": "HTML Boilerplate and Comments",
+          "preview": false,
+          "time": "09:42"
+        },
+        {
+          "sub_no": 4,
+          "content": "Basic Tags",
+          "preview": false,
+          "time": "08:28"
+        },
+        {
+          "sub_no": 5,
+          "content": "HTML Lists",
+          "preview": false,
+          "time": "04:32"
+        },
+        {
+          "sub_no": 6,
+          "content": "HTML Lists Assignment",
+          "preview": false,
+          "time": "01:23"
+        },
+        {
+          "sub_no": 7,
+          "content": "HTML Lists Assignment: SOLUTION",
+          "preview": false,
+          "time": "05:59"
+        },
+        {
+          "sub_no": 8,
+          "content": "Divs and Spans",
+          "preview": false,
+          "time": "05:13"
+        },
+        {
+          "sub_no": 9,
+          "content": "HTML Attributes",
+          "preview": false,
+          "time": "09:00"
+        },
+        {
+          "sub_no": 10,
+          "content": "Recreate Webpage Assignment",
+          "preview": false,
+          "time": "01:00"
+        },
+        {
+          "sub_no": 11,
+          "content": "Recreate Webpage Assignment: SOLUTION",
+          "preview": false,
+          "time": "03:56"
+        }
+      ],
+      "lectures": 12
+    },
+    {
+      "no": 3,
+      "title": "Intermediate HTML",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Unit Objectives",
+          "preview": false,
+          "time": "01:19"
+        },
+        {
+          "sub_no": 1,
+          "content": "HTML Tables",
+          "preview": false,
+          "time": "06:03"
+        },
+        {
+          "sub_no": 2,
+          "content": "Tables Pokemon Exercise",
+          "preview": false,
+          "time": "01:18"
+        },
+        {
+          "sub_no": 3,
+          "content": "Tables Pokemon Exercise: SOLUTION",
+          "preview": false,
+          "time": "07:39"
+        },
+        {
+          "sub_no": 4,
+          "content": "Introduction to Forms",
+          "preview": false,
+          "time": "06:18"
+        },
+        {
+          "sub_no": 5,
+          "content": "Playing with Inputs",
+          "preview": false,
+          "time": "03:04"
+        },
+        {
+          "sub_no": 6,
+          "content": "The Form Tag",
+          "preview": false,
+          "time": "06:36"
+        },
+        {
+          "sub_no": 7,
+          "content": "Labels",
+          "preview": false,
+          "time": "03:37"
+        },
+        {
+          "sub_no": 8,
+          "content": "Form Validations",
+          "preview": false,
+          "time": "03:45"
+        },
+        {
+          "sub_no": 9,
+          "content": "Dropdowns and Radio Buttons",
+          "preview": false,
+          "time": "11:40"
+        },
+        {
+          "sub_no": 10,
+          "content": "Form Exercise",
+          "preview": false,
+          "time": "03:40"
+        },
+        {
+          "sub_no": 11,
+          "content": "Note about the Form Exercise solution",
+          "preview": false,
+          "time": "00:21"
+        },
+        {
+          "sub_no": 12,
+          "content": "Form Exercise: SOLUTION",
+          "preview": false,
+          "time": "17:00"
+        }
+      ],
+      "lectures": 13
+    },
+    {
+      "no": 4,
+      "title": "Introduction to CSS",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Unit Objectives",
+          "preview": false,
+          "time": "02:07"
+        },
+        {
+          "sub_no": 1,
+          "content": "CSS Basics",
+          "preview": false,
+          "time": "05:28"
+        },
+        {
+          "sub_no": 2,
+          "content": "Our First Stylesheet",
+          "preview": false,
+          "time": "10:24"
+        },
+        {
+          "sub_no": 3,
+          "content": "CSS Colors",
+          "preview": false,
+          "time": "14:55"
+        },
+        {
+          "sub_no": 4,
+          "content": "Background and Border",
+          "preview": false,
+          "time": "06:59"
+        },
+        {
+          "sub_no": 5,
+          "content": "Selectors Basics Todo List",
+          "preview": false,
+          "time": "10:55"
+        },
+        {
+          "sub_no": 6,
+          "content": "Introduction to Chrome Inspector",
+          "preview": false,
+          "time": "05:43"
+        },
+        {
+          "sub_no": 7,
+          "content": "More Advanced Selectors",
+          "preview": false,
+          "time": "09:51"
+        },
+        {
+          "sub_no": 8,
+          "content": "Specificity and the Cascade",
+          "preview": false,
+          "time": "10:38"
+        },
+        {
+          "sub_no": 9,
+          "content": "Note about Selectors Practice Exercise",
+          "preview": false,
+          "time": "00:22"
+        },
+        {
+          "sub_no": 10,
+          "content": "Selectors Practice Exercise",
+          "preview": false,
+          "time": "04:58"
+        },
+        {
+          "sub_no": 11,
+          "content": "Selectors Practice Exercise: SOLUTION",
+          "preview": false,
+          "time": "16:51"
+        }
+      ],
+      "lectures": 12
+    },
+    {
+      "no": 5,
+      "title": "Intermediate CSS",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Unit Objectives",
+          "preview": false,
+          "time": "01:41"
+        },
+        {
+          "sub_no": 1,
+          "content": "Text and Fonts",
+          "preview": false,
+          "time": "09:54"
+        },
+        {
+          "sub_no": 2,
+          "content": "More Text and Fonts",
+          "preview": false,
+          "time": "04:42"
+        },
+        {
+          "sub_no": 3,
+          "content": "Note about Google Fonts",
+          "preview": false,
+          "time": "00:41"
+        },
+        {
+          "sub_no": 4,
+          "content": "Using Google Fonts",
+          "preview": false,
+          "time": "05:15"
+        },
+        {
+          "sub_no": 5,
+          "content": "Introduction to the Box Model",
+          "preview": false,
+          "time": "11:40"
+        },
+        {
+          "sub_no": 6,
+          "content": "Creating a Tic Tac Toe Board",
+          "preview": false,
+          "time": "01:11"
+        },
+        {
+          "sub_no": 7,
+          "content": "Creating a Tic Tac Toe Board: SOLUTION",
+          "preview": false,
+          "time": "07:43"
+        },
+        {
+          "sub_no": 8,
+          "content": "Note about Image Gallery Code Along Pt. 1",
+          "preview": false,
+          "time": "00:15"
+        },
+        {
+          "sub_no": 9,
+          "content": "Image Gallery Code Along Pt. 1",
+          "preview": false,
+          "time": "08:40"
+        },
+        {
+          "sub_no": 10,
+          "content": "Note about changes to Google Fonts",
+          "preview": false,
+          "time": "00:40"
+        },
+        {
+          "sub_no": 11,
+          "content": "Image Gallery Code Along Pt. 2",
+          "preview": false,
+          "time": "05:56"
+        },
+        {
+          "sub_no": 12,
+          "content": "CSS Blog From Scratch Exercise Intro",
+          "preview": false,
+          "time": "03:24"
+        },
+        {
+          "sub_no": 13,
+          "content": "CSS Blog From Scratch Exercise SOLUTION Pt. 1",
+          "preview": true,
+          "time": "08:34"
+        },
+        {
+          "sub_no": 14,
+          "content": "CSS Blog From Scratch Exercise SOLUTION Pt. 2",
+          "preview": false,
+          "time": "08:11"
+        },
+        {
+          "sub_no": 15,
+          "content": "CSS Blog From Scratch Exercise SOLUTION Pt. 3",
+          "preview": false,
+          "time": "07:31"
+        }
+      ],
+      "lectures": 16
+    },
+    {
+      "no": 6,
+      "title": "Bootstrap",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Unit Objectives",
+          "preview": false,
+          "time": "02:18"
+        },
+        {
+          "sub_no": 1,
+          "content": "What is Bootstrap?",
+          "preview": false,
+          "time": "08:01"
+        },
+        {
+          "sub_no": 2,
+          "content": "Note about Bootstrap versions",
+          "preview": false,
+          "time": "00:22"
+        },
+        {
+          "sub_no": 3,
+          "content": "Adding Bootstrap to a Project",
+          "preview": false,
+          "time": "09:13"
+        },
+        {
+          "sub_no": 4,
+          "content": "Forms and Inputs",
+          "preview": false,
+          "time": "14:00"
+        },
+        {
+          "sub_no": 5,
+          "content": "Nav Bars",
+          "preview": false,
+          "time": "15:44"
+        },
+        {
+          "sub_no": 6,
+          "content": "The Grid System",
+          "preview": false,
+          "time": "08:52"
+        },
+        {
+          "sub_no": 7,
+          "content": "Grid System Pt. 2",
+          "preview": false,
+          "time": "11:48"
+        },
+        {
+          "sub_no": 8,
+          "content": "Note about finding image source url from unsplash.com",
+          "preview": false,
+          "time": "00:29"
+        },
+        {
+          "sub_no": 9,
+          "content": "Bootstrap Image Gallery Pt. 1",
+          "preview": false,
+          "time": "14:11"
+        },
+        {
+          "sub_no": 10,
+          "content": "Note about Font-awesome",
+          "preview": false,
+          "time": "00:11"
+        },
+        {
+          "sub_no": 11,
+          "content": "Bootstrap Image Gallery Pt. 2",
+          "preview": false,
+          "time": "09:17"
+        },
+        {
+          "sub_no": 12,
+          "content": "Note about bootstrap thumbnails",
+          "preview": false,
+          "time": "00:26"
+        },
+        {
+          "sub_no": 13,
+          "content": "Creating a Startup Landing Page Code Along",
+          "preview": false,
+          "time": "13:48"
+        },
+        {
+          "sub_no": 14,
+          "content": "Creating a Startup Landing Page Code Along Pt. 2",
+          "preview": false,
+          "time": "10:29"
+        },
+        {
+          "sub_no": 15,
+          "content": "Note about making bootstrap responsive on mobile devices",
+          "preview": false,
+          "time": "00:08"
+        }
+      ],
+      "lectures": 16
+    },
+    {
+      "no": 7,
+      "title": "Introduction to JavaScript",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Unit Objectives",
+          "preview": false,
+          "time": "04:41"
+        },
+        {
+          "sub_no": 1,
+          "content": "The JavaScript Console",
+          "preview": false,
+          "time": "03:22"
+        },
+        {
+          "sub_no": 2,
+          "content": "Primitives",
+          "preview": false,
+          "time": "13:14"
+        },
+        {
+          "sub_no": 3,
+          "content": "Primitives Exercises",
+          "preview": false,
+          "time": "03:21"
+        },
+        {
+          "sub_no": 4,
+          "content": "Variables",
+          "preview": false,
+          "time": "06:25"
+        },
+        {
+          "sub_no": 5,
+          "content": "Null and Undefined",
+          "preview": false,
+          "time": "02:33"
+        },
+        {
+          "sub_no": 6,
+          "content": "Useful Built-In Methods",
+          "preview": false,
+          "time": "05:12"
+        },
+        {
+          "sub_no": 7,
+          "content": "Writing JavaScript in a Separate File",
+          "preview": false,
+          "time": "05:44"
+        },
+        {
+          "sub_no": 8,
+          "content": "JS Stalker Exercise",
+          "preview": false,
+          "time": "01:51"
+        },
+        {
+          "sub_no": 9,
+          "content": "JS Stalker Exercise: SOLUTION",
+          "preview": false,
+          "time": "04:47"
+        },
+        {
+          "sub_no": 10,
+          "content": "Age Calculator Exercise",
+          "preview": false,
+          "time": "01:10"
+        },
+        {
+          "sub_no": 11,
+          "content": "Age Calculator Exercise: SOLUTION",
+          "preview": false,
+          "time": "04:01"
+        }
+      ],
+      "lectures": 12
+    },
+    {
+      "no": 8,
+      "title": "Javascript Basics: Control Flow",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Unit Objectives",
+          "preview": false,
+          "time": "03:05"
+        },
+        {
+          "sub_no": 1,
+          "content": "Boolean Logic",
+          "preview": false,
+          "time": "05:13"
+        },
+        {
+          "sub_no": 2,
+          "content": "Logical Operators",
+          "preview": false,
+          "time": "10:15"
+        },
+        {
+          "sub_no": 3,
+          "content": "Conditionals",
+          "preview": false,
+          "time": "08:14"
+        },
+        {
+          "sub_no": 4,
+          "content": "Conditionals Exercise SOLUTION",
+          "preview": false,
+          "time": "00:23"
+        },
+        {
+          "sub_no": 5,
+          "content": "Guessing Game Code Along",
+          "preview": false,
+          "time": "10:10"
+        },
+        {
+          "sub_no": 6,
+          "content": "Note about Introduction to  Loops lecture",
+          "preview": false,
+          "time": "00:08"
+        },
+        {
+          "sub_no": 7,
+          "content": "Introduction to Loops",
+          "preview": false,
+          "time": "09:26"
+        },
+        {
+          "sub_no": 8,
+          "content": "3 While Loop Exercises",
+          "preview": false,
+          "time": "03:25"
+        },
+        {
+          "sub_no": 9,
+          "content": "While Loops Problem Set",
+          "preview": false,
+          "time": "01:26"
+        },
+        {
+          "sub_no": 10,
+          "content": "While Loops Problem Set: SOLUTION",
+          "preview": false,
+          "time": "07:27"
+        },
+        {
+          "sub_no": 11,
+          "content": "Annoy-O-Matic Code Along",
+          "preview": false,
+          "time": "07:14"
+        },
+        {
+          "sub_no": 12,
+          "content": "Note about Intro to For Loops lecture",
+          "preview": false,
+          "time": "00:12"
+        },
+        {
+          "sub_no": 13,
+          "content": "Intro to For Loops",
+          "preview": false,
+          "time": "04:30"
+        },
+        {
+          "sub_no": 14,
+          "content": "For Loops Quick Exercises",
+          "preview": false,
+          "time": "02:18"
+        },
+        {
+          "sub_no": 15,
+          "content": "Loops Problem Set",
+          "preview": false,
+          "time": "01:05"
+        },
+        {
+          "sub_no": 16,
+          "content": "Loops Problem Set: SOLUTION",
+          "preview": false,
+          "time": "06:26"
+        }
+      ],
+      "lectures": 17
+    },
+    {
+      "no": 9,
+      "title": "Javascript Basics: Functions",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Unit Objectives",
+          "preview": false,
+          "time": "02:01"
+        },
+        {
+          "sub_no": 1,
+          "content": "Introduction to Functions",
+          "preview": false,
+          "time": "05:46"
+        },
+        {
+          "sub_no": 2,
+          "content": "Arguments",
+          "preview": false,
+          "time": "08:36"
+        },
+        {
+          "sub_no": 3,
+          "content": "The Return Keyword",
+          "preview": false,
+          "time": "09:11"
+        },
+        {
+          "sub_no": 4,
+          "content": "Functions Quiz",
+          "preview": false,
+          "time": "01:53"
+        },
+        {
+          "sub_no": 5,
+          "content": "Functions Problem Set",
+          "preview": false,
+          "time": "03:17"
+        },
+        {
+          "sub_no": 6,
+          "content": "Functions Problem Set: SOLUTION",
+          "preview": false,
+          "time": "14:31"
+        },
+        {
+          "sub_no": 7,
+          "content": "Scope Code Along",
+          "preview": false,
+          "time": "06:13"
+        },
+        {
+          "sub_no": 8,
+          "content": "Scope Quiz",
+          "preview": false,
+          "time": "02:35"
+        },
+        {
+          "sub_no": 9,
+          "content": "Higher Order Functions Code Along",
+          "preview": false,
+          "time": "05:45"
+        }
+      ],
+      "lectures": 10
+    }
+  ]
+}

@@ -1,0 +1,469 @@
+{
+  "no": 11,
+  "total": {
+    "lectures": 137,
+    "time": "12:47:43"
+  },
+  "header": [
+    {
+      "no": 0,
+      "title": "Introduction",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Course Introduction &amp; Overview",
+          "preview": false,
+          "time": "03:15"
+        },
+        {
+          "sub_no": 1,
+          "content": "Teaser - Hacking a Windows 10 Computer &amp; Accessing Their Webcam",
+          "preview": true,
+          "time": "06:10"
+        },
+        {
+          "sub_no": 2,
+          "content": "What Is Hacking &amp; Why Learn It ?",
+          "preview": true,
+          "time": "03:09"
+        }
+      ],
+      "lectures": 3
+    },
+    {
+      "no": 1,
+      "title": "Setting up The Lab",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Lab Overview &amp; Needed Software",
+          "preview": true,
+          "time": "03:25"
+        },
+        {
+          "sub_no": 1,
+          "content": "Kali Linux - Option 1 - Installing Kali As a Virtual Machine",
+          "preview": true,
+          "time": "08:15"
+        },
+        {
+          "sub_no": 2,
+          "content": "Kali Linux - Option 2 - Installing Kali Using the ISO Image",
+          "preview": true,
+          "time": "10:01"
+        },
+        {
+          "sub_no": 3,
+          "content": "Installing Metasploitable As a Virtual Machine",
+          "preview": false,
+          "time": "04:13"
+        },
+        {
+          "sub_no": 4,
+          "content": "Installing Windows As a Virtual Machine",
+          "preview": false,
+          "time": "03:21"
+        },
+        {
+          "sub_no": 5,
+          "content": "Creating &amp; Using Snapshots",
+          "preview": false,
+          "time": "06:08"
+        }
+      ],
+      "lectures": 6
+    },
+    {
+      "no": 2,
+      "title": "Linux Basics",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Basic Overview of Kali Linux",
+          "preview": true,
+          "time": "07:05"
+        },
+        {
+          "sub_no": 1,
+          "content": "The Terminal &amp; Linux Commands",
+          "preview": false,
+          "time": "09:06"
+        },
+        {
+          "sub_no": 2,
+          "content": "Updating Sources &amp; Installing Programs",
+          "preview": false,
+          "time": "04:42"
+        }
+      ],
+      "lectures": 3
+    },
+    {
+      "no": 3,
+      "title": "Network Penetration Testsing",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Network Penetration Testing Introduction",
+          "preview": false,
+          "time": "02:42"
+        },
+        {
+          "sub_no": 1,
+          "content": "Networks Basics",
+          "preview": true,
+          "time": "03:09"
+        },
+        {
+          "sub_no": 2,
+          "content": "What is MAC Address &amp; How To Change It",
+          "preview": false,
+          "time": "04:44"
+        },
+        {
+          "sub_no": 3,
+          "content": "Wireless Modes (Managed &amp; Monitor)",
+          "preview": false,
+          "time": "05:02"
+        },
+        {
+          "sub_no": 4,
+          "content": "Enabling Monitor Mode Manually (2nd method)",
+          "preview": false,
+          "time": "02:36"
+        },
+        {
+          "sub_no": 5,
+          "content": "Enabling Monitor Mode Using airmon-ng (3rd method)",
+          "preview": false,
+          "time": "03:16"
+        }
+      ],
+      "lectures": 6
+    },
+    {
+      "no": 4,
+      "title": "Network Penetration Testing - Pre Connection Attacks",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Packet Sniffing Basics Using Airodump-ng",
+          "preview": false,
+          "time": "05:40"
+        },
+        {
+          "sub_no": 1,
+          "content": "Targeted Packet Sniffing Using Airodump-ng",
+          "preview": false,
+          "time": "07:27"
+        },
+        {
+          "sub_no": 2,
+          "content": "Deauthentication Attack (Disconnecting Any Device From The Network)",
+          "preview": false,
+          "time": "05:16"
+        },
+        {
+          "sub_no": 3,
+          "content": "Creating a Fake Access Point (Honeypot) - Theory",
+          "preview": false,
+          "time": "03:44"
+        },
+        {
+          "sub_no": 4,
+          "content": "Creating a Fake Access Point (Honeypot) - Practical",
+          "preview": false,
+          "time": "09:50"
+        }
+      ],
+      "lectures": 5
+    },
+    {
+      "no": 5,
+      "title": "Network Penetration Testing - Gaining Access (WEP/WPA/WPA2 Cracking)",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Gaining Access Introduction",
+          "preview": false,
+          "time": "01:16"
+        },
+        {
+          "sub_no": 1,
+          "content": "WEP Cracking - Theory Behind Cracking WEP Encryption",
+          "preview": false,
+          "time": "03:26"
+        },
+        {
+          "sub_no": 2,
+          "content": "WEP Cracking - Basic Case",
+          "preview": false,
+          "time": "06:27"
+        },
+        {
+          "sub_no": 3,
+          "content": "WEP Cracking - Fake Authentication",
+          "preview": false,
+          "time": "05:59"
+        },
+        {
+          "sub_no": 4,
+          "content": "WEP Cracking - ARP Request Replay Attack",
+          "preview": false,
+          "time": "04:44"
+        },
+        {
+          "sub_no": 5,
+          "content": "WPA Cracking - Introduction",
+          "preview": false,
+          "time": "02:03"
+        },
+        {
+          "sub_no": 6,
+          "content": "WPA Cracking - Exploiting WPS Feature",
+          "preview": false,
+          "time": "07:17"
+        },
+        {
+          "sub_no": 7,
+          "content": "WPA Cracking - Theory Behind WPA/WPA2 Cracking",
+          "preview": false,
+          "time": "02:18"
+        },
+        {
+          "sub_no": 8,
+          "content": "WPA Cracking - How To Capture The Handshake",
+          "preview": false,
+          "time": "04:43"
+        },
+        {
+          "sub_no": 9,
+          "content": "WPA Cracking - Creating a Wordlist",
+          "preview": false,
+          "time": "06:08"
+        },
+        {
+          "sub_no": 10,
+          "content": "WPA Cracking - Using a Wordlist Attack",
+          "preview": false,
+          "time": "02:49"
+        },
+        {
+          "sub_no": 11,
+          "content": "Securing Your Network From The Above Attacks",
+          "preview": false,
+          "time": "02:03"
+        },
+        {
+          "sub_no": 12,
+          "content": "How to Configure Wireless Security Settings To Secure Your Network",
+          "preview": false,
+          "time": "06:25"
+        }
+      ],
+      "lectures": 13
+    },
+    {
+      "no": 6,
+      "title": "Network Penetration Testing - Post Connection Attacks",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Introduction",
+          "preview": false,
+          "time": "02:43"
+        },
+        {
+          "sub_no": 1,
+          "content": "Information Gathering - Discovering Connected Clients using netdiscover",
+          "preview": true,
+          "time": "03:31"
+        },
+        {
+          "sub_no": 2,
+          "content": "Gathering More Information Using Autoscan",
+          "preview": false,
+          "time": "08:42"
+        },
+        {
+          "sub_no": 3,
+          "content": "Gathering Even More Information Using Zenmap",
+          "preview": false,
+          "time": "11:15"
+        },
+        {
+          "sub_no": 4,
+          "content": "MITM - ARP Poisonning Theory",
+          "preview": false,
+          "time": "05:51"
+        },
+        {
+          "sub_no": 5,
+          "content": "MITM - ARP Spoofing using arpspoof",
+          "preview": false,
+          "time": "05:51"
+        },
+        {
+          "sub_no": 6,
+          "content": "MITM - ARP Spoofing Using MITMf",
+          "preview": false,
+          "time": "05:21"
+        },
+        {
+          "sub_no": 7,
+          "content": "MITM - Bypassing HTTPS",
+          "preview": false,
+          "time": "04:40"
+        },
+        {
+          "sub_no": 8,
+          "content": "MITM - Session Hijacking",
+          "preview": true,
+          "time": "06:34"
+        },
+        {
+          "sub_no": 9,
+          "content": "MITM - DNS Spoofing",
+          "preview": false,
+          "time": "05:10"
+        },
+        {
+          "sub_no": 10,
+          "content": "MITM - Capturing Screen Of Target &amp; Injecting a Keylogger",
+          "preview": false,
+          "time": "05:12"
+        },
+        {
+          "sub_no": 11,
+          "content": "MITM - Injecting Javascript/HTML Code",
+          "preview": false,
+          "time": "06:43"
+        },
+        {
+          "sub_no": 12,
+          "content": "MITM - Using MITMf Against Real Networks",
+          "preview": false,
+          "time": "09:08"
+        },
+        {
+          "sub_no": 13,
+          "content": "Wireshark - Basic Overview &amp; How To Use It With MITM Attacks",
+          "preview": false,
+          "time": "09:08"
+        },
+        {
+          "sub_no": 14,
+          "content": "Wireshark - Sniffing Data &amp; Analysing HTTP Traffic",
+          "preview": false,
+          "time": "08:00"
+        },
+        {
+          "sub_no": 15,
+          "content": "Wireshark - Capturing Passwords &amp; Cookies Entered By Any Device In The Network",
+          "preview": false,
+          "time": "05:36"
+        }
+      ],
+      "lectures": 16
+    },
+    {
+      "no": 7,
+      "title": "Network Penetration Testing - Detection &amp; Security",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Detecting ARP Poisonning Attacks",
+          "preview": false,
+          "time": "05:11"
+        },
+        {
+          "sub_no": 1,
+          "content": "Detecting suspicious Activities Using Wireshark",
+          "preview": true,
+          "time": "05:51"
+        }
+      ],
+      "lectures": 2
+    },
+    {
+      "no": 8,
+      "title": "Gaining Access To Computer Devices",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Gaining Access Introduction",
+          "preview": true,
+          "time": "04:14"
+        }
+      ],
+      "lectures": 1
+    },
+    {
+      "no": 9,
+      "title": "Gaining Access - Server Side Attacks",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Introduction",
+          "preview": true,
+          "time": "04:05"
+        },
+        {
+          "sub_no": 1,
+          "content": "Basic Information Gathering &amp; Exploitation",
+          "preview": true,
+          "time": "10:05"
+        },
+        {
+          "sub_no": 2,
+          "content": "Using a Basic Metasploit Exploit",
+          "preview": false,
+          "time": "07:31"
+        },
+        {
+          "sub_no": 3,
+          "content": "Exploiting a Code Execution Vulnerability",
+          "preview": false,
+          "time": "10:03"
+        },
+        {
+          "sub_no": 4,
+          "content": "MSFC - Installing MSFC (Metasploit Community)",
+          "preview": false,
+          "time": "05:46"
+        },
+        {
+          "sub_no": 5,
+          "content": "MSFC - Scanning Target(s) For Vulnerabilities",
+          "preview": false,
+          "time": "03:21"
+        },
+        {
+          "sub_no": 6,
+          "content": "MSFC - Analysing Scan results &amp; Exploiting Target System",
+          "preview": false,
+          "time": "09:42"
+        },
+        {
+          "sub_no": 7,
+          "content": "Nexpose - Installing Nexpose",
+          "preview": false,
+          "time": "09:59"
+        },
+        {
+          "sub_no": 8,
+          "content": "Nexpose - How To Configure &amp; Launch a Scan",
+          "preview": false,
+          "time": "09:16"
+        },
+        {
+          "sub_no": 9,
+          "content": "Nexpose - Analysing Scan Results &amp; Generating Reports",
+          "preview": false,
+          "time": "07:56"
+        }
+      ],
+      "lectures": 10
+    }
+  ]
+}

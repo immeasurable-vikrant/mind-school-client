@@ -1,0 +1,776 @@
+{
+  "no": 3,
+  "total": {
+    "lectures": 329,
+    "time": "21:58:13"
+  },
+  "header": [
+    {
+      "no": 0,
+      "title": "Getting Started",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Course Introduction",
+          "preview": false,
+          "time": "00:57"
+        },
+        {
+          "sub_no": 1,
+          "content": "What is Angular?",
+          "preview": true,
+          "time": "01:59"
+        },
+        {
+          "sub_no": 2,
+          "content": "Angular vs Angular 2 vs Angular 4",
+          "preview": true,
+          "time": "01:31"
+        },
+        {
+          "sub_no": 3,
+          "content": "CLI Deep Dive &amp; Troubleshooting",
+          "preview": true,
+          "time": "01:31"
+        },
+        {
+          "sub_no": 4,
+          "content": "Project Setup and First App",
+          "preview": true,
+          "time": "05:13"
+        },
+        {
+          "sub_no": 5,
+          "content": "Editing the First App",
+          "preview": true,
+          "time": "07:27"
+        },
+        {
+          "sub_no": 6,
+          "content": "The Course Structure",
+          "preview": true,
+          "time": "04:00"
+        },
+        {
+          "sub_no": 7,
+          "content": "How to get the Most out of the Course",
+          "preview": true,
+          "time": "02:25"
+        },
+        {
+          "sub_no": 8,
+          "content": "What is TypeScript?",
+          "preview": true,
+          "time": "02:09"
+        },
+        {
+          "sub_no": 9,
+          "content": "A Basic Project Setup using Bootstrap for Styling",
+          "preview": true,
+          "time": "03:35"
+        },
+        {
+          "sub_no": 10,
+          "content": "Where to find the Course Source Code",
+          "preview": false,
+          "time": "00:14"
+        }
+      ],
+      "lectures": 11
+    },
+    {
+      "no": 1,
+      "title": "The Basics",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Module Introduction",
+          "preview": false,
+          "time": "00:56"
+        },
+        {
+          "sub_no": 1,
+          "content": "How an Angular App gets Loaded and Started",
+          "preview": false,
+          "time": "07:11"
+        },
+        {
+          "sub_no": 2,
+          "content": "Components are Important!",
+          "preview": false,
+          "time": "03:08"
+        },
+        {
+          "sub_no": 3,
+          "content": "Creating a New Component",
+          "preview": false,
+          "time": "06:51"
+        },
+        {
+          "sub_no": 4,
+          "content": "Understanding the Role of AppModule and Component Declaration",
+          "preview": false,
+          "time": "05:15"
+        },
+        {
+          "sub_no": 5,
+          "content": "Using Custom Components",
+          "preview": false,
+          "time": "01:12"
+        },
+        {
+          "sub_no": 6,
+          "content": "Creating Components with the CLI &amp; Nesting Components",
+          "preview": false,
+          "time": "04:19"
+        },
+        {
+          "sub_no": 7,
+          "content": "Working with Component Templates",
+          "preview": false,
+          "time": "03:08"
+        },
+        {
+          "sub_no": 8,
+          "content": "Working with Component Styles",
+          "preview": false,
+          "time": "04:02"
+        },
+        {
+          "sub_no": 9,
+          "content": "Fully Understanding the Component Selector",
+          "preview": false,
+          "time": "03:50"
+        },
+        {
+          "sub_no": 10,
+          "content": "Practicing Components",
+          "preview": false,
+          "time": "1 question"
+        },
+        {
+          "sub_no": 11,
+          "content": "What is Databinding?",
+          "preview": false,
+          "time": "02:49"
+        },
+        {
+          "sub_no": 12,
+          "content": "String Interpolation",
+          "preview": false,
+          "time": "05:19"
+        },
+        {
+          "sub_no": 13,
+          "content": "Property Binding",
+          "preview": false,
+          "time": "06:34"
+        },
+        {
+          "sub_no": 14,
+          "content": "Property Binding vs String Interpolation",
+          "preview": false,
+          "time": "03:07"
+        },
+        {
+          "sub_no": 15,
+          "content": "Event Binding",
+          "preview": false,
+          "time": "04:09"
+        },
+        {
+          "sub_no": 16,
+          "content": "Bindable Properties and Events",
+          "preview": false,
+          "time": "00:22"
+        },
+        {
+          "sub_no": 17,
+          "content": "Passing and Using Data with Event Binding",
+          "preview": false,
+          "time": "04:37"
+        },
+        {
+          "sub_no": 18,
+          "content": "Two-Way-Databinding",
+          "preview": false,
+          "time": "02:47"
+        },
+        {
+          "sub_no": 19,
+          "content": "Important: FormsModule is Required for Two-Way-Binding!",
+          "preview": false,
+          "time": "00:11"
+        },
+        {
+          "sub_no": 20,
+          "content": "Combining all Forms of Databinding",
+          "preview": false,
+          "time": "01:46"
+        },
+        {
+          "sub_no": 21,
+          "content": "Practicing Databinding",
+          "preview": false,
+          "time": "1 question"
+        },
+        {
+          "sub_no": 22,
+          "content": "Understanding Directives",
+          "preview": false,
+          "time": "02:17"
+        },
+        {
+          "sub_no": 23,
+          "content": "Using ngIf to Output Data Conditionally",
+          "preview": false,
+          "time": "03:53"
+        },
+        {
+          "sub_no": 24,
+          "content": "Enhancing ngIf with an Else Condition",
+          "preview": false,
+          "time": "02:46"
+        },
+        {
+          "sub_no": 25,
+          "content": "Styling Elements Dynamically with ngStyle",
+          "preview": false,
+          "time": "05:01"
+        },
+        {
+          "sub_no": 26,
+          "content": "Applying CSS Classes Dynamically with ngClass",
+          "preview": false,
+          "time": "02:53"
+        }
+      ],
+      "lectures": 27
+    },
+    {
+      "no": 2,
+      "title": "Course Project - The Basics",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Outputting Lists with ngFor",
+          "preview": false,
+          "time": "03:43"
+        },
+        {
+          "sub_no": 1,
+          "content": "Practicing Directives",
+          "preview": false,
+          "time": "1 question"
+        },
+        {
+          "sub_no": 2,
+          "content": "Getting the Index when using ngFor",
+          "preview": false,
+          "time": "02:52"
+        },
+        {
+          "sub_no": 3,
+          "content": "Project Introduction",
+          "preview": false,
+          "time": "01:04"
+        },
+        {
+          "sub_no": 4,
+          "content": "Planning the App",
+          "preview": false,
+          "time": "05:33"
+        },
+        {
+          "sub_no": 5,
+          "content": "Setting up the Application",
+          "preview": false,
+          "time": "04:31"
+        },
+        {
+          "sub_no": 6,
+          "content": "Creating the Components",
+          "preview": false,
+          "time": "09:33"
+        },
+        {
+          "sub_no": 7,
+          "content": "Using the Components",
+          "preview": false,
+          "time": "03:15"
+        },
+        {
+          "sub_no": 8,
+          "content": "Adding a Navigation Bar",
+          "preview": false,
+          "time": "05:09"
+        },
+        {
+          "sub_no": 9,
+          "content": "Alternative Non-Collapsable Navigation Bar",
+          "preview": false,
+          "time": "00:12"
+        },
+        {
+          "sub_no": 10,
+          "content": "Creating a \"Recipe\" Model",
+          "preview": false,
+          "time": "04:33"
+        },
+        {
+          "sub_no": 11,
+          "content": "Adding Content to the Recipes Components",
+          "preview": false,
+          "time": "07:41"
+        },
+        {
+          "sub_no": 12,
+          "content": "Outputting a List of Recipes with ngFor",
+          "preview": false,
+          "time": "04:37"
+        },
+        {
+          "sub_no": 13,
+          "content": "Displaying Recipe Details",
+          "preview": false,
+          "time": "05:52"
+        },
+        {
+          "sub_no": 14,
+          "content": "Working on the ShoppingListComponent",
+          "preview": false,
+          "time": "01:49"
+        },
+        {
+          "sub_no": 15,
+          "content": "Creating an \"Ingredient\" Model",
+          "preview": false,
+          "time": "02:35"
+        }
+      ],
+      "lectures": 16
+    },
+    {
+      "no": 3,
+      "title": "Debugging",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Creating and Outputting the Shopping List",
+          "preview": false,
+          "time": "02:27"
+        },
+        {
+          "sub_no": 1,
+          "content": "Adding a Shopping List Edit Section",
+          "preview": false,
+          "time": "03:28"
+        },
+        {
+          "sub_no": 2,
+          "content": "Wrap Up &amp; Next Steps",
+          "preview": false,
+          "time": "00:54"
+        }
+      ],
+      "lectures": 3
+    },
+    {
+      "no": 4,
+      "title": "Components &amp; Databinding Deep Dive",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Understanding Angular Error Messages",
+          "preview": false,
+          "time": "04:36"
+        },
+        {
+          "sub_no": 1,
+          "content": "Debugging Code in the Browser Using Sourcemaps",
+          "preview": false,
+          "time": "05:32"
+        },
+        {
+          "sub_no": 2,
+          "content": "Using Augury to Dive into Angular Apps",
+          "preview": false,
+          "time": "02:01"
+        },
+        {
+          "sub_no": 3,
+          "content": "Module Introduction",
+          "preview": false,
+          "time": "00:36"
+        },
+        {
+          "sub_no": 4,
+          "content": "Splitting Apps into Components",
+          "preview": false,
+          "time": "05:56"
+        },
+        {
+          "sub_no": 5,
+          "content": "Property &amp; Event Binding Overview",
+          "preview": false,
+          "time": "01:44"
+        },
+        {
+          "sub_no": 6,
+          "content": "Binding to Custom Properties",
+          "preview": false,
+          "time": "05:43"
+        },
+        {
+          "sub_no": 7,
+          "content": "Assigning an Alias to Custom Properties",
+          "preview": false,
+          "time": "01:59"
+        },
+        {
+          "sub_no": 8,
+          "content": "Binding to Custom Events",
+          "preview": false,
+          "time": "09:05"
+        },
+        {
+          "sub_no": 9,
+          "content": "Assigning an Alias to Custom Events",
+          "preview": false,
+          "time": "00:57"
+        },
+        {
+          "sub_no": 10,
+          "content": "Custom Property and Event Binding Summary",
+          "preview": false,
+          "time": "02:02"
+        },
+        {
+          "sub_no": 11,
+          "content": "Understanding View Encapsulation",
+          "preview": false,
+          "time": "04:59"
+        },
+        {
+          "sub_no": 12,
+          "content": "More on View Encapsulation",
+          "preview": false,
+          "time": "02:43"
+        },
+        {
+          "sub_no": 13,
+          "content": "Using Local References in Templates",
+          "preview": false,
+          "time": "04:36"
+        },
+        {
+          "sub_no": 14,
+          "content": "Getting Access to the Template &amp; DOM with @ViewChild",
+          "preview": false,
+          "time": "05:02"
+        },
+        {
+          "sub_no": 15,
+          "content": "Projecting Content into Components with ng-content",
+          "preview": false,
+          "time": "03:22"
+        },
+        {
+          "sub_no": 16,
+          "content": "Understanding the Component Lifecycle",
+          "preview": false,
+          "time": "04:54"
+        },
+        {
+          "sub_no": 17,
+          "content": "Seeing Lifecycle Hooks in Action",
+          "preview": false,
+          "time": "11:55"
+        }
+      ],
+      "lectures": 18
+    },
+    {
+      "no": 5,
+      "title": "Course Project - Components &amp; Databinding",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Lifecycle Hooks and Template Access",
+          "preview": false,
+          "time": "02:33"
+        },
+        {
+          "sub_no": 1,
+          "content": "Getting Access to ng-content with @ContentChild",
+          "preview": false,
+          "time": "03:00"
+        },
+        {
+          "sub_no": 2,
+          "content": "Wrap Up",
+          "preview": false,
+          "time": "00:49"
+        },
+        {
+          "sub_no": 3,
+          "content": "Practicing Property &amp; Event Binding and View Encapsulation",
+          "preview": false,
+          "time": "1 question"
+        },
+        {
+          "sub_no": 4,
+          "content": "Introduction",
+          "preview": false,
+          "time": "00:50"
+        }
+      ],
+      "lectures": 5
+    },
+    {
+      "no": 6,
+      "title": "Directives Deep Dive",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Adding Navigation with Event Binding and ngIf",
+          "preview": false,
+          "time": "07:31"
+        },
+        {
+          "sub_no": 1,
+          "content": "Passing Recipe Data with Property Binding",
+          "preview": false,
+          "time": "04:43"
+        },
+        {
+          "sub_no": 2,
+          "content": "Passing Data with Event and Property Binding (Combined)",
+          "preview": false,
+          "time": "10:31"
+        },
+        {
+          "sub_no": 3,
+          "content": "Allowing the User to Add Ingredients to the Shopping List",
+          "preview": false,
+          "time": "07:22"
+        },
+        {
+          "sub_no": 4,
+          "content": "Module Introduction",
+          "preview": false,
+          "time": "01:23"
+        },
+        {
+          "sub_no": 5,
+          "content": "ngFor and ngIf Recap",
+          "preview": false,
+          "time": "03:36"
+        },
+        {
+          "sub_no": 6,
+          "content": "ngClass and ngStyle Recap",
+          "preview": false,
+          "time": "02:57"
+        },
+        {
+          "sub_no": 7,
+          "content": "Creating a Basic Attribute Directive",
+          "preview": false,
+          "time": "06:56"
+        },
+        {
+          "sub_no": 8,
+          "content": "Using the Renderer to build a Better Attribute Directive",
+          "preview": false,
+          "time": "07:04"
+        },
+        {
+          "sub_no": 9,
+          "content": "More about the Renderer",
+          "preview": false,
+          "time": "00:14"
+        },
+        {
+          "sub_no": 10,
+          "content": "Using HostListener to Listen to Host Events",
+          "preview": false,
+          "time": "03:00"
+        },
+        {
+          "sub_no": 11,
+          "content": "Using HostBinding to Bind to Host Properties",
+          "preview": false,
+          "time": "03:17"
+        }
+      ],
+      "lectures": 12
+    },
+    {
+      "no": 7,
+      "title": "Course Project - Directives",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Binding to Directive Properties",
+          "preview": false,
+          "time": "06:43"
+        }
+      ],
+      "lectures": 1
+    },
+    {
+      "no": 8,
+      "title": "Using Services &amp; Dependency Injection",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "What Happens behind the Scenes on Structural Directives",
+          "preview": false,
+          "time": "03:04"
+        },
+        {
+          "sub_no": 1,
+          "content": "Building a Structural Directive",
+          "preview": false,
+          "time": "06:13"
+        },
+        {
+          "sub_no": 2,
+          "content": "Understanding ngSwitch",
+          "preview": false,
+          "time": "02:49"
+        },
+        {
+          "sub_no": 3,
+          "content": "Building and Using a Dropdown Directive",
+          "preview": false,
+          "time": "06:25"
+        },
+        {
+          "sub_no": 4,
+          "content": "Module Introduction",
+          "preview": false,
+          "time": "01:39"
+        },
+        {
+          "sub_no": 5,
+          "content": "Why would you Need Services?",
+          "preview": false,
+          "time": "02:04"
+        },
+        {
+          "sub_no": 6,
+          "content": "Creating a Logging Service",
+          "preview": false,
+          "time": "03:32"
+        },
+        {
+          "sub_no": 7,
+          "content": "Injecting the Logging Service into Components",
+          "preview": false,
+          "time": "06:21"
+        },
+        {
+          "sub_no": 8,
+          "content": "Creating a Data Service",
+          "preview": false,
+          "time": "06:41"
+        }
+      ],
+      "lectures": 9
+    },
+    {
+      "no": 9,
+      "title": "Course Project - Services &amp; Dependency Injection",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Understanding the Hierarchical Injector",
+          "preview": false,
+          "time": "02:40"
+        },
+        {
+          "sub_no": 1,
+          "content": "How many Instances of Service Should It Be?",
+          "preview": false,
+          "time": "02:12"
+        },
+        {
+          "sub_no": 2,
+          "content": "Injecting Services into Services",
+          "preview": false,
+          "time": "04:23"
+        },
+        {
+          "sub_no": 3,
+          "content": "Using Services for Cross-Component Communication",
+          "preview": false,
+          "time": "04:06"
+        },
+        {
+          "sub_no": 4,
+          "content": "Practicing Services",
+          "preview": false,
+          "time": "1 question"
+        },
+        {
+          "sub_no": 5,
+          "content": "Introduction",
+          "preview": false,
+          "time": "01:23"
+        },
+        {
+          "sub_no": 6,
+          "content": "Setting up the Services",
+          "preview": false,
+          "time": "01:15"
+        },
+        {
+          "sub_no": 7,
+          "content": "Managing Recipes in a Recipe Service",
+          "preview": false,
+          "time": "04:07"
+        }
+      ],
+      "lectures": 8
+    },
+    {
+      "no": 10,
+      "title": "Changing Pages with Routing",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Using a Service for Cross-Component Communication",
+          "preview": false,
+          "time": "05:07"
+        },
+        {
+          "sub_no": 1,
+          "content": "Adding the Shopping List Service",
+          "preview": false,
+          "time": "05:04"
+        },
+        {
+          "sub_no": 2,
+          "content": "Using Services for \"Push Notifications\"",
+          "preview": false,
+          "time": "03:08"
+        },
+        {
+          "sub_no": 3,
+          "content": "Adding Ingredients to Recipes",
+          "preview": false,
+          "time": "03:41"
+        },
+        {
+          "sub_no": 4,
+          "content": "Passing Ingredients from Recipes to the Shopping List (via a Service)",
+          "preview": false,
+          "time": "07:03"
+        }
+      ],
+      "lectures": 5
+    }
+  ]
+}

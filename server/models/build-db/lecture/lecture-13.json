@@ -1,0 +1,860 @@
+{
+  "no": 13,
+  "total": {
+    "lectures": 168,
+    "time": "19:24:05"
+  },
+  "header": [
+    {
+      "no": 0,
+      "title": "Introduction",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Frequently Asked Questions (FAQ's)",
+          "preview": false,
+          "time": "00:55"
+        },
+        {
+          "sub_no": 1,
+          "content": "How to Grow a Business Online From Scratch",
+          "preview": false,
+          "time": "07:49"
+        },
+        {
+          "sub_no": 2,
+          "content": "Course Notes",
+          "preview": true,
+          "time": "00:23"
+        },
+        {
+          "sub_no": 3,
+          "content": "The \"One Thing\" That Will Transform Your Marketing",
+          "preview": false,
+          "time": "03:28"
+        },
+        {
+          "sub_no": 4,
+          "content": "5 Best Free Digital Marketing Tools",
+          "preview": false,
+          "time": "04:07"
+        }
+      ],
+      "lectures": 5
+    },
+    {
+      "no": 1,
+      "title": "Marketing Fundamentals",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Project Overview: Create a Buyer Persona &amp; Unique Selling Proposition",
+          "preview": false,
+          "time": "02:28"
+        },
+        {
+          "sub_no": 1,
+          "content": "How to Create a Buyer Persona",
+          "preview": false,
+          "time": "07:55"
+        },
+        {
+          "sub_no": 2,
+          "content": "8 Ways to Find Your Audience Online",
+          "preview": false,
+          "time": "08:43"
+        },
+        {
+          "sub_no": 3,
+          "content": "How to Identify Your Unique Selling Proposition",
+          "preview": false,
+          "time": "10:16"
+        },
+        {
+          "sub_no": 4,
+          "content": "Taking Action: Create a Buyer Persona &amp; Unique Selling Proposition",
+          "preview": false,
+          "time": "04:05"
+        },
+        {
+          "sub_no": 5,
+          "content": "3 Steps to Get Valuable Feedback on Your Project",
+          "preview": false,
+          "time": "00:22"
+        }
+      ],
+      "lectures": 6
+    },
+    {
+      "no": 2,
+      "title": "Market Research",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Project: Validate Your Idea with Typeform",
+          "preview": false,
+          "time": "02:27"
+        },
+        {
+          "sub_no": 1,
+          "content": "Why Typeform?",
+          "preview": true,
+          "time": "05:41"
+        },
+        {
+          "sub_no": 2,
+          "content": "How to Design Your Online Survey",
+          "preview": false,
+          "time": "11:27"
+        },
+        {
+          "sub_no": 3,
+          "content": "How to Distribute Your Online Survey",
+          "preview": false,
+          "time": "09:39"
+        },
+        {
+          "sub_no": 4,
+          "content": "How to Analyse Your Survey Results",
+          "preview": false,
+          "time": "07:49"
+        },
+        {
+          "sub_no": 5,
+          "content": "Taking Action: Validate Your Idea with Typeform",
+          "preview": false,
+          "time": "02:40"
+        }
+      ],
+      "lectures": 6
+    },
+    {
+      "no": 3,
+      "title": "Wordpress",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Quiz - Market Research",
+          "preview": false,
+          "time": "2 questions"
+        },
+        {
+          "sub_no": 1,
+          "content": "Project: Create a Wordpress Website in 1hr Without Any Technical Skills",
+          "preview": false,
+          "time": "04:30"
+        },
+        {
+          "sub_no": 2,
+          "content": "Why Wordpress?",
+          "preview": false,
+          "time": "04:22"
+        },
+        {
+          "sub_no": 3,
+          "content": "How to Choose a Domain Name",
+          "preview": false,
+          "time": "06:24"
+        },
+        {
+          "sub_no": 4,
+          "content": "Domain Registration &amp; Hosting",
+          "preview": false,
+          "time": "03:22"
+        },
+        {
+          "sub_no": 5,
+          "content": "How to Install Wordpress",
+          "preview": false,
+          "time": "01:43"
+        },
+        {
+          "sub_no": 6,
+          "content": "How to Add Pages &amp; Posts to Wordpress",
+          "preview": false,
+          "time": "04:55"
+        },
+        {
+          "sub_no": 7,
+          "content": "Google Analytics for Wordpress",
+          "preview": false,
+          "time": "06:04"
+        },
+        {
+          "sub_no": 8,
+          "content": "How to Choose &amp; Install a Premium Theme",
+          "preview": false,
+          "time": "05:28"
+        }
+      ],
+      "lectures": 9
+    },
+    {
+      "no": 4,
+      "title": "Email Marketing",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Taking Action: Create Your Site in 5 Steps!",
+          "preview": false,
+          "time": "02:25"
+        },
+        {
+          "sub_no": 1,
+          "content": "Quiz - Wordpress",
+          "preview": false,
+          "time": "2 questions"
+        },
+        {
+          "sub_no": 2,
+          "content": "Project: Get Your First 1000 Email Subscribers in 30 Days",
+          "preview": false,
+          "time": "05:45"
+        },
+        {
+          "sub_no": 3,
+          "content": "Why List Building Is So Important",
+          "preview": false,
+          "time": "05:20"
+        },
+        {
+          "sub_no": 4,
+          "content": "How to Integrate MailChimp with Wordpress",
+          "preview": false,
+          "time": "07:26"
+        },
+        {
+          "sub_no": 5,
+          "content": "How to Track Email Sign Ups with Google Analytics",
+          "preview": false,
+          "time": "06:16"
+        },
+        {
+          "sub_no": 6,
+          "content": "How to Add a Lead Magnet to Your Sign Up Form",
+          "preview": false,
+          "time": "08:25"
+        },
+        {
+          "sub_no": 7,
+          "content": "How to Turn Your Homepage Into a Landing Page",
+          "preview": false,
+          "time": "06:46"
+        },
+        {
+          "sub_no": 8,
+          "content": "How to Use Pop Ups &amp; Opt In Forms",
+          "preview": false,
+          "time": "09:15"
+        },
+        {
+          "sub_no": 9,
+          "content": "How to Use LeadPages to Grow Faster",
+          "preview": false,
+          "time": "10:15"
+        },
+        {
+          "sub_no": 10,
+          "content": "How to Create an Email Campaign in Mailchimp",
+          "preview": false,
+          "time": "09:22"
+        }
+      ],
+      "lectures": 11
+    },
+    {
+      "no": 5,
+      "title": "Copywriting",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Email Analytics: 5 Metrics to Track",
+          "preview": false,
+          "time": "06:22"
+        },
+        {
+          "sub_no": 1,
+          "content": "Taking Action: Set Up Your Sign Forms &amp; Incentives",
+          "preview": true,
+          "time": "02:03"
+        },
+        {
+          "sub_no": 2,
+          "content": "Quiz - Email Marketing",
+          "preview": false,
+          "time": "3 questions"
+        },
+        {
+          "sub_no": 3,
+          "content": "Project: Write Copy That Sells",
+          "preview": false,
+          "time": "03:49"
+        },
+        {
+          "sub_no": 4,
+          "content": "What is Copywriting &amp; Why is it Important?",
+          "preview": false,
+          "time": "11:04"
+        },
+        {
+          "sub_no": 5,
+          "content": "How to Write For Your Buyer Persona",
+          "preview": false,
+          "time": "06:08"
+        },
+        {
+          "sub_no": 6,
+          "content": "Attention - Headlines are \"Eighty Cents of the Dollar\"",
+          "preview": false,
+          "time": "06:58"
+        }
+      ],
+      "lectures": 7
+    },
+    {
+      "no": 6,
+      "title": "Search Engine Optimization (SEO)",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "11 Tips to Write Magnetic Headlines",
+          "preview": false,
+          "time": "12:29"
+        },
+        {
+          "sub_no": 1,
+          "content": "A.I.D.A - Interest, Desire &amp; Action",
+          "preview": true,
+          "time": "12:04"
+        },
+        {
+          "sub_no": 2,
+          "content": "Taking Action: Use A.I.D.A to Write Copy That Sells",
+          "preview": false,
+          "time": "07:47"
+        },
+        {
+          "sub_no": 3,
+          "content": "Quiz - Copywriting",
+          "preview": false,
+          "time": "2 questions"
+        },
+        {
+          "sub_no": 4,
+          "content": "Project: Complete this 26-Point SEO Checklist",
+          "preview": false,
+          "time": "02:31"
+        },
+        {
+          "sub_no": 5,
+          "content": "An Overview of SEO",
+          "preview": false,
+          "time": "11:23"
+        },
+        {
+          "sub_no": 6,
+          "content": "5 SEO Metrics to Measure SEO Performance",
+          "preview": false,
+          "time": "07:22"
+        },
+        {
+          "sub_no": 7,
+          "content": "How to SEO Optimise Your Homepage",
+          "preview": false,
+          "time": "08:43"
+        },
+        {
+          "sub_no": 8,
+          "content": "How to Verify Your Website in The Google Search Console",
+          "preview": false,
+          "time": "03:54"
+        },
+        {
+          "sub_no": 9,
+          "content": "How to Improve Website Performance &amp; Speed",
+          "preview": false,
+          "time": "10:58"
+        },
+        {
+          "sub_no": 10,
+          "content": "How to Take the Google Mobile Friendly Test",
+          "preview": false,
+          "time": "02:38"
+        },
+        {
+          "sub_no": 11,
+          "content": "How to Do Keyword Research: Steps &amp; Strategy",
+          "preview": false,
+          "time": "06:43"
+        },
+        {
+          "sub_no": 12,
+          "content": "How to Quickly Brainstorm 1000's of Keyword Ideas",
+          "preview": false,
+          "time": "15:44"
+        },
+        {
+          "sub_no": 13,
+          "content": "How to Narrow Down Your Keyword List using Google Keyword Planner",
+          "preview": false,
+          "time": "11:12"
+        },
+        {
+          "sub_no": 14,
+          "content": "How to Assess Keyword Competition &amp; Choose Target Keywords",
+          "preview": false,
+          "time": "06:16"
+        },
+        {
+          "sub_no": 15,
+          "content": "How to Write Title Tags Search Engines Love",
+          "preview": false,
+          "time": "10:26"
+        },
+        {
+          "sub_no": 16,
+          "content": "How to Skyrocket Clickthrough Rate with Meta Descriptions",
+          "preview": false,
+          "time": "03:27"
+        },
+        {
+          "sub_no": 17,
+          "content": "How to Appear in the Google Image Search Results",
+          "preview": false,
+          "time": "05:20"
+        },
+        {
+          "sub_no": 18,
+          "content": "Copy Optimization: Headings Tags, Outgoing &amp; Internal Links etc.",
+          "preview": false,
+          "time": "05:43"
+        },
+        {
+          "sub_no": 19,
+          "content": "The Types of Backlinks That Really Matter and How to Get Them",
+          "preview": false,
+          "time": "09:24"
+        },
+        {
+          "sub_no": 20,
+          "content": "How to Maximise Links for Your SEO Campaigns",
+          "preview": false,
+          "time": "03:48"
+        },
+        {
+          "sub_no": 21,
+          "content": "How to Create Content That Generates Links &amp; Social Shares on Autopilot",
+          "preview": false,
+          "time": "10:58"
+        },
+        {
+          "sub_no": 22,
+          "content": "How to Leverage Authority Websites and Top of the Search Results",
+          "preview": false,
+          "time": "04:31"
+        }
+      ],
+      "lectures": 23
+    },
+    {
+      "no": 7,
+      "title": "YouTube Marketing",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Student Q&amp;A #1",
+          "preview": false,
+          "time": "15:04"
+        },
+        {
+          "sub_no": 1,
+          "content": "Student Q&amp;A #2",
+          "preview": false,
+          "time": "15:15"
+        },
+        {
+          "sub_no": 2,
+          "content": "Quiz - SEO",
+          "preview": false,
+          "time": "2 questions"
+        },
+        {
+          "sub_no": 3,
+          "content": "Local SEO: How to Rank Your Local Business in Google",
+          "preview": false,
+          "time": "23:18"
+        },
+        {
+          "sub_no": 4,
+          "content": "Taking Action: Follow the 26 Point SEO Checklist!",
+          "preview": false,
+          "time": "01:39"
+        },
+        {
+          "sub_no": 5,
+          "content": "Project: Use Simple Videos to Drive Traffic &amp; Sales",
+          "preview": false,
+          "time": "03:08"
+        },
+        {
+          "sub_no": 6,
+          "content": "Why YouTube",
+          "preview": false,
+          "time": "05:57"
+        },
+        {
+          "sub_no": 7,
+          "content": "YouTube Marketing Strategy",
+          "preview": false,
+          "time": "05:35"
+        },
+        {
+          "sub_no": 8,
+          "content": "\"Watch Time\" is Golden",
+          "preview": false,
+          "time": "04:42"
+        },
+        {
+          "sub_no": 9,
+          "content": "The Subscriber Advantage",
+          "preview": false,
+          "time": "07:06"
+        },
+        {
+          "sub_no": 10,
+          "content": "YouTube Recording Software &amp; Mics",
+          "preview": false,
+          "time": "07:03"
+        },
+        {
+          "sub_no": 11,
+          "content": "YouTube Acccount Set Up &amp; Optimization",
+          "preview": false,
+          "time": "10:05"
+        },
+        {
+          "sub_no": 12,
+          "content": "YouTube Keyword Research",
+          "preview": false,
+          "time": "10:40"
+        },
+        {
+          "sub_no": 13,
+          "content": "YouTube Video Structure",
+          "preview": false,
+          "time": "09:54"
+        },
+        {
+          "sub_no": 14,
+          "content": "YouTube SEO",
+          "preview": false,
+          "time": "08:15"
+        }
+      ],
+      "lectures": 15
+    },
+    {
+      "no": 8,
+      "title": "Facebook Marketing",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Youtube Thumbnails",
+          "preview": false,
+          "time": "04:28"
+        },
+        {
+          "sub_no": 1,
+          "content": "YouTube Annotations &amp; Cards",
+          "preview": false,
+          "time": "08:55"
+        },
+        {
+          "sub_no": 2,
+          "content": "YouTube Promotion",
+          "preview": false,
+          "time": "03:07"
+        },
+        {
+          "sub_no": 3,
+          "content": "YouTube Analytics",
+          "preview": false,
+          "time": "09:29"
+        },
+        {
+          "sub_no": 4,
+          "content": "Taking Action: Upload Your First Video",
+          "preview": false,
+          "time": "02:59"
+        },
+        {
+          "sub_no": 5,
+          "content": "Quiz - YouTube",
+          "preview": false,
+          "time": "2 questions"
+        },
+        {
+          "sub_no": 6,
+          "content": "Project: Get Your First 1000 Likes  Without Facebook Ads",
+          "preview": false,
+          "time": "02:53"
+        },
+        {
+          "sub_no": 7,
+          "content": "Why Facebook?",
+          "preview": false,
+          "time": "09:12"
+        },
+        {
+          "sub_no": 8,
+          "content": "Create Your Facebook Page",
+          "preview": false,
+          "time": "06:39"
+        },
+        {
+          "sub_no": 9,
+          "content": "Facebook Icon",
+          "preview": false,
+          "time": "07:30"
+        },
+        {
+          "sub_no": 10,
+          "content": "Facebook Cover Image",
+          "preview": false,
+          "time": "06:07"
+        },
+        {
+          "sub_no": 11,
+          "content": "Description &amp; About Page",
+          "preview": false,
+          "time": "05:02"
+        },
+        {
+          "sub_no": 12,
+          "content": "Apps &amp; Tabs",
+          "preview": false,
+          "time": "04:45"
+        },
+        {
+          "sub_no": 13,
+          "content": "Page Settings",
+          "preview": false,
+          "time": "07:07"
+        },
+        {
+          "sub_no": 14,
+          "content": "9 Post Formulas Gauranteed to Drive Engagement",
+          "preview": false,
+          "time": "03:29"
+        },
+        {
+          "sub_no": 15,
+          "content": "Edgerank Algorithm",
+          "preview": false,
+          "time": "06:52"
+        },
+        {
+          "sub_no": 16,
+          "content": "Caption This Photo",
+          "preview": false,
+          "time": "05:21"
+        },
+        {
+          "sub_no": 17,
+          "content": "Quotes",
+          "preview": false,
+          "time": "03:44"
+        },
+        {
+          "sub_no": 18,
+          "content": "Native Videos",
+          "preview": false,
+          "time": "07:01"
+        },
+        {
+          "sub_no": 19,
+          "content": "Facebook Contest",
+          "preview": false,
+          "time": "06:03"
+        },
+        {
+          "sub_no": 20,
+          "content": "5 More Facebook Post Formulas",
+          "preview": false,
+          "time": "07:09"
+        },
+        {
+          "sub_no": 21,
+          "content": "Bonus Tips: Content Strategy",
+          "preview": false,
+          "time": "04:31"
+        },
+        {
+          "sub_no": 22,
+          "content": "10 Tactics to Start Getting Organic Likes",
+          "preview": false,
+          "time": "08:15"
+        }
+      ],
+      "lectures": 23
+    },
+    {
+      "no": 9,
+      "title": "Twitter Marketing",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Use Email to Drive Organic Likes",
+          "preview": false,
+          "time": "09:09"
+        },
+        {
+          "sub_no": 1,
+          "content": "Use Facebook Groups to Drive Organic Likes",
+          "preview": false,
+          "time": "05:35"
+        },
+        {
+          "sub_no": 2,
+          "content": "Add a Facebook Like Box to Your Website",
+          "preview": false,
+          "time": "04:36"
+        },
+        {
+          "sub_no": 3,
+          "content": "Secret Strategy to Increase Page Likes",
+          "preview": false,
+          "time": "02:27"
+        },
+        {
+          "sub_no": 4,
+          "content": "5 Facebook Insights Reports to Measure Success",
+          "preview": false,
+          "time": "09:46"
+        },
+        {
+          "sub_no": 5,
+          "content": "Taking Action: Get Your First 1000 Facebook Likes",
+          "preview": false,
+          "time": "03:14"
+        },
+        {
+          "sub_no": 6,
+          "content": "Quiz - Facebook",
+          "preview": false,
+          "time": "2 questions"
+        },
+        {
+          "sub_no": 7,
+          "content": "Project:  Increase Your Twitter Followers with 10 Strategies",
+          "preview": false,
+          "time": "03:37"
+        },
+        {
+          "sub_no": 8,
+          "content": "Why Twitter?",
+          "preview": false,
+          "time": "08:57"
+        },
+        {
+          "sub_no": 9,
+          "content": "How Twitter Works",
+          "preview": false,
+          "time": "14:14"
+        },
+        {
+          "sub_no": 10,
+          "content": "What Not To Do on Twitter",
+          "preview": false,
+          "time": "03:34"
+        },
+        {
+          "sub_no": 11,
+          "content": "4 Ways To Get More Retweets",
+          "preview": false,
+          "time": "07:52"
+        },
+        {
+          "sub_no": 12,
+          "content": "5 Steps Optimize Your Profile",
+          "preview": false,
+          "time": "11:50"
+        },
+        {
+          "sub_no": 13,
+          "content": "5 Ways to Promote Your Twitter",
+          "preview": false,
+          "time": "09:40"
+        },
+        {
+          "sub_no": 14,
+          "content": "Use Hastags to Increase Discoverability",
+          "preview": false,
+          "time": "06:51"
+        },
+        {
+          "sub_no": 15,
+          "content": "Follow Top Twitter Users",
+          "preview": false,
+          "time": "04:46"
+        }
+      ],
+      "lectures": 16
+    },
+    {
+      "no": 10,
+      "title": "Quora Marketing",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "The Poster Boy Formula",
+          "preview": false,
+          "time": "07:19"
+        },
+        {
+          "sub_no": 1,
+          "content": "Join a Trending Conversation",
+          "preview": false,
+          "time": "04:50"
+        },
+        {
+          "sub_no": 2,
+          "content": "Ask Questions",
+          "preview": false,
+          "time": "04:39"
+        },
+        {
+          "sub_no": 3,
+          "content": "Bring Twitter Into the Physical World",
+          "preview": false,
+          "time": "01:52"
+        },
+        {
+          "sub_no": 4,
+          "content": "Track Results: Twitter Analytics",
+          "preview": false,
+          "time": "03:40"
+        },
+        {
+          "sub_no": 5,
+          "content": "Bonus Tip. Schedule Tweets with Buffer",
+          "preview": false,
+          "time": "03:43"
+        },
+        {
+          "sub_no": 6,
+          "content": "Taking Action: Implement Strategies to Increase Twitter Followers",
+          "preview": false,
+          "time": "03:34"
+        },
+        {
+          "sub_no": 7,
+          "content": "Quiz - Twitter",
+          "preview": false,
+          "time": "2 questions"
+        }
+      ],
+      "lectures": 10
+    }
+  ]
+}

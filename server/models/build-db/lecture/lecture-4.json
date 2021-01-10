@@ -1,0 +1,925 @@
+{
+  "no": 4,
+  "total": {
+    "lectures": 264,
+    "time": "71:25:31"
+  },
+  "header": [
+    {
+      "no": 0,
+      "title": "Getting Started With iOS 10 &amp; Swift 3",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Intro to Course",
+          "preview": false,
+          "time": "06:25"
+        },
+        {
+          "sub_no": 1,
+          "content": "Get $5000 worth of AMAZING graphics for FREE",
+          "preview": true,
+          "time": "02:50"
+        },
+        {
+          "sub_no": 2,
+          "content": "Download your FREE graphics here",
+          "preview": true,
+          "time": "00:12"
+        },
+        {
+          "sub_no": 3,
+          "content": "Student success story",
+          "preview": false,
+          "time": "03:01"
+        },
+        {
+          "sub_no": 4,
+          "content": "Register as an Apple Developer",
+          "preview": true,
+          "time": "04:24"
+        },
+        {
+          "sub_no": 5,
+          "content": "Downloading Xcode 8",
+          "preview": true,
+          "time": "03:11"
+        },
+        {
+          "sub_no": 6,
+          "content": "Installing Xcode 8",
+          "preview": true,
+          "time": "02:06"
+        },
+        {
+          "sub_no": 7,
+          "content": "Building your first Swift 3 iOS 10 App",
+          "preview": true,
+          "time": "16:38"
+        },
+        {
+          "sub_no": 8,
+          "content": "Where to get free live help",
+          "preview": true,
+          "time": "00:15"
+        },
+        {
+          "sub_no": 9,
+          "content": "Setting Learning Expectations",
+          "preview": false,
+          "time": "19:39"
+        },
+        {
+          "sub_no": 10,
+          "content": "Student success story #2 app in the world!!",
+          "preview": false,
+          "time": "03:34"
+        },
+        {
+          "sub_no": 11,
+          "content": "More testimonials!",
+          "preview": true,
+          "time": "04:33"
+        }
+      ],
+      "lectures": 12
+    },
+    {
+      "no": 1,
+      "title": "Learn to code with Swift 3",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Intro to Xcode 8 Changes",
+          "preview": true,
+          "time": "01:02"
+        },
+        {
+          "sub_no": 1,
+          "content": "Variables, operators, &amp; how computers work",
+          "preview": false,
+          "time": "16:48"
+        },
+        {
+          "sub_no": 2,
+          "content": "Source Code",
+          "preview": true,
+          "time": "00:00"
+        },
+        {
+          "sub_no": 3,
+          "content": "Swift 3 strings",
+          "preview": false,
+          "time": "15:22"
+        },
+        {
+          "sub_no": 4,
+          "content": "Swift 3 numbers",
+          "preview": true,
+          "time": "19:53"
+        },
+        {
+          "sub_no": 5,
+          "content": "Exercise: Variables",
+          "preview": false,
+          "time": "00:01"
+        },
+        {
+          "sub_no": 6,
+          "content": "Swift 3 functions",
+          "preview": false,
+          "time": "22:39"
+        },
+        {
+          "sub_no": 7,
+          "content": "Swift 3 Booleans &amp; conditional logic",
+          "preview": false,
+          "time": "20:57"
+        },
+        {
+          "sub_no": 8,
+          "content": "Exercise: Functions",
+          "preview": false,
+          "time": "00:01"
+        },
+        {
+          "sub_no": 9,
+          "content": "Swift 3 constants &amp; logical operators",
+          "preview": false,
+          "time": "10:27"
+        },
+        {
+          "sub_no": 10,
+          "content": "Swift 3 arrays",
+          "preview": false,
+          "time": "13:06"
+        },
+        {
+          "sub_no": 11,
+          "content": "Swift 3 loops",
+          "preview": false,
+          "time": "18:59"
+        },
+        {
+          "sub_no": 12,
+          "content": "Swift 3 Dictionaries",
+          "preview": false,
+          "time": "18:44"
+        },
+        {
+          "sub_no": 13,
+          "content": "Exercise - Loops &amp; Arrays",
+          "preview": false,
+          "time": "00:01"
+        },
+        {
+          "sub_no": 14,
+          "content": "Swift Optionals: Xcode 8 Updates",
+          "preview": false,
+          "time": "01:04"
+        },
+        {
+          "sub_no": 15,
+          "content": "Swift Optionals",
+          "preview": false,
+          "time": "28:01"
+        },
+        {
+          "sub_no": 16,
+          "content": "Object oriented programming",
+          "preview": false,
+          "time": "12:00"
+        },
+        {
+          "sub_no": 17,
+          "content": "Inheritance",
+          "preview": false,
+          "time": "08:19"
+        },
+        {
+          "sub_no": 18,
+          "content": "Polymorphism",
+          "preview": false,
+          "time": "08:22"
+        },
+        {
+          "sub_no": 19,
+          "content": "Xcode 8 - Tips &amp; Tricks",
+          "preview": false,
+          "time": "12:00"
+        }
+      ],
+      "lectures": 20
+    },
+    {
+      "no": 2,
+      "title": "Version Control With Git &amp; Github",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Swift 3 Quiz",
+          "preview": false,
+          "time": "5 questions"
+        },
+        {
+          "sub_no": 1,
+          "content": "Coding Warmup: Loops",
+          "preview": false,
+          "time": "00:02"
+        },
+        {
+          "sub_no": 2,
+          "content": "About version control",
+          "preview": true,
+          "time": "12:39"
+        },
+        {
+          "sub_no": 3,
+          "content": "Git basics",
+          "preview": false,
+          "time": "16:20"
+        },
+        {
+          "sub_no": 4,
+          "content": "Setting up Github",
+          "preview": false,
+          "time": "05:34"
+        },
+        {
+          "sub_no": 5,
+          "content": "Github vs Bitbucket",
+          "preview": false,
+          "time": "03:06"
+        },
+        {
+          "sub_no": 6,
+          "content": "Local &amp; remote Git repositories",
+          "preview": false,
+          "time": "17:32"
+        },
+        {
+          "sub_no": 7,
+          "content": "Working through Git merge conflicts",
+          "preview": false,
+          "time": "11:17"
+        },
+        {
+          "sub_no": 8,
+          "content": "Github Desktop",
+          "preview": false,
+          "time": "07:44"
+        }
+      ],
+      "lectures": 9
+    },
+    {
+      "no": 3,
+      "title": "Foundational iOS",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Exercise: Pushing your code to Github",
+          "preview": false,
+          "time": "00:02"
+        },
+        {
+          "sub_no": 1,
+          "content": "iOS 10 App: Miracle Pills - Xcode 8 Updates",
+          "preview": false,
+          "time": "00:47"
+        },
+        {
+          "sub_no": 2,
+          "content": "iOS 10 App: Miracle Pills 01 - Autolayout &amp; project creation",
+          "preview": true,
+          "time": "14:48"
+        },
+        {
+          "sub_no": 3,
+          "content": "iOS 10 App: Miracle Pills 02 - Width, height, leading, trailing constraints",
+          "preview": false,
+          "time": "21:19"
+        },
+        {
+          "sub_no": 4,
+          "content": "iOS 10 App: Miracle Pills 03 - UIPickerView",
+          "preview": false,
+          "time": "28:49"
+        },
+        {
+          "sub_no": 5,
+          "content": "Exercise: Extending Miracle Pills",
+          "preview": false,
+          "time": "00:01"
+        },
+        {
+          "sub_no": 6,
+          "content": "Working with UIScrollView",
+          "preview": false,
+          "time": "28:45"
+        },
+        {
+          "sub_no": 7,
+          "content": "Working with UIStackview",
+          "preview": false,
+          "time": "39:36"
+        },
+        {
+          "sub_no": 8,
+          "content": "Changing Screens with Segues - Xcode 8 Updates",
+          "preview": false,
+          "time": "03:06"
+        },
+        {
+          "sub_no": 9,
+          "content": "Changing screens with segues",
+          "preview": false,
+          "time": "26:30"
+        },
+        {
+          "sub_no": 10,
+          "content": "iOS 10 App: Retro Calculator Intro",
+          "preview": true,
+          "time": "01:04"
+        },
+        {
+          "sub_no": 11,
+          "content": "iOS 10 App: Retro Calculator - Xcode 8 Updates",
+          "preview": false,
+          "time": "03:02"
+        },
+        {
+          "sub_no": 12,
+          "content": "iOS 10 App: Retro Calculator - UIStackView &amp; auto layout",
+          "preview": false,
+          "time": "34:53"
+        },
+        {
+          "sub_no": 13,
+          "content": "iOS 10 App: Retro Calculator - Custom fonts on iOS 10",
+          "preview": false,
+          "time": "02:41"
+        },
+        {
+          "sub_no": 14,
+          "content": "iOS 10 App: Retro Calculator - Playing audio files on iOS 10",
+          "preview": false,
+          "time": "08:00"
+        },
+        {
+          "sub_no": 15,
+          "content": "iOS 10 App: Retro Calculator - Math &amp; logic",
+          "preview": false,
+          "time": "17:29"
+        },
+        {
+          "sub_no": 16,
+          "content": "Exercise - Enhancing the Calculator",
+          "preview": false,
+          "time": "01:52"
+        },
+        {
+          "sub_no": 17,
+          "content": "Size classes on iOS 10 &amp; Xcode 8",
+          "preview": false,
+          "time": "18:03"
+        },
+        {
+          "sub_no": 18,
+          "content": "Exercise: Auto layout",
+          "preview": false,
+          "time": "00:01"
+        },
+        {
+          "sub_no": 19,
+          "content": "iOS 10 App: Party Rock Mansion Intro",
+          "preview": true,
+          "time": "01:43"
+        },
+        {
+          "sub_no": 20,
+          "content": "iOS 10 App: Party Rock - Xcode 8 Updates",
+          "preview": false,
+          "time": "02:05"
+        },
+        {
+          "sub_no": 21,
+          "content": "iOS 10 App: Party Rock - Designing the UI",
+          "preview": false,
+          "time": "17:24"
+        },
+        {
+          "sub_no": 22,
+          "content": "iOS 10 App: Party Rock - Custom table cells, and data modeling",
+          "preview": false,
+          "time": "22:39"
+        },
+        {
+          "sub_no": 23,
+          "content": "iOS 10 App: Party Rock - Downloading images &amp; async",
+          "preview": false,
+          "time": "09:21"
+        },
+        {
+          "sub_no": 24,
+          "content": "iOS 10 App: Party Rock - Showing Youtube videos in a web view",
+          "preview": false,
+          "time": "09:28"
+        },
+        {
+          "sub_no": 25,
+          "content": "Model View Controller (MVC)",
+          "preview": false,
+          "time": "26:46"
+        }
+      ],
+      "lectures": 26
+    },
+    {
+      "no": 4,
+      "title": "Working With REST &amp; Web Requests on iOS 10 &amp; Swift 3",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Create a Progress Bar with PaintCode",
+          "preview": false,
+          "time": "25:21"
+        },
+        {
+          "sub_no": 1,
+          "content": "How web requests work on iOS 10",
+          "preview": true,
+          "time": "17:05"
+        },
+        {
+          "sub_no": 2,
+          "content": "Understanding JSON on iOS 10",
+          "preview": false,
+          "time": "10:33"
+        },
+        {
+          "sub_no": 3,
+          "content": "iOS 10 App: Rainy Shine - Xcode 8 Updates",
+          "preview": false,
+          "time": "07:00"
+        },
+        {
+          "sub_no": 4,
+          "content": "iOS 10 App: Rainy Shine - App intro &amp; project creation",
+          "preview": true,
+          "time": "03:28"
+        },
+        {
+          "sub_no": 5,
+          "content": "iOS 10 App: Rainy Shine - Intro to Cocoapods",
+          "preview": false,
+          "time": "06:13"
+        },
+        {
+          "sub_no": 6,
+          "content": "iOS 10 App: Rainy Shine - Installing Cocoapods &amp; Alamofire",
+          "preview": false,
+          "time": "05:56"
+        },
+        {
+          "sub_no": 7,
+          "content": "iOS 10 App: Rainy Shine - Creating the interface with IBOutlets",
+          "preview": false,
+          "time": "32:53"
+        },
+        {
+          "sub_no": 8,
+          "content": "iOS 10 App: Rainy Shine - Table view, delegate, &amp; datasource",
+          "preview": false,
+          "time": "11:37"
+        },
+        {
+          "sub_no": 9,
+          "content": "iOS 10 App: Rainy Shine - OpenWeather API Registration",
+          "preview": false,
+          "time": "10:09"
+        },
+        {
+          "sub_no": 10,
+          "content": "iOS 10 App: Rainy Shine - Data model and constants",
+          "preview": false,
+          "time": "20:09"
+        },
+        {
+          "sub_no": 11,
+          "content": "Downloading data from the API with Alamofire",
+          "preview": false,
+          "time": "13:06"
+        },
+        {
+          "sub_no": 12,
+          "content": "iOS 10 App: Rainy Shine - Parse JSON data",
+          "preview": false,
+          "time": "16:12"
+        },
+        {
+          "sub_no": 13,
+          "content": "iOS 10 App: Rainy Shine - Updating UI with data from the API",
+          "preview": false,
+          "time": "08:11"
+        },
+        {
+          "sub_no": 14,
+          "content": "iOS 10 App: Rainy Shine - Data modeling &amp; initializing weather Dictionary",
+          "preview": false,
+          "time": "40:00"
+        },
+        {
+          "sub_no": 15,
+          "content": "iOS 10 App: Rainy Shine - IBOutlets &amp; custom weather cell",
+          "preview": false,
+          "time": "15:36"
+        },
+        {
+          "sub_no": 16,
+          "content": "iOS 10 App: Rainy Shine - User location with CLLocationManager",
+          "preview": false,
+          "time": "27:13"
+        },
+        {
+          "sub_no": 17,
+          "content": "iOS 10 App: Pokedex - Intro to app",
+          "preview": false,
+          "time": "01:15"
+        },
+        {
+          "sub_no": 18,
+          "content": "iOS 10 App: Pokedex - Xcode 8 Updates",
+          "preview": false,
+          "time": "06:26"
+        },
+        {
+          "sub_no": 19,
+          "content": "iOS 10 App: Pokedex - Project setup, images, data, github",
+          "preview": false,
+          "time": "08:16"
+        },
+        {
+          "sub_no": 20,
+          "content": "iOS 10 App: Pokedex - Creating a Pokemon class",
+          "preview": false,
+          "time": "04:36"
+        },
+        {
+          "sub_no": 21,
+          "content": "iOS 10 App: Pokedex - Collection view, storyboard layout",
+          "preview": false,
+          "time": "08:52"
+        },
+        {
+          "sub_no": 22,
+          "content": "iOS 10 App: Pokedex - Custom collection view cell",
+          "preview": false,
+          "time": "07:38"
+        },
+        {
+          "sub_no": 23,
+          "content": "iOS 10 App: Pokedex - Collection view delegate, data source, flow layout",
+          "preview": false,
+          "time": "13:02"
+        },
+        {
+          "sub_no": 24,
+          "content": "iOS 10 App: Pokedex - Parsing CSV files",
+          "preview": false,
+          "time": "12:52"
+        },
+        {
+          "sub_no": 25,
+          "content": "iOS 10 App: Pokedex - Audio &amp; custom fonts",
+          "preview": false,
+          "time": "12:23"
+        },
+        {
+          "sub_no": 26,
+          "content": "iOS 10 App: Pokedex - Search bar &amp; search filtering",
+          "preview": false,
+          "time": "15:27"
+        },
+        {
+          "sub_no": 27,
+          "content": "iOS 10 App: Pokedex - Detail controller &amp; segue",
+          "preview": false,
+          "time": "10:04"
+        },
+        {
+          "sub_no": 28,
+          "content": "iOS 10 App: Pokedex - Stack view &amp; detail view controller",
+          "preview": false,
+          "time": "23:13"
+        },
+        {
+          "sub_no": 29,
+          "content": "iOS 10 App: Pokedex - IBOutlets &amp; model changes",
+          "preview": false,
+          "time": "06:02"
+        },
+        {
+          "sub_no": 30,
+          "content": "iOS 10 App: Pokedex - The API, Github, Cocoapods &amp; Alamofire",
+          "preview": false,
+          "time": "07:22"
+        },
+        {
+          "sub_no": 31,
+          "content": "iOS 10 App: Pokedex - Downloading &amp; parsing data part 1",
+          "preview": false,
+          "time": "29:19"
+        },
+        {
+          "sub_no": 32,
+          "content": "iOS 10 App: Pokedex - Downloading &amp; parsing data part 2",
+          "preview": false,
+          "time": "16:04"
+        }
+      ],
+      "lectures": 33
+    },
+    {
+      "no": 5,
+      "title": "Data Persistence &amp; Core Data",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "iOS 10 App: Pokedex - Finishing the Pokedex",
+          "preview": false,
+          "time": "28:31"
+        },
+        {
+          "sub_no": 1,
+          "content": "Intro to Core Data App",
+          "preview": true,
+          "time": "01:22"
+        },
+        {
+          "sub_no": 2,
+          "content": "Why Use Core Data",
+          "preview": false,
+          "time": "03:54"
+        },
+        {
+          "sub_no": 3,
+          "content": "Core Data Architecture Overview",
+          "preview": false,
+          "time": "03:59"
+        },
+        {
+          "sub_no": 4,
+          "content": "iOS 10 App: DreamLister Part 1 - Creating a Data Model",
+          "preview": false,
+          "time": "20:30"
+        },
+        {
+          "sub_no": 5,
+          "content": "iOS 10 App: DreamLister Part 2 - Designing the Views",
+          "preview": false,
+          "time": "20:59"
+        },
+        {
+          "sub_no": 6,
+          "content": "iOS 10 App: DreamLister Part 3 - Connecting the Views",
+          "preview": false,
+          "time": "06:09"
+        },
+        {
+          "sub_no": 7,
+          "content": "iOS 10 App: DreamLister Part 4 - NSFetchedResultsController",
+          "preview": false,
+          "time": "22:22"
+        },
+        {
+          "sub_no": 8,
+          "content": "iOS 10 App: DreamLister Part 5 - Fetching and Displaying Data",
+          "preview": false,
+          "time": "16:59"
+        },
+        {
+          "sub_no": 9,
+          "content": "iOS 10 App: DreamLister Part 6 - Laying Out The Details Screen",
+          "preview": false,
+          "time": "14:53"
+        },
+        {
+          "sub_no": 10,
+          "content": "iOS 10 App: DreamLister Part 7 - Implementing UIPickerView",
+          "preview": false,
+          "time": "13:39"
+        },
+        {
+          "sub_no": 11,
+          "content": "iOS 10 App: DreamLister Part 8 - Saving Data from a Form",
+          "preview": false,
+          "time": "13:34"
+        },
+        {
+          "sub_no": 12,
+          "content": "iOS 10 App: DreamLister Part 9 - Editing Existing Data",
+          "preview": false,
+          "time": "16:28"
+        },
+        {
+          "sub_no": 13,
+          "content": "iOS 10 App: DreamLister Part 10 - Deleting Data and Adding Images",
+          "preview": false,
+          "time": "18:47"
+        },
+        {
+          "sub_no": 14,
+          "content": "iOS 10 App: DreamLister Part 11 - Sorting Data",
+          "preview": false,
+          "time": "06:56"
+        },
+        {
+          "sub_no": 15,
+          "content": "iOS 10 App: DreamLister Part 12 - ItemType Challenge",
+          "preview": false,
+          "time": "02:27"
+        }
+      ],
+      "lectures": 16
+    },
+    {
+      "no": 6,
+      "title": "Protocol Oriented Programming and Advanced Swift 3",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "iOS 10 App: Converting Swift 2 to Swift 3 Core Data Project",
+          "preview": false,
+          "time": "13:38"
+        },
+        {
+          "sub_no": 1,
+          "content": "Intro to Protocol Oriented Programming",
+          "preview": false,
+          "time": "11:08"
+        },
+        {
+          "sub_no": 2,
+          "content": "Writing your first protocols",
+          "preview": false,
+          "time": "20:25"
+        },
+        {
+          "sub_no": 3,
+          "content": "Creating protocol extensions",
+          "preview": false,
+          "time": "14:53"
+        },
+        {
+          "sub_no": 4,
+          "content": "Generics &amp; protocols",
+          "preview": false,
+          "time": "13:37"
+        },
+        {
+          "sub_no": 5,
+          "content": "Protocol Oriented Programming - Xcode 8 Updates",
+          "preview": false,
+          "time": "02:44"
+        },
+        {
+          "sub_no": 6,
+          "content": "Practical examples using protocol oriented programming",
+          "preview": false,
+          "time": "01:23:20"
+        }
+      ],
+      "lectures": 7
+    },
+    {
+      "no": 7,
+      "title": "iOS 10 Hot New Features",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Recursive Functions",
+          "preview": false,
+          "time": "13:48"
+        },
+        {
+          "sub_no": 1,
+          "content": "iOS 10: iMessage Sticker App Extension",
+          "preview": false,
+          "time": "06:19"
+        },
+        {
+          "sub_no": 2,
+          "content": "iOS 10: Speech Recognition API",
+          "preview": false,
+          "time": "46:45"
+        },
+        {
+          "sub_no": 3,
+          "content": "iOS 10: User Notifications - Xcode 8 Updates",
+          "preview": false,
+          "time": "05:47"
+        }
+      ],
+      "lectures": 4
+    },
+    {
+      "no": 8,
+      "title": "Building Full Stack Apps With Firebase",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "iOS 10: User Notifications",
+          "preview": false,
+          "time": "45:33"
+        },
+        {
+          "sub_no": 1,
+          "content": "Intro to Firebase",
+          "preview": true,
+          "time": "06:35"
+        },
+        {
+          "sub_no": 2,
+          "content": "Firebase Push Notifications - Creating the project",
+          "preview": false,
+          "time": "05:33"
+        },
+        {
+          "sub_no": 3,
+          "content": "Firebase Push Notifications - Creating a push cert",
+          "preview": false,
+          "time": "07:00"
+        },
+        {
+          "sub_no": 4,
+          "content": "Firebase Push Notifications - Connecting via code to Firebase messaging",
+          "preview": false,
+          "time": "17:47"
+        },
+        {
+          "sub_no": 5,
+          "content": "Sorting Data in Firebase - Xcode 8 Updates",
+          "preview": false,
+          "time": "02:33"
+        }
+      ],
+      "lectures": 6
+    },
+    {
+      "no": 9,
+      "title": "Maps, GPS, Geolocation, Pokemon &amp; Firebase",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Sorting Data in Firebase",
+          "preview": false,
+          "time": "28:41"
+        },
+        {
+          "sub_no": 1,
+          "content": "iOS 10 App: PokeFinder - Intro to App",
+          "preview": false,
+          "time": "02:45"
+        },
+        {
+          "sub_no": 2,
+          "content": "iOS 10 App: PokeFinder - Xcode 8 Updates",
+          "preview": false,
+          "time": "02:01"
+        },
+        {
+          "sub_no": 3,
+          "content": "iOS 10 App: PokeFinder - Installing Firebase &amp; GeoFire",
+          "preview": false,
+          "time": "13:02"
+        },
+        {
+          "sub_no": 4,
+          "content": "iOS 10 App: PokeFinder - Custom image for user location",
+          "preview": false,
+          "time": "16:34"
+        },
+        {
+          "sub_no": 5,
+          "content": "iOS 10 App: PokeFinder - Saving Pokemon to a GPS location",
+          "preview": false,
+          "time": "19:05"
+        },
+        {
+          "sub_no": 6,
+          "content": "iOS 10 App: PokeFinder - Showing Pokemon annotations on the map",
+          "preview": false,
+          "time": "18:10"
+        },
+        {
+          "sub_no": 7,
+          "content": "iOS 10 App: PokeFinder - Location permissions &amp; final app",
+          "preview": false,
+          "time": "08:10"
+        }
+      ],
+      "lectures": 8
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "no": 1,
+  "total": {
+    "lectures": 63,
+    "time": "06:12:50"
+  },
+  "header": [
+    {
+      "no": 0,
+      "title": "Course Introduction and Resources",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Course Roadmap (overview)",
+          "preview": false,
+          "time": "03:25"
+        },
+        {
+          "sub_no": 1,
+          "content": "Meet Your Instructor",
+          "preview": true,
+          "time": "02:08"
+        },
+        {
+          "sub_no": 2,
+          "content": "Getting Course Resources (GitHub Repo)",
+          "preview": true,
+          "time": "00:25"
+        },
+        {
+          "sub_no": 3,
+          "content": "Installing Docker",
+          "preview": false,
+          "time": "01:42"
+        },
+        {
+          "sub_no": 4,
+          "content": "Code or Text Editor for Docker and Compose files",
+          "preview": false,
+          "time": "00:11"
+        },
+        {
+          "sub_no": 5,
+          "content": "Terminal Shell and Tab Completion for Docker CLI",
+          "preview": false,
+          "time": "01:19"
+        },
+        {
+          "sub_no": 6,
+          "content": "Course Chat Room",
+          "preview": false,
+          "time": "00:47"
+        },
+        {
+          "sub_no": 7,
+          "content": "Docker Version Format Change in Early 2017",
+          "preview": false,
+          "time": "01:14"
+        }
+      ],
+      "lectures": 8
+    },
+    {
+      "no": 1,
+      "title": "Creating and Using Containers Like a Boss",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Check Our Docker Install and Config",
+          "preview": false,
+          "time": "03:42"
+        },
+        {
+          "sub_no": 1,
+          "content": "Starting a Nginx web server",
+          "preview": false,
+          "time": "08:58"
+        },
+        {
+          "sub_no": 2,
+          "content": "Debrief: What Happens When We Run a Container",
+          "preview": false,
+          "time": "02:29"
+        },
+        {
+          "sub_no": 3,
+          "content": "Container VS. VM: It's Just a Process",
+          "preview": false,
+          "time": "04:12"
+        },
+        {
+          "sub_no": 4,
+          "content": "Assignment: Manage Multiple Containers",
+          "preview": false,
+          "time": "03:34"
+        },
+        {
+          "sub_no": 5,
+          "content": "Assignment Answers: Manage Multiple Containers",
+          "preview": false,
+          "time": "05:41"
+        },
+        {
+          "sub_no": 6,
+          "content": "What's Going On In Containers: CLI Process Monitoring",
+          "preview": false,
+          "time": "04:56"
+        },
+        {
+          "sub_no": 7,
+          "content": "Getting a Shell Inside Containers: No Need for SSH",
+          "preview": false,
+          "time": "10:45"
+        },
+        {
+          "sub_no": 8,
+          "content": "Docker Networks: Concepts for Private and Public Comms in Containers",
+          "preview": true,
+          "time": "11:36"
+        },
+        {
+          "sub_no": 9,
+          "content": "Docker Networks: CLI Management of Virtual Networks",
+          "preview": false,
+          "time": "07:58"
+        },
+        {
+          "sub_no": 10,
+          "content": "Docker Networks: DNS and How Containers Find Each Other",
+          "preview": false,
+          "time": "05:42"
+        },
+        {
+          "sub_no": 11,
+          "content": "Assignment: Using Containers for CLI Testing",
+          "preview": false,
+          "time": "02:30"
+        },
+        {
+          "sub_no": 12,
+          "content": "Assignment Answers: Using Containers for CLI Testing",
+          "preview": false,
+          "time": "02:50"
+        },
+        {
+          "sub_no": 13,
+          "content": "Assignment: DNS Round Robin Test",
+          "preview": false,
+          "time": "05:10"
+        },
+        {
+          "sub_no": 14,
+          "content": "Assignment Answers: DNS Round Robin Test",
+          "preview": false,
+          "time": "03:39"
+        }
+      ],
+      "lectures": 15
+    },
+    {
+      "no": 2,
+      "title": "Container Images, Where To Find Them and How To Build Them",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "What's In An Image (and What Isn't)",
+          "preview": false,
+          "time": "02:01"
+        },
+        {
+          "sub_no": 1,
+          "content": "The Mighty Hub: Using Docker Hub Registry Images",
+          "preview": false,
+          "time": "11:44"
+        },
+        {
+          "sub_no": 2,
+          "content": "Images and Their Layers: Discover the Image Cache",
+          "preview": false,
+          "time": "12:41"
+        },
+        {
+          "sub_no": 3,
+          "content": "Image Tagging and Pushing to Docker Hub",
+          "preview": false,
+          "time": "12:22"
+        },
+        {
+          "sub_no": 4,
+          "content": "Building Images: The Dockerfile Basics",
+          "preview": false,
+          "time": "06:34"
+        },
+        {
+          "sub_no": 5,
+          "content": "Building Images: Running Docker Builds",
+          "preview": false,
+          "time": "03:36"
+        },
+        {
+          "sub_no": 6,
+          "content": "Building Images: Extending Official Images",
+          "preview": false,
+          "time": "05:19"
+        },
+        {
+          "sub_no": 7,
+          "content": "Assignment: Build Your Own Dockerfile and Run Containers From It",
+          "preview": false,
+          "time": "04:00"
+        },
+        {
+          "sub_no": 8,
+          "content": "Assignment Answers: Build Your Own Dockerfile and Run Containers From It",
+          "preview": false,
+          "time": "08:03"
+        }
+      ],
+      "lectures": 9
+    },
+    {
+      "no": 3,
+      "title": "Container Lifetime &amp; Persistent Data: Volumes, Volumes, Volumes",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Container Lifetime &amp; Persistent Data",
+          "preview": false,
+          "time": "04:13"
+        },
+        {
+          "sub_no": 1,
+          "content": "Persistent Data: Data Volumes",
+          "preview": false,
+          "time": "08:48"
+        },
+        {
+          "sub_no": 2,
+          "content": "Persistent Data: Bind Mounting",
+          "preview": false,
+          "time": "07:03"
+        },
+        {
+          "sub_no": 3,
+          "content": "Assignment: Database Upgrades with Named Volumes",
+          "preview": false,
+          "time": "03:34"
+        },
+        {
+          "sub_no": 4,
+          "content": "Assignment Answers: Database Upgrades with Named Volumes",
+          "preview": false,
+          "time": "03:37"
+        },
+        {
+          "sub_no": 5,
+          "content": "Assignment: Edit Code Running In Containers With Bind Mounts",
+          "preview": false,
+          "time": "04:12"
+        },
+        {
+          "sub_no": 6,
+          "content": "Assignment Answers: Edit Code Running In Containers With Bind Mounts",
+          "preview": false,
+          "time": "02:47"
+        }
+      ],
+      "lectures": 7
+    },
+    {
+      "no": 4,
+      "title": "Making It Easier with Docker Compose: The Multi-Container Tool",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Docker Compose and The docker-compose.yml File",
+          "preview": false,
+          "time": "10:29"
+        },
+        {
+          "sub_no": 1,
+          "content": "Trying Out Basic Compose Commands",
+          "preview": false,
+          "time": "08:38"
+        },
+        {
+          "sub_no": 2,
+          "content": "Assignment: Build a Compose File For a Multi-Container Service",
+          "preview": false,
+          "time": "02:59"
+        },
+        {
+          "sub_no": 3,
+          "content": "Assignment Answers: Build a Compose File For a Multi-Container Service",
+          "preview": false,
+          "time": "09:36"
+        },
+        {
+          "sub_no": 4,
+          "content": "Adding Image Building to Compose Files",
+          "preview": false,
+          "time": "09:20"
+        },
+        {
+          "sub_no": 5,
+          "content": "Assignment: Compose For Run-Time Image Building and Multi-Container Development",
+          "preview": true,
+          "time": "03:06"
+        },
+        {
+          "sub_no": 6,
+          "content": "Assignment Answers: Compose For Run-Time Image Building and Multi-Container Dev",
+          "preview": false,
+          "time": "11:28"
+        }
+      ],
+      "lectures": 7
+    },
+    {
+      "no": 5,
+      "title": "Docker Services and The Power of Swarm: Built-In Orchestration",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Swarm Mode: Built-In Orchestration",
+          "preview": false,
+          "time": "08:57"
+        },
+        {
+          "sub_no": 1,
+          "content": "Create Your First Service and Scale It Locally",
+          "preview": false,
+          "time": "12:16"
+        },
+        {
+          "sub_no": 2,
+          "content": "Creating a 3-Node Swarm Cluster",
+          "preview": true,
+          "time": "14:41"
+        },
+        {
+          "sub_no": 3,
+          "content": "Scaling Out with Overlay Networking",
+          "preview": false,
+          "time": "06:42"
+        },
+        {
+          "sub_no": 4,
+          "content": "Scaling Out with Routing Mesh",
+          "preview": false,
+          "time": "08:54"
+        },
+        {
+          "sub_no": 5,
+          "content": "Assignment: Create A Multi-Service Multi-Node Web App",
+          "preview": false,
+          "time": "06:25"
+        },
+        {
+          "sub_no": 6,
+          "content": "Assignment Answers: Create A Multi-Service Multi-Node Web App",
+          "preview": false,
+          "time": "13:32"
+        },
+        {
+          "sub_no": 7,
+          "content": "Swarm Stacks and Production Grade Compose",
+          "preview": false,
+          "time": "14:19"
+        },
+        {
+          "sub_no": 8,
+          "content": "Secrets Storage for Swarm: Protecting Your Environment Variables",
+          "preview": false,
+          "time": "05:07"
+        },
+        {
+          "sub_no": 9,
+          "content": "Using Secrets in Swarm Services",
+          "preview": false,
+          "time": "06:56"
+        },
+        {
+          "sub_no": 10,
+          "content": "Using Secrets with Swarm Stacks",
+          "preview": false,
+          "time": "03:51"
+        },
+        {
+          "sub_no": 11,
+          "content": "Using Secrets With Local Docker Compose",
+          "preview": false,
+          "time": "02:55"
+        },
+        {
+          "sub_no": 12,
+          "content": "Assignment: Create A Stack with Secrets and Deploy",
+          "preview": false,
+          "time": "02:09"
+        },
+        {
+          "sub_no": 13,
+          "content": "Assignment Answers: Create A Stack with Secrets and Deploy",
+          "preview": false,
+          "time": "04:28"
+        },
+        {
+          "sub_no": 14,
+          "content": "Full App Lifecycle: Dev, Build and Deploy With a Single Compose Design",
+          "preview": false,
+          "time": "10:10"
+        }
+      ],
+      "lectures": 15
+    },
+    {
+      "no": 6,
+      "title": "Bonus Section",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Bonus Lecture: Bret's DockerCon 2017 Video: \"Journey to Docker Production\"",
+          "preview": false,
+          "time": "00:35"
+        },
+        {
+          "sub_no": 1,
+          "content": "Bonus Lecture: Bret's Docker and DevOps Newsletter",
+          "preview": false,
+          "time": "00:09"
+        }
+      ],
+      "lectures": 2
+    }
+  ]
+}

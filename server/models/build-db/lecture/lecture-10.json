@@ -1,0 +1,351 @@
+{
+  "no": 10,
+  "total": {
+    "lectures": 50,
+    "time": "04:17:28"
+  },
+  "header": [
+    {
+      "no": 0,
+      "title": "INTRODUCTION",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "The Rocket Science Of Writing",
+          "preview": false,
+          "time": "03:22"
+        },
+        {
+          "sub_no": 1,
+          "content": "The Four Ninja Levels",
+          "preview": true,
+          "time": "02:55"
+        },
+        {
+          "sub_no": 2,
+          "content": "A Quick Proof",
+          "preview": false,
+          "time": "03:18"
+        }
+      ],
+      "lectures": 3
+    },
+    {
+      "no": 1,
+      "title": "THE NARRATIVE",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "How To Find Your Voice",
+          "preview": false,
+          "time": "13:40"
+        },
+        {
+          "sub_no": 1,
+          "content": "How To Kickstart A Narrative",
+          "preview": false,
+          "time": "04:37"
+        },
+        {
+          "sub_no": 2,
+          "content": "How To Organize Your Narrative",
+          "preview": true,
+          "time": "11:04"
+        },
+        {
+          "sub_no": 3,
+          "content": "Killer Intros",
+          "preview": false,
+          "time": "09:41"
+        },
+        {
+          "sub_no": 4,
+          "content": "Cool Kickers",
+          "preview": false,
+          "time": "03:43"
+        },
+        {
+          "sub_no": 5,
+          "content": "Other Types Of Narrative",
+          "preview": false,
+          "time": "12:21"
+        },
+        {
+          "sub_no": 6,
+          "content": "How To Embed Metaphor",
+          "preview": false,
+          "time": "08:31"
+        },
+        {
+          "sub_no": 7,
+          "content": "Ninja Writing Exercises: THE NARRATIVE",
+          "preview": false,
+          "time": "03:04"
+        },
+        {
+          "sub_no": 8,
+          "content": "Bonus Ninja Tactics #1: SYMMETRY",
+          "preview": false,
+          "time": "05:02"
+        },
+        {
+          "sub_no": 9,
+          "content": "Bonus Ninja Tactics #2: HOW TO EXTEND A NARRATIVE",
+          "preview": false,
+          "time": "02:21"
+        },
+        {
+          "sub_no": 10,
+          "content": "Bonus Ninja Tactics #3: HOW TO GET A FRESH PERSPECTIVE",
+          "preview": false,
+          "time": "02:57"
+        }
+      ],
+      "lectures": 11
+    },
+    {
+      "no": 2,
+      "title": "PARAGRAPHS",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Why Have Paragraphs?",
+          "preview": false,
+          "time": "04:12"
+        },
+        {
+          "sub_no": 1,
+          "content": "Different Paragraph Styles",
+          "preview": true,
+          "time": "05:52"
+        },
+        {
+          "sub_no": 2,
+          "content": "Ninja Writing Exercises: PARAGRAPHS",
+          "preview": false,
+          "time": "02:12"
+        },
+        {
+          "sub_no": 3,
+          "content": "Bonus Ninja Tactics #1: SUPERTHICK PARAGRAPHS",
+          "preview": false,
+          "time": "02:44"
+        }
+      ],
+      "lectures": 4
+    },
+    {
+      "no": 3,
+      "title": "SENTENCES",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "How To Recognize A Non-Sentence",
+          "preview": false,
+          "time": "07:27"
+        },
+        {
+          "sub_no": 1,
+          "content": "How To Tighten Sentences",
+          "preview": false,
+          "time": "03:08"
+        },
+        {
+          "sub_no": 2,
+          "content": "How To Sharpen Sentences",
+          "preview": false,
+          "time": "09:20"
+        },
+        {
+          "sub_no": 3,
+          "content": "How To Give Sentences Rhythm",
+          "preview": false,
+          "time": "13:00"
+        },
+        {
+          "sub_no": 4,
+          "content": "How To Produce Poetic Sentences",
+          "preview": false,
+          "time": "08:00"
+        },
+        {
+          "sub_no": 5,
+          "content": "How To Create Emphasis",
+          "preview": false,
+          "time": "03:02"
+        },
+        {
+          "sub_no": 6,
+          "content": "How To Whip Up Drama",
+          "preview": false,
+          "time": "07:27"
+        },
+        {
+          "sub_no": 7,
+          "content": "Don't Give Readers Whiplash",
+          "preview": false,
+          "time": "02:49"
+        },
+        {
+          "sub_no": 8,
+          "content": "Stick To What's Necessary",
+          "preview": false,
+          "time": "02:50"
+        },
+        {
+          "sub_no": 9,
+          "content": "Avoid Back Referencing",
+          "preview": false,
+          "time": "02:51"
+        },
+        {
+          "sub_no": 10,
+          "content": "Avoid Run-On Ambiguity",
+          "preview": false,
+          "time": "02:45"
+        },
+        {
+          "sub_no": 11,
+          "content": "Ninja Writing Exercises: SENTENCES",
+          "preview": false,
+          "time": "08:15"
+        },
+        {
+          "sub_no": 12,
+          "content": "Bonus Ninja Tactics #1: WRITE FOR YOUR GRANDMA",
+          "preview": false,
+          "time": "01:58"
+        },
+        {
+          "sub_no": 13,
+          "content": "Bonus Ninja Tactics #2: THE ONE-BREATH READBACK",
+          "preview": false,
+          "time": "02:43"
+        }
+      ],
+      "lectures": 14
+    },
+    {
+      "no": 4,
+      "title": "WORDS",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Choose Precise Words",
+          "preview": false,
+          "time": "02:51"
+        },
+        {
+          "sub_no": 1,
+          "content": "Avoid Technical, Abstract Words",
+          "preview": false,
+          "time": "06:08"
+        },
+        {
+          "sub_no": 2,
+          "content": "Choose Colorful Words",
+          "preview": false,
+          "time": "07:02"
+        },
+        {
+          "sub_no": 3,
+          "content": "Notice Implied Words",
+          "preview": false,
+          "time": "03:00"
+        },
+        {
+          "sub_no": 4,
+          "content": "Avoid Pointless Distinctions",
+          "preview": false,
+          "time": "03:57"
+        },
+        {
+          "sub_no": 5,
+          "content": "Degrees Of Orderliness",
+          "preview": false,
+          "time": "05:27"
+        },
+        {
+          "sub_no": 6,
+          "content": "Create More Special Effects",
+          "preview": false,
+          "time": "06:08"
+        },
+        {
+          "sub_no": 7,
+          "content": "The Power Of Reminder Words",
+          "preview": false,
+          "time": "03:03"
+        },
+        {
+          "sub_no": 8,
+          "content": "Words That Sound Good Together",
+          "preview": false,
+          "time": "05:27"
+        },
+        {
+          "sub_no": 9,
+          "content": "Numbers Into Words, Titles Into Descriptions",
+          "preview": false,
+          "time": "04:53"
+        },
+        {
+          "sub_no": 10,
+          "content": "Don't Overemphasize",
+          "preview": false,
+          "time": "03:54"
+        },
+        {
+          "sub_no": 11,
+          "content": "How To Slice Syllables",
+          "preview": false,
+          "time": "02:49"
+        },
+        {
+          "sub_no": 12,
+          "content": "Ninja Writing Exercises: WORDS",
+          "preview": false,
+          "time": "06:43"
+        },
+        {
+          "sub_no": 13,
+          "content": "Bonus Ninja Tactics #1: HOW TO BOOST YOUR VOCABULARY",
+          "preview": false,
+          "time": "04:58"
+        },
+        {
+          "sub_no": 14,
+          "content": "Bonus Ninja Writing Tactics #2: OBSOLETE HYPHENS",
+          "preview": false,
+          "time": "02:28"
+        }
+      ],
+      "lectures": 15
+    },
+    {
+      "no": 5,
+      "title": "CONCLUSION",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Quick Wrap-Up",
+          "preview": false,
+          "time": "06:18"
+        },
+        {
+          "sub_no": 1,
+          "content": "Ninja Writer's Checklist",
+          "preview": false,
+          "time": "4 pages"
+        },
+        {
+          "sub_no": 2,
+          "content": "BONUS LECTURE: How To Get My Other Courses Dirt-Cheap",
+          "preview": false,
+          "time": "01:11"
+        }
+      ],
+      "lectures": 3
+    }
+  ]
+}

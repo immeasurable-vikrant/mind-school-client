@@ -1,0 +1,583 @@
+{
+  "no": 6,
+  "total": {
+    "lectures": 98,
+    "time": "13:10:21"
+  },
+  "header": [
+    {
+      "no": 0,
+      "title": "Introduction and Setup",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Introduction and the Goal of this Course",
+          "preview": false,
+          "time": "04:33"
+        },
+        {
+          "sub_no": 1,
+          "content": "Big Words and NodeJS",
+          "preview": true,
+          "time": "01:13"
+        },
+        {
+          "sub_no": 2,
+          "content": "Watching this Course in High Definition",
+          "preview": true,
+          "time": "00:51"
+        },
+        {
+          "sub_no": 3,
+          "content": "Conceptual Aside: The Command Line Interface",
+          "preview": false,
+          "time": "09:49"
+        },
+        {
+          "sub_no": 4,
+          "content": "Command Line References",
+          "preview": true,
+          "time": "00:18"
+        }
+      ],
+      "lectures": 5
+    },
+    {
+      "no": 1,
+      "title": "V8: The Javascript Engine",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Conceptual Aside: Processors, Machine Language, and C++",
+          "preview": false,
+          "time": "10:07"
+        },
+        {
+          "sub_no": 1,
+          "content": "Javascript Aside: Javascript Engines and The ECMAScript Specification",
+          "preview": true,
+          "time": "04:01"
+        },
+        {
+          "sub_no": 2,
+          "content": "V8 Under the Hood",
+          "preview": true,
+          "time": "05:57"
+        },
+        {
+          "sub_no": 3,
+          "content": "Adding Features to Javascript",
+          "preview": true,
+          "time": "15:04"
+        }
+      ],
+      "lectures": 4
+    },
+    {
+      "no": 2,
+      "title": "The Node Core",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Conceptual Aside: Servers and Clients",
+          "preview": true,
+          "time": "06:45"
+        },
+        {
+          "sub_no": 1,
+          "content": "What Does Javascript Need to Manage a Server?",
+          "preview": true,
+          "time": "02:18"
+        },
+        {
+          "sub_no": 2,
+          "content": "The C++ Core",
+          "preview": true,
+          "time": "05:51"
+        },
+        {
+          "sub_no": 3,
+          "content": "The Javascript Core",
+          "preview": true,
+          "time": "03:04"
+        },
+        {
+          "sub_no": 4,
+          "content": "Downloading Lecture Source Code",
+          "preview": true,
+          "time": "00:32"
+        },
+        {
+          "sub_no": 5,
+          "content": "Let's Install and Run Some Javascript in Node",
+          "preview": false,
+          "time": "16:47"
+        }
+      ],
+      "lectures": 6
+    },
+    {
+      "no": 3,
+      "title": "Modules, Exports, and Require",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Conceptual Aside: Modules",
+          "preview": true,
+          "time": "02:21"
+        },
+        {
+          "sub_no": 1,
+          "content": "Javascript Aside: First-Class Functions and Function Expressions",
+          "preview": false,
+          "time": "12:03"
+        },
+        {
+          "sub_no": 2,
+          "content": "Let's Build a Module",
+          "preview": false,
+          "time": "10:54"
+        },
+        {
+          "sub_no": 3,
+          "content": "Javascript Aside: Objects and Object Literals",
+          "preview": false,
+          "time": "06:55"
+        },
+        {
+          "sub_no": 4,
+          "content": "Javascript Aside: Prototypal Inheritance and Function Constructors",
+          "preview": false,
+          "time": "11:38"
+        },
+        {
+          "sub_no": 5,
+          "content": "Javascript Aside: By Reference and By Value",
+          "preview": false,
+          "time": "05:44"
+        },
+        {
+          "sub_no": 6,
+          "content": "Javascript Aside: Immediately Invoked Function Expressions (IIFEs)",
+          "preview": false,
+          "time": "07:42"
+        },
+        {
+          "sub_no": 7,
+          "content": "How Do Node Modules Really Work?: module.exports and require",
+          "preview": false,
+          "time": "17:33"
+        },
+        {
+          "sub_no": 8,
+          "content": "Javascript Aside: JSON",
+          "preview": false,
+          "time": "01:40"
+        },
+        {
+          "sub_no": 9,
+          "content": "More on require",
+          "preview": false,
+          "time": "11:39"
+        },
+        {
+          "sub_no": 10,
+          "content": "Module Patterns",
+          "preview": false,
+          "time": "19:12"
+        },
+        {
+          "sub_no": 11,
+          "content": "exports vs module.exports",
+          "preview": false,
+          "time": "10:02"
+        },
+        {
+          "sub_no": 12,
+          "content": "Requiring Native (Core) Modules",
+          "preview": false,
+          "time": "06:51"
+        },
+        {
+          "sub_no": 13,
+          "content": "Modules and ES6",
+          "preview": false,
+          "time": "02:36"
+        },
+        {
+          "sub_no": 14,
+          "content": "Web Server Checklist",
+          "preview": false,
+          "time": "01:21"
+        }
+      ],
+      "lectures": 15
+    },
+    {
+      "no": 4,
+      "title": "Events and the Event Emitter",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Conceptual Aside: Events",
+          "preview": false,
+          "time": "05:24"
+        },
+        {
+          "sub_no": 1,
+          "content": "Javascript Aside: Object Properties, First Class Functions, and Arrays",
+          "preview": false,
+          "time": "05:08"
+        },
+        {
+          "sub_no": 2,
+          "content": "The Node Event Emitter - Part 1",
+          "preview": false,
+          "time": "13:58"
+        },
+        {
+          "sub_no": 3,
+          "content": "The Node Event Emitter - Part 2",
+          "preview": false,
+          "time": "11:58"
+        },
+        {
+          "sub_no": 4,
+          "content": "Javascript Aside: Object.create and Prototypes",
+          "preview": false,
+          "time": "06:18"
+        },
+        {
+          "sub_no": 5,
+          "content": "Inheriting From the Event Emitter",
+          "preview": false,
+          "time": "14:40"
+        },
+        {
+          "sub_no": 6,
+          "content": "Javascript Aside: Node, ES6, and Template Literals",
+          "preview": false,
+          "time": "07:55"
+        },
+        {
+          "sub_no": 7,
+          "content": "Javascript Aside: .call and .apply",
+          "preview": false,
+          "time": "03:40"
+        },
+        {
+          "sub_no": 8,
+          "content": "Inheriting From the Event Emitter - Part 2",
+          "preview": false,
+          "time": "09:43"
+        },
+        {
+          "sub_no": 9,
+          "content": "Javascript Aside: ES6 Classes",
+          "preview": false,
+          "time": "08:43"
+        },
+        {
+          "sub_no": 10,
+          "content": "Inheriting From the Event Emitter - Part 3",
+          "preview": false,
+          "time": "06:00"
+        }
+      ],
+      "lectures": 11
+    },
+    {
+      "no": 5,
+      "title": "Asynchronous Code, libuv, The Event Loop, Streams, Files, and more…",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Javascript Aside: Javascript is Synchronous",
+          "preview": false,
+          "time": "02:38"
+        },
+        {
+          "sub_no": 1,
+          "content": "Conceptual Aside: Callbacks",
+          "preview": false,
+          "time": "01:29"
+        },
+        {
+          "sub_no": 2,
+          "content": "libuv, The Event Loop, and Non-Blocking Asynchronous Execution",
+          "preview": false,
+          "time": "11:39"
+        },
+        {
+          "sub_no": 3,
+          "content": "Conceptual Aside: Streams and Buffers",
+          "preview": false,
+          "time": "04:31"
+        },
+        {
+          "sub_no": 4,
+          "content": "Conceptual Aside: Binary Data, Character Sets, and Encodings",
+          "preview": false,
+          "time": "11:09"
+        },
+        {
+          "sub_no": 5,
+          "content": "Buffers",
+          "preview": false,
+          "time": "06:48"
+        },
+        {
+          "sub_no": 6,
+          "content": "ES6 Typed Arrays",
+          "preview": false,
+          "time": "04:52"
+        },
+        {
+          "sub_no": 7,
+          "content": "Javascript Aside: Callbacks",
+          "preview": false,
+          "time": "04:03"
+        },
+        {
+          "sub_no": 8,
+          "content": "Files and fs",
+          "preview": false,
+          "time": "15:52"
+        },
+        {
+          "sub_no": 9,
+          "content": "Streams",
+          "preview": false,
+          "time": "18:14"
+        },
+        {
+          "sub_no": 10,
+          "content": "Conceptual Aside: Pipes",
+          "preview": false,
+          "time": "02:14"
+        },
+        {
+          "sub_no": 11,
+          "content": "Pipes",
+          "preview": false,
+          "time": "15:51"
+        },
+        {
+          "sub_no": 12,
+          "content": "Web Server Checklist",
+          "preview": false,
+          "time": "02:37"
+        }
+      ],
+      "lectures": 13
+    },
+    {
+      "no": 6,
+      "title": "HTTP and being a Web Server",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Conceptual Aside: TCP/IP",
+          "preview": false,
+          "time": "07:55"
+        },
+        {
+          "sub_no": 1,
+          "content": "Conceptual Aside: Addresses and Ports",
+          "preview": false,
+          "time": "03:11"
+        },
+        {
+          "sub_no": 2,
+          "content": "Conceptual Aside: HTTP",
+          "preview": false,
+          "time": "06:06"
+        },
+        {
+          "sub_no": 3,
+          "content": "http_parser",
+          "preview": false,
+          "time": "06:56"
+        },
+        {
+          "sub_no": 4,
+          "content": "Let's Build a Web Server in Node",
+          "preview": false,
+          "time": "17:26"
+        },
+        {
+          "sub_no": 5,
+          "content": "Outputting HTML and Templates",
+          "preview": false,
+          "time": "11:43"
+        },
+        {
+          "sub_no": 6,
+          "content": "Streams and Performance",
+          "preview": false,
+          "time": "05:11"
+        },
+        {
+          "sub_no": 7,
+          "content": "Conceptual Aside: APIs and Endpoints",
+          "preview": false,
+          "time": "02:37"
+        },
+        {
+          "sub_no": 8,
+          "content": "Outputting JSON",
+          "preview": false,
+          "time": "06:39"
+        },
+        {
+          "sub_no": 9,
+          "content": "Routing",
+          "preview": false,
+          "time": "11:02"
+        },
+        {
+          "sub_no": 10,
+          "content": "Web Server Checklist",
+          "preview": false,
+          "time": "02:24"
+        }
+      ],
+      "lectures": 11
+    },
+    {
+      "no": 7,
+      "title": "NPM: the Node Package Manager",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Conceptual Aside: Packages and Package Managers",
+          "preview": false,
+          "time": "03:07"
+        },
+        {
+          "sub_no": 1,
+          "content": "Conceptual Aside: Semantic Versioning (semver)",
+          "preview": false,
+          "time": "04:46"
+        },
+        {
+          "sub_no": 2,
+          "content": "npm and the npm registry: Other People's Code",
+          "preview": false,
+          "time": "04:59"
+        },
+        {
+          "sub_no": 3,
+          "content": "init, nodemon, and package.json",
+          "preview": false,
+          "time": "13:02"
+        },
+        {
+          "sub_no": 4,
+          "content": "npm Global Installation",
+          "preview": false,
+          "time": "00:10"
+        },
+        {
+          "sub_no": 5,
+          "content": "init, nodemon, and package.json - Part 2",
+          "preview": false,
+          "time": "15:17"
+        },
+        {
+          "sub_no": 6,
+          "content": "Using Other People's Code",
+          "preview": false,
+          "time": "01:43"
+        }
+      ],
+      "lectures": 7
+    },
+    {
+      "no": 8,
+      "title": "Express",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Installing Express and Making it Easier to Build a Web Server",
+          "preview": false,
+          "time": "16:01"
+        },
+        {
+          "sub_no": 1,
+          "content": "Routes",
+          "preview": false,
+          "time": "04:32"
+        },
+        {
+          "sub_no": 2,
+          "content": "Static Files and Middleware",
+          "preview": false,
+          "time": "14:58"
+        },
+        {
+          "sub_no": 3,
+          "content": "Templates and Template Engines",
+          "preview": false,
+          "time": "15:54"
+        },
+        {
+          "sub_no": 4,
+          "content": "Querystring and Post Parameters",
+          "preview": false,
+          "time": "18:21"
+        },
+        {
+          "sub_no": 5,
+          "content": "RESTful APIs and JSON",
+          "preview": false,
+          "time": "05:21"
+        },
+        {
+          "sub_no": 6,
+          "content": "Structuring an App",
+          "preview": false,
+          "time": "13:45"
+        }
+      ],
+      "lectures": 7
+    },
+    {
+      "no": 9,
+      "title": "Javascript, JSON, and Databases",
+      "body": [
+        {
+          "sub_no": 0,
+          "content": "Conceptual Aside: Relational Databases and SQL",
+          "preview": false,
+          "time": "03:48"
+        },
+        {
+          "sub_no": 1,
+          "content": "Node and MySQL",
+          "preview": false,
+          "time": "09:28"
+        },
+        {
+          "sub_no": 2,
+          "content": "Conceptual Aside: NoSQL and Documents",
+          "preview": false,
+          "time": "03:12"
+        },
+        {
+          "sub_no": 3,
+          "content": "MongoDB and Mongoose",
+          "preview": false,
+          "time": "10:50"
+        },
+        {
+          "sub_no": 4,
+          "content": "Web Server Checklist",
+          "preview": false,
+          "time": "01:07"
+        }
+      ],
+      "lectures": 5
+    }
+  ]
+}
