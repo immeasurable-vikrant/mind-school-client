@@ -1,5 +1,3 @@
-/** @format */
-
 import seedrandom from 'seedrandom';
 import express from 'express';
 import http from 'http';
@@ -31,11 +29,14 @@ const app = express();
 
 mongoose.Promise = require('bluebird');
 
+const MONGODB_URI =
+  'mongodb+srv://vikrantsinghbandral:Sonchiriya%402019@cluster0.gn6ju.mongodb.net/database?retryWrites=true&w=majority';
+
 mongoose
-  .connect(config.database, {
-    useMongoClient: true,
+  .connect(MONGODB_URI || 'mongodb://localhost:27017/', {
     keepAlive: 300000,
     connectTimeoutMS: 30000,
+    useNewUrlParser: true,
   })
   .then(() => {
     console.log('Connected to the database');
@@ -61,7 +62,7 @@ mongoose
   .catch((err) => {
     if (err) {
       console.log(err);
-      return handleError(err);
+      return err;
     }
   });
 
