@@ -121,3 +121,35 @@ img {
   margin-top: 35px;
   text-align: center;
 }
+
+.horizontal_slider {
+  display: block;
+  width: 100%;
+  overflow-x: scroll;
+  /* margin-top: 150px; */
+  box-sizing: border-box;
+  /* background-color: #eee; */
+}
+
+.slider_container {
+  display: block;
+  white-space: nowrap;
+}
+
+.item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.item img {
+  object-fit: cover;
+}
+
+/*this is for chrome  / firefox / opero and safari */
+.horizontal_slider::-webkit-scrollbar {
+  display: none;
+}
+
+.horizontal_slider {
+  -ms-overflow-style: none;
+}
