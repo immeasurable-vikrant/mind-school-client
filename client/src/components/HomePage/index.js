@@ -1,15 +1,16 @@
 import _ from 'lodash';
-import React, { Fragment } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Carousel from 'react-elastic-carousel';
 import { useMediaQuery } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import { randomSort } from '../../utility/randomSort';
+import { paginate, paginateReset, paginateLoading } from '../../actions/course';
 import CourseDetail from '../../common-components/courseDetail/courseDetail.component';
 import Loader from '../../common-components/loader/loader.component';
 import './index.scss';
-import '../../index.scss';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,9 +26,31 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const HomePage = ({ isLoading, courses, hasError }) => {
+const HomePage = ({ isLoading, courses, hasError, fetchPaginate }) => {
   const matches = useMediaQuery('(min-width:600px)');
   const classes = useStyles();
+  const [state, setState] = useState({
+    keyword: '',
+    limit: 9,
+    sort: {}
+  });
+
+  const loadInitial = (keyword) => {
+    const { limit } = state;
+
+    const sort = randomSort();
+
+    const callback = () => {
+      setState({ sort });
+    };
+
+    fetchPaginate(keyword, 1, limit, sort, callback);
+  };
+
+  useEffect(() => {
+    loadInitial();
+  }, []);
+
   const breakPoints = [
     { width: 1, itemsToShow: 2 },
     { width: 550, itemsToShow: 2, itemsToScroll: 2 },
@@ -76,6 +99,7 @@ HomePage.propTypes = {
   isLoading: PropTypes.bool,
   hasError: PropTypes.string,
   courses: PropTypes.array,
+  fetchPaginate: PropTypes.func,
 };
 
 const mapStateToProps = (state) => {
@@ -86,4 +110,16 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default withRouter(connect(mapStateToProps, null)(HomePage));
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchPaginate: (keyword, page, limit, sort, callback) =>
+      dispatch(paginate(keyword, page, limit, sort, callback)),
+    paginateReset: () => dispatch(paginateReset()),
+    paginateLoading: (loading) => dispatch(paginateLoading(loading)),
+    signError: (error) => dispatch(signError(error)),
+  };
+};
+
+export default withRouter(
+  connect(mapStateToProps, mapDispatchToProps)(HomePage),
+);

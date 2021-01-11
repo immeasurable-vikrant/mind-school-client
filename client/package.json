@@ -59,7 +59,7 @@
     "dateformat": "^3.0.3",
     "font-awesome": "^4.7.0",
     "fontsource-roboto": "^3.0.3",
-    "history": "^5.0.0",
+    "history": "^4.10.1",
     "imports-loader": "^1.1.0",
     "jquery": "^3.5.1",
     "lodash": "^4.17.19",

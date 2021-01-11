@@ -1,12 +1,7 @@
-/** @format */
-
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import { makeStyles } from '@material-ui/core/styles';
-import { CssBaseline, Container } from '@material-ui/core';
 import HomePage from './HomePage/index';
-// import HomePageSecondary from './HomePageSecondary';
-// import Wrapper from './Wrapper';
 import HeroImage from '../common-components/heroImage/heroImage.component';
 import WhyLearn from './WhyLearn/index';
 import BecomeTeacher from './BecomeTeacher';
@@ -17,9 +12,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const App = () => {
+const App = ({ auth }) => {
   const classes = useStyles();
-  const auth = 'Vikrant Singh';
   return (
     <Fragment>
       <HeroImage
@@ -27,11 +21,14 @@ const App = () => {
         subHeading='Keep learning in the moments that matter'
         description='Courses for every step of your career. Instructors with real-world experience.'
       />
-      <CssBaseline />
-      <HomePage />
+      <div className={classes.container}>
+        <HomePage />
+      </div>
       <hr />
       <WhyLearn />
-      <HomePage />
+      <div className={classes.container}>
+        <HomePage />
+      </div>
       <hr />
       <BecomeTeacher />
     </Fragment>
@@ -40,8 +37,8 @@ const App = () => {
 
 const mapStateToProps = (state) => {
   return {
-    auth,
+    auth: state.auth.user || '',
   };
 };
 
-export default connect(null, null)(App);
+export default connect(mapStateToProps, null)(App);
