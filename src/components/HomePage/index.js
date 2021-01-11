@@ -31,9 +31,8 @@ const HomePage = ({ isLoading, courses, hasError, fetchPaginate }) => {
   const classes = useStyles();
   const [state, setState] = useState({
     keyword: '',
-    limit: 8,
-    sort: {},
-    suggestions: [],
+    limit: 9,
+    sort: {}
   });
 
   const loadInitial = (keyword) => {
