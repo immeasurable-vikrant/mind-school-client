@@ -3,11 +3,13 @@ import React, { Fragment } from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import Carousel from 'react-elastic-carousel';
 import { useMediaQuery } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import CourseDetail from '../../common-components/courseDetail/courseDetail.component';
 import Loader from '../../common-components/loader/loader.component';
 import './index.scss';
+import '../../index.scss';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,6 +28,13 @@ const useStyles = makeStyles((theme) => ({
 const HomePage = ({ isLoading, courses, hasError }) => {
   const matches = useMediaQuery('(min-width:600px)');
   const classes = useStyles();
+  const breakPoints = [
+    { width: 1, itemsToShow: 2 },
+    { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+    { width: 768, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 },
+  ];
+
   return (
     <Fragment>
       <h1 className={classes.text}>Browse All Courses</h1>
@@ -36,20 +45,26 @@ const HomePage = ({ isLoading, courses, hasError }) => {
               <strong>There was a loading error</strong>
             </div>
           </div>
-        ) : (
+        ) : matches ? (
           <Fragment>
-            <div className='horizontal_slider'>
-              <div className='slider_container'>
-                {_.map(courses, (course, i) => {
-                  return (
-                    <div key={i} className='item'>
-                      <CourseDetail key={course.id} course={course} />
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
+            <Carousel breakPoints={breakPoints}>
+              {_.map(courses, (course, i) => {
+                return <CourseDetail key={course.id} course={course} />;
+              })}
+            </Carousel>
           </Fragment>
+        ) : (
+          <div className='horizontal_slider'>
+            <div className='slider_container'>
+              {_.map(courses, (course, i) => {
+                return (
+                  <div key={i} className='item'>
+                    <CourseDetail key={course.id} course={course} />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         )}
       </div>
       <div>{isLoading && <Loader />}</div>
