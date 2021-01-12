@@ -20,6 +20,7 @@ import {
   Menu,
   Button,
 } from '@material-ui/core';
+import MenuIcon from '@material-ui/icons/Menu';
 import SchoolIcon from '@material-ui/icons/School';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import SearchIcon from '@material-ui/icons/Search';
@@ -108,9 +109,10 @@ const Header = withRouter(({ logged, logOut }) => {
   const history = useHistory();
   const classes = useStyles();
   const [state, setState] = useState({ search: '' });
+  const [anchorAuthEl, setAnchorAuthEl] = React.useState(null);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-
+  const isMenuAuthOpen = Boolean(anchorAuthEl);
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
@@ -120,6 +122,13 @@ const Header = withRouter(({ logged, logOut }) => {
 
   const handleMobileMenuClose = () => {
     setMobileMoreAnchorEl(null);
+  };
+  const handleMenuAuthClose = () => {
+    setAnchorAuthEl(null);
+  };
+
+  const handleMenuAuth = (event) => {
+    setAnchorAuthEl(event.currentTarget);
   };
 
   const handleMenuClose = () => {
@@ -132,7 +141,6 @@ const Header = withRouter(({ logged, logOut }) => {
   };
 
   const logoutHandler = () => {
-    console.log('clicked');
     logOut();
   };
 
@@ -162,6 +170,7 @@ const Header = withRouter(({ logged, logOut }) => {
   );
 
   const mobileMenuId = 'primary-search-account-menu-mobile';
+  const mobileMenuAuthId = 'primary-search-account-menu-auth-mobile';
   const renderMobileMenu = (
     <Menu
       anchorEl={mobileMoreAnchorEl}
@@ -193,6 +202,29 @@ const Header = withRouter(({ logged, logOut }) => {
       </MenuItem>
       <MenuItem onClick={logoutHandler}>
         <p>Logout</p>
+      </MenuItem>
+    </Menu>
+  );
+  const renderMobileMenuAuth = (
+    <Menu
+      anchorEl={anchorAuthEl}
+      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+      id={mobileMenuAuthId}
+      keepMounted
+      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+      open={isMenuAuthOpen}
+      onClose={handleMenuAuthClose}>
+      <MenuItem
+        onClick={() => {
+          history.push('/signin');
+        }}>
+        <p>Sign In</p>
+      </MenuItem>
+      <MenuItem
+        onClick={() => {
+          history.push('/signup');
+        }}>
+        <p>Sign Up</p>
       </MenuItem>
     </Menu>
   );
@@ -240,14 +272,14 @@ const Header = withRouter(({ logged, logOut }) => {
     return (
       <Fragment>
         <div className={classes.sectionMobile}>
-          <div style={{ width: '100%' }}>
-            <Button
-              className={classes.login}
-              variant='contained'
-              onClick={() => history.push('/signin')}>
-              Sign In
-            </Button>
-          </div>
+          <IconButton
+            aria-label='show more'
+            aria-controls={mobileMenuAuthId}
+            aria-haspopup='true'
+            onClick={handleMenuAuth}
+            color='inherit'>
+            <MenuIcon />
+          </IconButton>
         </div>
         <div className={classes.sectionDesktop}>
           <Button
@@ -321,6 +353,7 @@ const Header = withRouter(({ logged, logOut }) => {
             {logged ? renderProfilePic() : renderLogin()}
           </Toolbar>
         </AppBar>
+        {renderMobileMenuAuth}
         {renderMobileMenu}
         {renderMenu}
       </div>

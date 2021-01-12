@@ -70,7 +70,6 @@ export function signUp({ email, password, name, avatar, failed = null }) {
     axios
       .post(`${hostUrl}/signup`, formData)
       .then((response) => {
-        console.log('qwertyuytrew', response);
         localStorage.setItem('token', response.data.token);
 
         dispatch(signIn());

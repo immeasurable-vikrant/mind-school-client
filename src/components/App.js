@@ -26,6 +26,7 @@ const App = ({ auth }) => {
       </div>
       <hr />
       <WhyLearn />
+      <hr />
       <div className={classes.container}>
         <HomePage />
       </div>

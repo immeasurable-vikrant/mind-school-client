@@ -66,6 +66,10 @@ body {
   padding: 16px;
   /* border: 1px solid lightgray; */
   border-radius: 10px;
+  @media (min-width: 720px) {
+    width: 484px;
+    margin: 24px auto;
+  }
 }
 
 .google-oAuth-btn {

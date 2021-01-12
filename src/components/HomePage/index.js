@@ -32,7 +32,7 @@ const HomePage = ({ isLoading, courses, hasError, fetchPaginate }) => {
   const [state, setState] = useState({
     keyword: '',
     limit: 9,
-    sort: {}
+    sort: {},
   });
 
   const loadInitial = (keyword) => {
@@ -58,21 +58,27 @@ const HomePage = ({ isLoading, courses, hasError, fetchPaginate }) => {
     { width: 1200, itemsToShow: 4 },
   ];
 
-  return (
+  return hasError ? (
+    <div className='alert alert-danger'>
+      <div style={{ textAlign: 'center' }}>
+        <strong>There was a loading error</strong>
+      </div>
+    </div>
+  ) : (
     <Fragment>
       <h1 className={classes.text}>Browse All Courses</h1>
       <div className={classes.root}>
-        {hasError ? (
-          <div className='alert alert-danger'>
-            <div style={{ textAlign: 'center' }}>
-              <strong>There was a loading error</strong>
-            </div>
-          </div>
+        {isLoading ? (
+          <Loader />
         ) : matches ? (
           <Fragment>
             <Carousel breakPoints={breakPoints}>
               {_.map(courses, (course, i) => {
-                return <CourseDetail key={course.id} course={course} />;
+                return (
+                  <div key={i}>
+                    <CourseDetail course={course} />
+                  </div>
+                );
               })}
             </Carousel>
           </Fragment>
@@ -82,7 +88,7 @@ const HomePage = ({ isLoading, courses, hasError, fetchPaginate }) => {
               {_.map(courses, (course, i) => {
                 return (
                   <div key={i} className='item'>
-                    <CourseDetail key={course.id} course={course} />
+                    <CourseDetail course={course} />
                   </div>
                 );
               })}
@@ -90,7 +96,6 @@ const HomePage = ({ isLoading, courses, hasError, fetchPaginate }) => {
           </div>
         )}
       </div>
-      <div>{isLoading && <Loader />}</div>
     </Fragment>
   );
 };

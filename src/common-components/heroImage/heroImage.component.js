@@ -49,7 +49,6 @@ const HeroImage = ({
 
 const mapStateToProps = (state) => {
   const auth = getIn(state, ['auth', 'user', 'profile', 'name']);
-  console.log('state', state);
   return {
     auth,
   };

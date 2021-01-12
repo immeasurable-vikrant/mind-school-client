@@ -172,19 +172,6 @@ const HomePageSecondary = ({
               alignItems: 'center',
             }}>
             <span>
-              {/* <AutoSuggest
-                suggestions={suggestions}
-                onSuggestionsClearRequested={onSuggestionsClearRequested}
-                onSuggestionsFetchRequested={onSuggestionsFetchRequested}
-                onSuggestionSelected={(_, { suggestionValue }) =>
-                  console.log('Selected: ' + suggestionValue)
-                }
-                getSuggestionValue={getSuggestionValue}
-                renderSuggestion={renderSuggestion}
-                inputProps={inputProps}
-                renderInputComponent={renderInputComponent}
-                highlightFirstSuggestion={true}
-              /> */}
             </span>
             <span>
               {/* <RaisedButton label='Search' type='submit' primary={true} /> */}
