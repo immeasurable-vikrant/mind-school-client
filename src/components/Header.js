@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import { withRouter, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { userInfo, logout } from '../actions';
-import getIn from '../utility/getIn';
 import companyLogo from '../../public/assets/images/apple.png';
 //material-ui imports
 import { fade, makeStyles } from '@material-ui/core/styles';
@@ -106,7 +105,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Header = withRouter(({ logged, logOut }) => {
+const Header = withRouter(({ logged, logOut, courses }) => {
   const history = useHistory();
   const classes = useStyles();
   const [state, setState] = useState({ search: '' });
@@ -194,8 +193,8 @@ const Header = withRouter(({ logged, logOut }) => {
         onClick={() => {
           history.push('/list-cart');
         }}>
-        <IconButton aria-label='show 11 new cart' color='inherit'>
-          <Badge badgeContent={11} color='secondary'>
+        <IconButton aria-label='show new cart' color='inherit'>
+          <Badge badgeContent={courses.length} color='secondary'>
             <ShoppingCartIcon />
           </Badge>
         </IconButton>
@@ -239,9 +238,9 @@ const Header = withRouter(({ logged, logOut }) => {
               onClick={() => {
                 history.push('/list-cart');
               }}
-              aria-label='show 17 new cart'
+              aria-label='show new cart'
               color='inherit'>
-              <Badge badgeContent={17} color='secondary'>
+              <Badge badgeContent={courses.length} color='secondary'>
                 <ShoppingCartIcon />
               </Badge>
             </IconButton>
@@ -363,14 +362,15 @@ const Header = withRouter(({ logged, logOut }) => {
   return <div className='App'>{renderNav()}</div>;
 });
 
+
 const mapStateToProps = (state) => {
-  const auth = getIn(state, ['auth']);
-  const { logged, user } = auth;
+  // console.log('mapStateToProps', state)
   return {
-    logged,
-    user,
-  };
-};
+    logged: state.auth.logged,
+    user: state.auth.user,
+    courses: state.fetchCartList
+  }
+}
 
 const mapDispatchToProps = (dispatch) => {
   return {

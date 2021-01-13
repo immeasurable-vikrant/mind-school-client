@@ -58,8 +58,6 @@ const HomePage = ({ isLoading, courses, hasError, fetchPaginate }) => {
     { width: 1200, itemsToShow: 4 },
   ];
 
-  console.log(" key={i} classNam", isLoading);
-
   return hasError ? (
     <div className="alert alert-danger">
       <div style={{ textAlign: "center" }}>

@@ -173,7 +173,6 @@ const Curriculum = (props) => {
     if (!lecture) {
       return <div>&nbsp;</div>;
     }
-
     return (
       <Fragment>
         <div>{lectureHeader(lecture)}</div>
