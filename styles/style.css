@@ -12,6 +12,9 @@ body {
   font-size: small;
   background-color: white !important;
 }
+button:hover {
+  cursor: pointer;
+}
 
 .color-gray {
   color: #9e9e9e;

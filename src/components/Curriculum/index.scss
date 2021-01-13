@@ -45,9 +45,9 @@ input {
   &-label {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    padding: 8px 16px;
     background: $clouds;
-    font-weight: bold;
+    font-weight: 500;
     color: $midnight;
     cursor: pointer;
     /* Icon */
@@ -92,6 +92,13 @@ input:checked {
   }
   ~ .tab-content {
     max-height: 100vh;
-    padding: 1em;
+    padding: 8px 16px;
   }
+}
+
+.collapse-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-stretch: condensed;
 }

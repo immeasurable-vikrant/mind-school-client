@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { Dialog } from '@material-ui/core';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
+import playVideo from '../../../public/assets/images/play.png'
 import { fetchLecture, viewLecture } from '../../actions/lecture';
 import { userInfo } from '../../actions';
 import SignIn from '../../auth/SignIn';
@@ -113,7 +114,7 @@ const Curriculum = (props) => {
                 style={{ width: '100%', height: '100% ' }}
                 onClick={(e) => handleViewLecture(e, header, body, true)}>
                 <i className='fa fa-play-circle-o' aria-hidden='true' />
-                <p>Play</p>
+                <img src={playVideo} height='22px' width='22px' alt='playIcon' />
               </div>
             );
           }
@@ -125,18 +126,11 @@ const Curriculum = (props) => {
   const lectureBody = (header) => {
     return _.map(header.body, (body, i) => {
       return (
-        <div key={i} className='collapsible-body'>
-          <div className='row text-size-fifth'>
-            <div className='col-sm-7 text-left'>
-              <span>{body.content}</span>
-            </div>
-            <div className='col-sm-3 text-center'>
-              {lecturePreview(header, body, body.preview)}
-            </div>
-            <div className='col-sm-2 text-right'>
-              <span>{body.time}</span>
-            </div>
-          </div>
+        <div key={i} className='collapse-div'>
+          <span>{body.content}</span>
+          {lecturePreview(header, body, body.preview)}
+          <span>{body.time}</span>
+          <hr />
         </div>
       );
     });

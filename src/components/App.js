@@ -42,7 +42,7 @@ const App = ({ auth, isLoading }) => {
 const mapStateToProps = (state) => {
   return {
     auth: state.auth.user || "",
-    isLoading: state.paginate.loading,
+    // isLoading: state.paginate.loading,
   };
 };
 

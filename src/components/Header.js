@@ -51,6 +51,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       display: 'block',
     },
+    cursor: 'pointer',
   },
   search: {
     position: 'relative',
@@ -312,7 +313,7 @@ const Header = withRouter(({ logged, logOut }) => {
         <AppBar position='static' className={classes.header}>
           <Toolbar>
             <div
-              style={{ margin: '10px 8px 16px' }}
+              style={{ margin: '10px 8px 16px', cursor: 'pointer' }}
               onClick={() => {
                 history.push('/');
               }}>
