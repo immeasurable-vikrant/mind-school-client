@@ -8,24 +8,19 @@ import { signIn, userInfo } from '../actions';
 
 const SocialGoogle = ({ fetchSignIn, fetchUserInfo, location }) => {
   const history = useHistory();
-  // console.log('match', match)
-  // const { token } = useParams();
+  
 
   useEffect(() => {
-    console.log('location', location.search)
     const params = new URLSearchParams(location.search)
     const setToken = params.get('token')
-    localStorage.setItem('token',setToken)
+    localStorage.setItem('token', setToken)
     fetchSignIn();
     fetchUserInfo();
     history.push('/');
   }, []);
 
-  return (
-    <div>
-      <h2>HELLLO FUCKER</h2>
-    </div>
-  );
+  return <div />
+
 };
 
 SocialGoogle.propTypes = {
