@@ -1,5 +1,3 @@
-/** @format */
-
 //Libraries Import
 import _ from 'lodash';
 import React, { useState, useEffect, useRef } from 'react';
@@ -20,6 +18,7 @@ import { userInfo } from '../actions';
 import { hostUrl } from '../../config';
 //Auth Import
 import SignIn from '../auth/SignIn';
+import '../../styles/style.css'
 
 const numberWithCommas = (x) => {
   const parts = parseInt(x, 10).toString().split('.');
@@ -36,6 +35,11 @@ const useStyles = makeStyles((theme) => ({
   rootCartSubtitle: {
     margin: '16px 0 8px',
   },
+  color: '#8E44AD',
+  border: '1px solid #8E44AD',
+  borderRadius: '10px',
+  backgroundColor: 'white',
+  margin: '5px',
   cartTitle: {
     fontSize: '18px',
     fontWeight: '500',
@@ -292,7 +296,7 @@ const ListCart = ({
   const renderCheckout = () => {
     return (
       <div>
-        <div className='container-fluid'>
+        <div className='container-fluid-div'>
           <div className='row'>
             <div className='col-sm-12'>
               <br />
@@ -306,13 +310,12 @@ const ListCart = ({
               <div
                 style={{
                   display: 'flex',
-                  justifyContent: 'center',
-                  margin: 10,
+                  justifyContent: 'center'
                 }}>
                 <button
                   type='button'
                   name='paycart'
-                  className='btn btn-lg btn-primary btn-block'
+                  className='log-in-btn'
                   onClick={(e) => {
                     e.preventDefault();
                     onPayCart();
