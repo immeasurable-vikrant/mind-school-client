@@ -1,5 +1,3 @@
-/** @format */
-
 import React, { Fragment, useState } from 'react';
 import Description from '../../common-components/description/description.component';
 import WHY_LEARN_DATA from './whyLearnData';

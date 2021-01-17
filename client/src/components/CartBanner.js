@@ -126,12 +126,9 @@ const CartBanner = ({
       };
       const paymentObject = new window.Razorpay(options);
       paymentObject.open();
-      fetchBuyCourse(course.no);
-      // console.log('WINDOWWRAZORPAY', window)
-      // if(response){
-      //    fetchBuyCourse(course.no);
-      // }
-      // fetchBuyCourse(course.no);
+      if (response) {
+        fetchBuyCourse(course.no);
+      }
     } else {
       handleOpen();
     }

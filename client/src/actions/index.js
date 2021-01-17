@@ -26,9 +26,10 @@ export function userData(data = null) {
   };
 }
 
-export function userInfo() {
+export function userInfo(tokenPassed) {
   return function (dispatch) {
-    const token = localStorage.getItem('token');
+    console.log('tokennnnnnnn', token)
+    const token = tokenPassed
     if (token && token.length > 0) {
       axios
         .get(`${hostUrl}/token`, {
@@ -70,11 +71,10 @@ export function signUp({ email, password, name, avatar, failed = null }) {
     axios
       .post(`${hostUrl}/signup`, formData)
       .then((response) => {
-        console.log('qwertyuytrew', response);
         localStorage.setItem('token', response.data.token);
-
+        const tokenPassed = response.data.token;
         dispatch(signIn());
-        dispatch(userInfo());
+        dispatch(userInfo(tokenPassed));
 
         return history.push('/');
       })
@@ -91,9 +91,9 @@ export function logIn({ email, password, redirect = null, failed = null }) {
       .post(`${hostUrl}/signin`, { email, password })
       .then((response) => {
         localStorage.setItem('token', response.data.token);
-
+        const tokenPassed = response.data.token;
         dispatch(signIn());
-        dispatch(userInfo());
+        dispatch(userInfo(tokenPassed));
 
         if (!redirect) {
           return history.push('/');

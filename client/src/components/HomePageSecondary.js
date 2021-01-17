@@ -1,5 +1,3 @@
-/** @format */
-
 import _ from 'lodash';
 import React, { useEffect, useState, Fragment } from 'react';
 import { withRouter, useHistory } from 'react-router-dom';
@@ -174,19 +172,6 @@ const HomePageSecondary = ({
               alignItems: 'center',
             }}>
             <span>
-              {/* <AutoSuggest
-                suggestions={suggestions}
-                onSuggestionsClearRequested={onSuggestionsClearRequested}
-                onSuggestionsFetchRequested={onSuggestionsFetchRequested}
-                onSuggestionSelected={(_, { suggestionValue }) =>
-                  console.log('Selected: ' + suggestionValue)
-                }
-                getSuggestionValue={getSuggestionValue}
-                renderSuggestion={renderSuggestion}
-                inputProps={inputProps}
-                renderInputComponent={renderInputComponent}
-                highlightFirstSuggestion={true}
-              /> */}
             </span>
             <span>
               {/* <RaisedButton label='Search' type='submit' primary={true} /> */}
