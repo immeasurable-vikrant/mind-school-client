@@ -3,11 +3,12 @@ import $ from 'jquery';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { signError, logIn } from '../actions';
-import { ERROR_MESSAGES } from '../common/constants';
-import TextInput from '../components/TextInput';
-import { hostUrl } from '../../config';
-import '../../styles/style.css';
+import { signError, logIn } from '../../actions';
+import { ERROR_MESSAGES } from '../../common/constants';
+import TextInput from '../../components/TextInput';
+import { hostUrl } from '../../../config';
+import '../../../styles/style.css';
+import '../SignIn/index.scss'
 
 class Signin extends Component {
   constructor(props) {
@@ -124,12 +125,12 @@ class Signin extends Component {
 
   renderSocial = () => {
     return (
-      <div>
+      <div className='google-auth-btn-div'>
         <a
-          className='btn btn-outline-dark google-oAuth-btn'
+          className='google-auth-link'
           href={`${hostUrl}/auth/google`}
           role='button'
-          style={{ textTransform: 'none', border: '1px solid #ced4da' }}>
+          >
           <img
             width='20px'
             style={{ marginBottom: '3px', marginRight: '5px' }}

@@ -47,7 +47,7 @@ export const SignUp = Loadable({
 });
 
 export const SignIn = Loadable({
-  loader: () => import('../auth/SignIn'),
+  loader: () => import('../auth/SignIn/index'),
   loading: LoadingComponent,
 });
 
@@ -62,7 +62,7 @@ export const DetailCourse = Loadable({
 });
 
 export const ViewCourses = Loadable({
-  loader: () => import('../components/ViewCourses'),
+  loader: () => import('../components/ViewCourses/index'),
   loading: LoadingComponent,
 });
 

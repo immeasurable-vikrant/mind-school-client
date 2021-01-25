@@ -8,7 +8,7 @@ import { connect } from 'react-redux';
 import { buyCourse, addCart } from '../actions/cart';
 import { userInfo } from '../actions';
 import { hostUrl } from '../../config';
-import SignIn from '../auth/SignIn';
+import SignIn from '../auth/SignIn/index';
 import { makeStyles } from '@material-ui/core/styles';
 import englishIcon from '../../public/assets/images/english.png';
 import supportTeam from '../../public/assets/images/clock.png';
@@ -85,6 +85,7 @@ const CartBanner = ({
   };
 
   const onBuyCourse = async () => {
+    debugger;
     if (logged) {
       const result = await loadScript(
         'https://checkout.razorpay.com/v1/checkout.js',
@@ -231,7 +232,7 @@ const CartBanner = ({
 
   const renderBanner = () => {
     return (
-      <div>
+      <div className='cart-banner-div'>
         <Paper elevation={0}>
           <div>
             <div style={{ marginBottom: 6 }} />
@@ -292,7 +293,7 @@ const CartBanner = ({
   };
 
   return (
-    <div>
+    <div className='cart-banner-div'>
       {renderDialog()}
       {renderBanner()}
     </div>

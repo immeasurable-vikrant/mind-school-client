@@ -1,21 +1,19 @@
-/** @format */
-
 import _ from 'lodash';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { withRouter, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { fetchViewCourses } from '../actions/view-courses';
-import { userInfo } from '../actions';
+import { fetchViewCourses } from '../../actions/view-courses';
+import { userInfo } from '../../actions';
 import { CircularProgress, Avatar, Grid, Typography } from '@material-ui/core';
-import Equalizer from 'react-equalizer';
-import { hostUrl } from '../../config';
+import { hostUrl } from '../../../config';
 import { makeStyles } from '@material-ui/core/styles';
+import './index.scss';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    margin: '16px'
+    margin: '16px',
   },
   noCourse: {
     marginTop: '140px',
@@ -24,8 +22,8 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: '500',
     lineHeight: '27px',
     color: '#3c3b37',
-    textAlign: 'center'
-  }
+    textAlign: 'center',
+  },
 }));
 
 const ViewCourses = ({
@@ -33,12 +31,12 @@ const ViewCourses = ({
   isLoading,
   hasError,
   fetchUserInfo,
-  viewCourses
+  viewCourses,
 }) => {
   const classes = useStyles();
   const history = useHistory();
   const [state, setState] = useState({
-    dialogStyle: { display: 'none' }
+    dialogStyle: { display: 'none' },
   });
 
   useEffect(() => {
@@ -50,8 +48,8 @@ const ViewCourses = ({
         marginTop: 100,
         marginBottom: 100,
         width: '100%',
-        height: '100%'
-      }
+        height: '100%',
+      },
     });
     const token = localStorage.getItem('token');
     if (token) {
@@ -104,11 +102,11 @@ const ViewCourses = ({
   const authorNames = (authors) => {
     return _.map(authors, (author, i) => {
       return (
-        <div key={i} className='row'>
-            <span>
-              <Avatar src={`${hostUrl}/images/${author.avatar}`} size={22} />
-            </span>
-            <span style={{marginLeft: '8px', fontSize: '22px', fontWeight: '500', lineHeight: '28px'}}> {author.name}</span>
+        <div key={i} className="author-names">
+          <span>
+            <Avatar src={`${hostUrl}/images/${author.avatar}`} size={22} />
+          </span>
+          <span style={{margin: '8px'}}>{author.name}</span>
         </div>
       );
     });
@@ -117,41 +115,25 @@ const ViewCourses = ({
   const listCourse = (course) => {
     return (
       <div
-        onClick={(e) => handleCourse(e, course)}
-        style={{
-          width: '100%',
-          height: '100%',
-          cursor: 'pointer'
-        }}>
-        <div
-          style={{
-            marginLeft: 3,
-            marginRight: 3,
-            marginTop: 12,
-            marginBottom: 8,
-            overflow: 'hidden'
-          }}>
-          <img
-            style={{ width: '100%', height: '100%' }}
-            alt='altImg'
-            src={`${hostUrl}/images/${course.picture}`}
-          />
+        className='description-container-view-courses'
+        onClick={(e) => handleCourse(e, course)}>
+        <div className='img-container-view-courses'>
+          <img src={`${hostUrl}/images/${course.picture}`} alt='imgUrl' className='course-picture'/>
         </div>
-        <hr />
-        <div className='container' style={{margin:'16px'}}>{authorNames(course._authors)}</div>
-        <div className='text-size-fifth text-bold' style={{margin:'16px', fontSize: '22px', fontWeight: '400', lineHeight: '28px'}}>{course.title}</div>
-        <div className='text-size-fifth' style={{margin:'16px'}}>{course.subtitle}</div>
+        <div className='description-titles-container-view-courses'>
+          <span className='title-view-courses'>
+            {authorNames(course._authors)}
+          </span>
+          <p className='subtitle-view-courses'>{course.title}</p>
+          <p className='subtitle-view-courses'>{course.subtitle}</p>
+        </div>
       </div>
     );
   };
 
   const listCourses = (lists) => {
     return _.map(lists, (course, i) => {
-      return (
-        <div key={i} className='col-sm-4'>
-          {listCourse(course)}
-        </div>
-      );
+      return <div key={i}>{listCourse(course)}</div>;
     });
   };
 
@@ -166,11 +148,7 @@ const ViewCourses = ({
       const rows = _.map(courses, (course, i) => {
         if (i % 3 === 0) {
           const lists = _.slice(courses, i, i + 3);
-          return (
-            <div key={i} className='row'>
-              <Equalizer byRow={true}>{listCourses(lists)}</Equalizer>
-            </div>
-          );
+          return <div key={i}>{listCourses(lists)}</div>;
         }
       });
 
@@ -186,20 +164,19 @@ const ViewCourses = ({
     if (isLoading) {
       return <div>{renderState()}</div>;
     }
-
     return (
-      <div>
+      <Fragment>
         {renderTop()}
         {renderList()}
-      </div>
+      </Fragment>
     );
   };
 
   return (
-    <div>
+    <Fragment>
       {renderCourses()}
       <hr />
-    </div>
+    </Fragment>
   );
 };
 
@@ -210,7 +187,7 @@ ViewCourses.propTypes = {
   isLoading: PropTypes.bool,
   courses: PropTypes.array,
   viewCourses: PropTypes.func,
-  fetchUserInfo: PropTypes.func
+  fetchUserInfo: PropTypes.func,
 };
 
 const mapStateToProps = (state) => {
@@ -219,17 +196,17 @@ const mapStateToProps = (state) => {
     user: state.auth.user,
     hasError: state.viewCoursesError,
     isLoading: state.viewCoursesLoading,
-    courses: state.fetchViewCourses
+    courses: state.fetchViewCourses,
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
     viewCourses: () => dispatch(fetchViewCourses()),
-    fetchUserInfo: () => dispatch(userInfo())
+    fetchUserInfo: () => dispatch(userInfo()),
   };
 };
 
 export default withRouter(
-  connect(mapStateToProps, mapDispatchToProps)(ViewCourses)
+  connect(mapStateToProps, mapDispatchToProps)(ViewCourses),
 );

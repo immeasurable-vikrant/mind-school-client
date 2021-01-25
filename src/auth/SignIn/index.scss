@@ -1,0 +1,25 @@
+.google-auth-btn-div {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: black;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid #ced4da;
+  background: transparent;
+}
+
+.google-auth-link {
+  a:hover {
+    cursor: pointer;
+    text-transform: none;
+    outline: none;
+    color: black;
+    outline: none;
+  }
+}

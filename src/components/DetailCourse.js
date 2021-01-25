@@ -244,6 +244,7 @@ const DetailCourse = ({
             </h2>
           </div>
           <br />
+          <div className='show-more-div'>
           <ShowMore lines={5} more='Show more' less='Show less' anchorClass=''>
             <div
               className={classes.courseDescription}
@@ -252,6 +253,7 @@ const DetailCourse = ({
               }}
             />
           </ShowMore>
+          </div>
           <hr />
           <div className='course-curriculum-div'>
             <h2 className={classes.detailCourseDescriptionTitle}>

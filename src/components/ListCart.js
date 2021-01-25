@@ -1,3 +1,5 @@
+/** @format */
+
 //Libraries Import
 import _ from 'lodash';
 import React, { useState, useEffect, useRef } from 'react';
@@ -17,8 +19,8 @@ import { userInfo } from '../actions';
 //Config Import
 import { hostUrl } from '../../config';
 //Auth Import
-import SignIn from '../auth/SignIn';
-import '../../styles/style.css'
+import SignIn from '../auth/SignIn/index';
+import '../../styles/style.css';
 
 const numberWithCommas = (x) => {
   const parts = parseInt(x, 10).toString().split('.');
@@ -34,6 +36,11 @@ const useStyles = makeStyles((theme) => ({
   },
   rootCartSubtitle: {
     margin: '16px 0 8px',
+    [theme.breakpoints.up('md')]: {
+      margin: '24px auto',
+      // width: '484px'
+    },
+
   },
   color: '#8E44AD',
   border: '1px solid #8E44AD',
@@ -51,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '14px',
     fontWeight: '400',
     lineHeight: '22px',
-    margin: '0',
+    margin: '0'
   },
   courseLength: {
     fontSize: '18px',
@@ -76,6 +83,10 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: '18px',
     color: '#29303b',
     margin: '4px 0',
+    [theme.breakpoints.up('md')]: {
+      margin: '24px auto',
+      // width: '484px'
+    },
   },
   courseSubTitle: {
     fontSize: '13px',
@@ -98,7 +109,7 @@ const useStyles = makeStyles((theme) => ({
   },
   renderList: {
     margin: '30px',
-  },
+  }
 }));
 
 const styles = {
@@ -223,7 +234,7 @@ const ListCart = ({
     if (courses) {
       return (
         <Grid className={classes.root}>
-          <Grid container item xs={6} spacing={3}>
+          <Grid container item xs={6} spacing={3} className={classes.shoppingCartTitle}> 
             <Typography className={classes.cartTitle}>
               Shoopping Cart!
             </Typography>
@@ -310,7 +321,7 @@ const ListCart = ({
               <div
                 style={{
                   display: 'flex',
-                  justifyContent: 'center'
+                  justifyContent: 'center',
                 }}>
                 <button
                   type='button'

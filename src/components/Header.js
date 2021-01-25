@@ -330,7 +330,7 @@ const Header = withRouter(({ logged, logOut, courses }) => {
               onClick={() => {
                 history.push('/');
               }}>
-              Immeasurable
+              Mind Academy
             </Typography>
 
             <div className={classes.search}>

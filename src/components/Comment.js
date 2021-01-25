@@ -14,7 +14,7 @@ import {
 import { userInfo } from '../actions';
 
 import AlertDialog from './AlertDialog';
-import SignIn from '../auth/SignIn';
+import SignIn from '../auth/SignIn/index';
 
 const styles = {
   dialogRoot: {

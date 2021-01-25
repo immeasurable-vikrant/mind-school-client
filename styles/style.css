@@ -1,7 +1,7 @@
 /** @format */
 
 html {
-  font-family: "Roboto", sans-serif !important;
+  font-family: 'Roboto', sans-serif !important;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -46,7 +46,6 @@ button:hover {
   border: 1px solid #8e44ad;
   border-radius: 4px;
   background-color: white;
-  margin: 4px;
   margin-top: 24px;
   padding: 8px;
 }
@@ -74,18 +73,17 @@ button:hover {
 .sign-in-form {
   margin: 24px 16px;
   background-color: white;
-  padding: 16px;
   /* border: 1px solid lightgray; */
   border-radius: 10px;
-  @media (min-width: 720px) {
+  border: 1px solid lightgray;
+  padding: 24px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, -0.8);
+}
+@media (min-width: 720px) {
+  .sign-in-form {
     width: 484px;
     margin: 24px auto;
   }
-}
-
-.google-oAuth-btn {
-  width: 100%;
-  border: 1px solid #ced4da;
 }
 
 input {
@@ -130,7 +128,7 @@ input::placeholder {
 
 .collapsible-header {
   font-weight: bold;
-  font-family: "Roboto", "PT\ Sans", sans-serif;
+  font-family: 'Roboto', 'PT\ Sans', sans-serif;
   line-height: 6rem;
   font-size: 2rem;
 }
@@ -175,6 +173,13 @@ input::placeholder {
   font-size: 15px;
   padding: 24px 64px 24px 24px;
 }
+@media (min-width: 720px) {
+  .loginBox-header{
+    width: 525px;
+    margin: 16px auto;
+  }
+}
+
 
 .clp-component-render {
   /* box-sizing: border-box; */
@@ -288,6 +293,17 @@ input::placeholder {
 
 .course-curriculum-div {
   margin: 16px 0;
+}
+
+@media (min-width: 720px) {
+  .course-curriculum-div {
+    width: 448px;
+    margin: 16px auto;
+  }
+  .show-more-div {
+    width: 448px;
+    margin: 16px auto;
+  }
 }
 
 .col-sm-6 {

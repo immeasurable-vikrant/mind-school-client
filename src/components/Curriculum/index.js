@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 import playVideo from '../../../public/assets/images/play.png'
 import { fetchLecture, viewLecture } from '../../actions/lecture';
 import { userInfo } from '../../actions';
-import SignIn from '../../auth/SignIn';
+import SignIn from '../../auth/SignIn/index';
 import './index.scss';
 
 import { makeStyles } from '@material-ui/core/styles';

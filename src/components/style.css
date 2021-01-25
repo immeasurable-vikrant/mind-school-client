@@ -6,6 +6,13 @@
  * @format
  */
 
+@media (min-width: 720px){
+  .cart-banner-div {
+    margin: 16px auto;
+    width: 545px;
+  }
+}
+
 .new_footer_area {
   background: #fbfbfd;
 }
